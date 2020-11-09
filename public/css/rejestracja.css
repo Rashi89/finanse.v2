@@ -1,0 +1,272 @@
+body
+{
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+.info
+{
+	font-size:17px;
+	margin-top:30px;
+	margin-left:50px;
+}
+.logotyp
+{
+	height:400px;
+	width:308px;
+	margin-top:70px;
+}
+
+.formularz
+{
+	background-color:white;
+	padding: 50px 50px 50px 50px;
+	margin-top:50px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	margin-bottom:30px !Important;
+
+}
+
+.napis
+{
+	color:#1c525e !important;
+	font-size: 28px;
+	letter-spacing: 3px;
+	margin-left:50px;
+	font-weight:bold;
+}
+.napis1
+{
+	color:#1c525e !important;
+	font-size: 45px;
+	letter-spacing: 3px;
+	width:600px;
+
+}
+.info1
+{
+	color:#1c525e !important;
+	font-size:28px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	margin-left:50px;
+	
+}
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:360px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(28,82,94,1);
+	box-shadow: 0px 0px 10px 2px rgba(28,82,94,1);
+	border: 1px solid #65b7c9;
+	background-color:#bde7f0;
+	color:#2897b0;
+}
+
+.rejestracja input[type=submit]
+{
+	width: 360px;
+	height:45px;
+	background-color:#13acf5;
+	font-size:15px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:100px;
+}
+
+.rejestracja input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+
+.rejestracja input[type=submit]:hover
+{
+	background-color:#117fb4;
+}
+
+.rejestracja1 input[type=submit]
+{
+	width: 220px;
+	height:45px;
+	background-color:#0b3c4d;
+	font-size:15px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:100px;
+}
+
+.rejestracja1 input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+
+.rejestracja1 input[type=submit]:hover
+{
+	background-color:#06242f;
+}
+
+.anuluj 
+{
+	width: 360px;
+	height:45px;
+	background-color:#ab3b3b;
+	font-size:15px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:100px;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-align:center;
+}  
+
+.anuluj:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+
+.anuluj:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#7b2929;
+}
+
+.error
+{
+	color:red;
+	margin-top:5px;
+	margin-left:100px;
+}
+.stopka_menu
+{
+	margin-top:70px;
+	width: 100%;
+	background-color: #2c3136;
+	height:32px;
+	color: white;
+	font-size:20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+.blad
+{
+	margin-left: 100px;
+}
+
+.forgot
+{
+	margin-left:100px;
+}
+.forgot>a:hover
+{
+	text-decoration: none;
+}
+
+@media(max-width:576px)
+{
+.napis
+{
+	
+	font-size:20px;
+}
+.logotyp
+{
+	height:250px;
+	width:192px;
+	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.info
+{
+	font-size:12px;
+}
+.stopka_menu
+{
+	font-size:12px;
+}
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:250px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+.rejestracja input[type=submit]
+{
+	width: 250px;
+}
+.anuluj 
+{
+	width: 250px;
+} 
+}
+@media(min-width:577px) and (max-width:991px)
+{
+	.logotyp
+{
+	height:250px;
+	width:192px;
+	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.stopka_menu
+{
+	font-size:15px;
+}
+}

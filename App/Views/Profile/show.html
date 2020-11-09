@@ -1,0 +1,63 @@
+<<<<<<< HEAD
+{% extends "Base.html" %}
+=======
+{% extends "Base_user.html" %}
+>>>>>>> feature/login_signup
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+
+<<<<<<< HEAD
+		<h1>Profile</h1>
+		
+		
+			<dl class="dl-horizontal">
+					<dt>Name</dt>
+					<dd>{{user.name}}</dd>
+					<dt>Email</dt>
+					<dd>{{user.email}}</dd>
+			</dl>
+		
+		
+		<a href="/profile/edit">Edit</a>
+=======
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="welcome">
+								<div class="data">	
+								Dzisiejsza data: {{date}}
+								</div>
+								<div class="data">
+								Twoje saldo: {{saldo}}
+								</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="buttons">
+								<div class="button">
+								<a href="przychod.php" class="income btn">Dodaj przychód</a>
+								</div>
+								<div class="button">
+								<a href="wydatek.php" class="expense btn">Dodaj wydatek</a>
+								</div>
+								<div class="button">
+								<a href="bilans_wybor.php" class="bilans btn">Przeglądaj bilans</a>
+								</div>
+								<div style="clear:both;"></div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<img src="/img/grafa_glowna.png" class="img-fluid"/>
+					</div>
+
+
+			</main>
+
+
+>>>>>>> feature/login_signup
+{% endblock %}

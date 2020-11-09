@@ -1,0 +1,1077 @@
+[09-Oct-2020 13:15:16 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:15:16 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:27 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:27 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:29 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:29 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:39 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:27:39 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:38:11 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 13:38:50 Europe/Berlin] Uncaught exception: Exception' with message 'Controller class App\Controllers\Post not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post/new')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 90
+[09-Oct-2020 14:07:08 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:07:08 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:07:10 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:07:10 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:08:40 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:08:40 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:08:41 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:08:41 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:15:11 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:15:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:16:46 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:16:46 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:16:47 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:16:47 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:17 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:17 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:47 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:23:47 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:34:20 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:34:20 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:34:21 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:34:21 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:36:29 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:36:29 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:7
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 7)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 7)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 7
+[09-Oct-2020 14:36:30 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:36:30 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:7
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 7)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 7)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 7
+[09-Oct-2020 14:40:59 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:40:59 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:7
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 7)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 7)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 7
+[09-Oct-2020 14:41:00 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:41:00 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:7
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 7)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 7)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 7
+[09-Oct-2020 14:48:22 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:48:22 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:48:23 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:48:23 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:48:24 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:48:24 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:51:33 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:51:33 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:51:34 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:51:34 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:52:36 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:52:36 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 14:52:37 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 14:52:37 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:03:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:03:18 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:03:19 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:03:19 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:03:31 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:03:31 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:03:31 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:03:31 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:17:04 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('post')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:17:04 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:17:08 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:17:08 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:17:57 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:17:57 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:17:58 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:17:58 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:17:59 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:17:59 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:29:53 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:29:53 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:29:54 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:29:54 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:29:57 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/404.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:29:57 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:31:40 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:31:40 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:31:41 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:31:41 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:31:43 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:31:43 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:33:49 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:33:49 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:33:49 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 15:33:49 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6
+[09-Oct-2020 15:40:30 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:40:30 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:40:31 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:40:31 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:41:13 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:41:13 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:41:14 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:41:14 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:41:15 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:41:15 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:41:17 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:41:17 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:45:18 Europe/Berlin] Uncaught exception: Twig\Error\LoaderError' with message 'Unable to find template "Base.html" (looked into: ../App/Views) in "Home/index.html" at line 1.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Base.html')
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Base.html')
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(319): Twig\Environment->getTemplateClass('Base.html')
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#9 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#10 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#11 [internal function]: App\Controllers\Home->indexAction()
+#12 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#14 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#15 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+[09-Oct-2020 15:45:18 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "Base.html" (looked into: ../App/Views) in "500.html" at line 1. in C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php:182
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Base.html')
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Base.html')
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(319): Twig\Environment->getTemplateClass('Base.html')
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', '500.html', 1)
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_198f6c6fbe4b637d3430668ff46b1fe4ba0ce9861d0a6dec0235e6648eae431f->doDisplay(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorH in C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 182
+[09-Oct-2020 15:45:21 Europe/Berlin] Uncaught exception: Twig\Error\LoaderError' with message 'Unable to find template "Base.html" (looked into: ../App/Views) in "Home/index.html" at line 1.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Base.html')
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Base.html')
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(319): Twig\Environment->getTemplateClass('Base.html')
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#9 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#10 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#11 [internal function]: App\Controllers\Home->indexAction()
+#12 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#14 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#15 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+[09-Oct-2020 15:45:21 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "Base.html" (looked into: ../App/Views) in "500.html" at line 1. in C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php:182
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('Base.html')
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('Base.html')
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(319): Twig\Environment->getTemplateClass('Base.html')
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(42): Twig\Template->loadTemplate('Base.html', '500.html', 1)
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_198f6c6fbe4b637d3430668ff46b1fe4ba0ce9861d0a6dec0235e6648eae431f->doDisplay(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorH in C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 182
+[09-Oct-2020 15:47:32 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('css/style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:47:32 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:48:00 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:48:00 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:48:01 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:48:01 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:54:50 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:54:50 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 15:55:40 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:55:41 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:30 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:31 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:32 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:33 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:34 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:56:34 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:57:12 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:57:13 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:57:14 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:57:15 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:05 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:06 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:07 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:08 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:09 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:09 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:09 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:10 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:10 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('posts/public/cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:11 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 15:58:11 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:28:44 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:28:45 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:34:32 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('public/css/styl...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:34:33 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 16:34:38 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:34:38 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 16:35:25 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:35:25 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 16:35:25 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:35:25 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 16:36:09 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[09-Oct-2020 16:36:09 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\404.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig in C:\xampp\htdocs\aplikacja\App\Views\404.html on line 6
+[09-Oct-2020 16:36:11 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unknown "asset" function.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#8 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#9 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(322): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Base.html', NULL)
+#10 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(358) : eval()'d code(43): Twig\Template->loadTemplate('Base.html', 'Home/index.html', 1)
+#11 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(394): __TwigTemplate_a8e8f4627907f1696c1259210201674b89d066b4af0b708bc1313bd7961972af->doDisplay(Array, Array)
+#12 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(367): Twig\Template->displayWithErrorHandling(Array, Array)
+#13 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Template.php(379): Twig\Template->display(Array)
+#14 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#15 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#16 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Home/index.html', Array)
+#17 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(30): Core\View::renderTemplate('Home/index.html', Array)
+#18 [internal function]: App\Controllers\Home->indexAction()
+#19 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#21 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('')
+#22 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Base.html' on line 6
+[09-Oct-2020 16:36:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\SyntaxError: Unknown "asset" function. in C:\xampp\htdocs\aplikacja\App\Views\Base.html:6
+Stack trace:
+#0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(446): Twig\ExpressionParser->getFunctionNodeClass('asset', 6)
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(235): Twig\ExpressionParser->getFunctionNode('asset', 6)
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#7 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\ in C:\xampp\htdocs\aplikacja\App\Views\Base.html on line 6

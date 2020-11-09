@@ -1,0 +1,127 @@
+[15-Oct-2020 11:18:21 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[15-Oct-2020 12:08:31 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected ';', expecting ')''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('signup/new')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php' on line 21
+[15-Oct-2020 13:05:43 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(41): Core\Router->dispatch('login/new')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:05:48 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(41): Core\Router->dispatch('login/new')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:05:53 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(41): Core\Router->dispatch('logout')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:06:41 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(41): Core\Router->dispatch('logout')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:08:10 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('logout')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:08:16 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('logout')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 53
+[15-Oct-2020 13:23:34 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined function App\Controllers\session_generate_id()'
+Stack trace: #0 [internal function]: App\Controllers\Login->createAction()
+#1 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#3 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login/create')
+#4 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 20
+[15-Oct-2020 14:24:10 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(12): Core\View::renderTemplate('Login/new.html')
+#1 [internal function]: App\Controllers\Login->newAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('new', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login/new')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:24:11 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(29): Core\View::renderTemplate('Home/index.html')
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:24:30 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(29): Core\View::renderTemplate('Home/index.html')
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:24:31 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(29): Core\View::renderTemplate('Home/index.html')
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:24:51 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(12): Core\View::renderTemplate('Login/new.html')
+#1 [internal function]: App\Controllers\Login->newAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('new', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:25:05 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined method App\Auth::isLoggedIn()'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(29): Core\View::renderTemplate('Home/index.html')
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\View.php' on line 32
+[15-Oct-2020 14:52:22 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined index: email'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(17): Core\Error::errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: App\Controllers\Login->createAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login/create')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php17' on line 0
+[15-Oct-2020 14:52:53 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login/')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96

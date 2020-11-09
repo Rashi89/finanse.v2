@@ -1,0 +1,76 @@
+[19-Oct-2020 11:15:13 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[19-Oct-2020 11:36:41 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(17): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16
+[19-Oct-2020 11:41:50 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(17): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16
+[19-Oct-2020 11:49:15 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(17): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16
+[19-Oct-2020 11:59:29 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(17): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16
+[19-Oct-2020 12:18:36 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(16): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16
+[19-Oct-2020 12:20:01 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected '}''
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Token')
+#2 C:\xampp\htdocs\aplikacja\App\Models\User.php(134): spl_autoload_call('App\\Token')
+#3 C:\xampp\htdocs\aplikacja\App\Auth.php(16): App\Models\User->rememberLogin()
+#4 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(24): App\Auth::login(Object(App\Models\User), true)
+#5 [internal function]: App\Controllers\Login->createAction()
+#6 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#8 C:\xampp\htdocs\aplikacja\public\index.php(43): Core\Router->dispatch('login/create')
+#9 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Token.php' on line 16

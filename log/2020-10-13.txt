@@ -1,0 +1,180 @@
+[13-Oct-2020 11:38:54 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('phpmyamin')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[13-Oct-2020 11:38:55 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[13-Oct-2020 14:44:20 Europe/Berlin] Uncaught exception: Error' with message 'Class 'Core\Controllers' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('login/new')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 5
+[13-Oct-2020 14:45:27 Europe/Berlin] Uncaught exception: Error' with message 'Class 'Core\Controllers' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('login/new')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 6
+[13-Oct-2020 14:45:29 Europe/Berlin] Uncaught exception: Error' with message 'Class 'Core\Controllers' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(70): class_exists('App\\Controllers...')
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('login/new')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 6
+[13-Oct-2020 15:20:52 Europe/Berlin] Uncaught exception: ParseError' with message 'syntax error, unexpected 'findByEmail' (T_STRING), expecting variable (T_VARIABLE)'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\User')
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): spl_autoload_call('App\\Models\\User')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 83
+[13-Oct-2020 15:27:52 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:30:16 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:30:29 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:31:55 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:32:05 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:33:52 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:33:56 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(95): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:34:53 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(100): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:38:06 Europe/Berlin] Uncaught exception: ArgumentCountError' with message 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Models\User->__construct()
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(100): PDOStatement->fetch()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::findByEmail('rachanek@yahoo....')
+#3 [internal function]: App\Controllers\Login->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php' on line 13
+[13-Oct-2020 15:50:53 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: password_hash'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(109): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::authenticate('rachanek@yahoo....', '1234aa')
+#2 [internal function]: App\Controllers\Login->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php109' on line 0
+[13-Oct-2020 15:51:09 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: password_hash'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(109): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::authenticate('rachanek@yahoo....', 'qwert')
+#2 [internal function]: App\Controllers\Login->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php109' on line 0
+[13-Oct-2020 15:52:14 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: password_hash'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(109): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::authenticate('rachanek@yahoo....', 'qwerty1234')
+#2 [internal function]: App\Controllers\Login->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php109' on line 0
+[13-Oct-2020 15:55:08 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: password_hash'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(109): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::authenticate('rachanek@yahoo....', 'qwerty1234')
+#2 [internal function]: App\Controllers\Login->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php109' on line 0
+[13-Oct-2020 15:55:22 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: password_hash'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(109): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Login.php(16): App\Models\User::authenticate('rachanek@yahoo....', '')
+#2 [internal function]: App\Controllers\Login->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(37): Core\Router->dispatch('login/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php109' on line 0

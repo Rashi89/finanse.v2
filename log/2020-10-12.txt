@@ -1,0 +1,229 @@
+[12-Oct-2020 11:17:04 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[12-Oct-2020 11:34:19 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined function App\Controllers\var_sump()'
+Stack trace: #0 [internal function]: App\Controllers\Signup->createAction()
+#1 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#3 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#4 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php' on line 16
+[12-Oct-2020 11:35:48 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined function App\Controllers\var_sump()'
+Stack trace: #0 [internal function]: App\Controllers\Signup->createAction()
+#1 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#3 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#4 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php' on line 16
+[12-Oct-2020 12:29:49 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: db'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(22): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php22' on line 0
+[12-Oct-2020 12:30:10 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: db'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(22): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php22' on line 0
+[12-Oct-2020 12:31:02 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: db'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(22): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#2 [internal function]: App\Controllers\Signup->createAction()
+#3 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#5 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php22' on line 0
+[12-Oct-2020 13:16:16 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(68): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php68' on line 0
+[12-Oct-2020 13:16:32 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:19:28 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:19:36 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:19:55 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:19:58 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:21:32 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 13:22:12 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(56): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php56' on line 0
+[12-Oct-2020 13:24:17 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(68): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php68' on line 0
+[12-Oct-2020 13:29:55 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(68): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 68, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php68' on line 0
+[12-Oct-2020 13:30:10 Europe/Berlin] Uncaught exception: ErrorException' with message 'Undefined variable: errors'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Models\User.php(51): Core\Error::errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\aplikacja\App\Models\User.php(25): App\Models\User->validate()
+#2 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(18): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction()
+#4 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#6 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#7 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Models\User.php51' on line 0
+[12-Oct-2020 14:06:41 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unexpected "}".'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(290): Twig\Lexer->lexExpression()
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(184): Twig\Lexer->lexVar()
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Signup/new.html')
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Signup/new.html')
+#7 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Signup/new.html', Array)
+#8 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(24): Core\View::renderTemplate('Signup/new.html', Array)
+#9 [internal function]: App\Controllers\Signup->createAction()
+#10 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#12 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#13 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Signup\new.html' on line 23
+[12-Oct-2020 14:06:49 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unexpected "}".'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(290): Twig\Lexer->lexExpression()
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(184): Twig\Lexer->lexVar()
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Signup/new.html')
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Signup/new.html')
+#7 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Signup/new.html', Array)
+#8 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(24): Core\View::renderTemplate('Signup/new.html', Array)
+#9 [internal function]: App\Controllers\Signup->createAction()
+#10 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#12 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#13 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Signup\new.html' on line 23
+[12-Oct-2020 14:06:59 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unexpected "}".'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(290): Twig\Lexer->lexExpression()
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(184): Twig\Lexer->lexVar()
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Signup/new.html')
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Signup/new.html')
+#7 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Signup/new.html', Array)
+#8 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(24): Core\View::renderTemplate('Signup/new.html', Array)
+#9 [internal function]: App\Controllers\Signup->createAction()
+#10 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#12 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#13 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Signup\new.html' on line 23
+[12-Oct-2020 14:07:14 Europe/Berlin] Uncaught exception: Twig\Error\SyntaxError' with message 'Unexpected "}".'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(290): Twig\Lexer->lexExpression()
+#1 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Lexer.php(184): Twig\Lexer->lexVar()
+#2 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#3 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#4 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Signup/new.html')
+#6 C:\xampp\htdocs\aplikacja\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Signup/new.html')
+#7 C:\xampp\htdocs\aplikacja\Core\View.php(33): Twig\Environment->render('Signup/new.html', Array)
+#8 C:\xampp\htdocs\aplikacja\App\Controllers\Signup.php(24): Core\View::renderTemplate('Signup/new.html', Array)
+#9 [internal function]: App\Controllers\Signup->createAction()
+#10 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#12 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/create')
+#13 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Views\Signup\new.html' on line 23
+[12-Oct-2020 14:31:57 Europe/Berlin] Uncaught exception: Exception' with message 'Method sucessAction not found in controller App\Controllers\Signup'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('sucess', Array)
+#1 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/sucess')
+#2 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Controller.php' on line 29
+[12-Oct-2020 14:33:43 Europe/Berlin] Uncaught exception: Exception' with message 'Method sucessAction not found in controller App\Controllers\Signup'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('sucess', Array)
+#1 C:\xampp\htdocs\aplikacja\public\index.php(36): Core\Router->dispatch('signup/sucess')
+#2 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Controller.php' on line 29

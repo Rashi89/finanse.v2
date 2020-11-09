@@ -1,0 +1,82 @@
+[16-Oct-2020 11:58:48 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:50:12 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('items/home/inde...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:51:52 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('index')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:52:18 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('items/home/inde...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:52:56 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('items/home/inde...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:53:03 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('home/items/inde...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 12:53:08 Europe/Berlin] Uncaught exception: Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('home/items/inde...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Router.php' on line 96
+[16-Oct-2020 13:30:48 Europe/Berlin] Uncaught exception: Error' with message 'Class 'Core\Auth' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Items.php(12): Core\Controller->requireLogin()
+#1 [internal function]: App\Controllers\Items->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('items/index')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Controller.php' on line 51
+[16-Oct-2020 13:30:51 Europe/Berlin] Uncaught exception: Error' with message 'Class 'Core\Auth' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Items.php(12): Core\Controller->requireLogin()
+#1 [internal function]: App\Controllers\Items->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(22): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('items/index')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\Core\Controller.php' on line 51
+[16-Oct-2020 14:40:59 Europe/Berlin] Uncaught exception: Error' with message 'Class 'App\Controllers\Auth' not found'
+Stack trace: #0 [internal function]: App\Controllers\Home->indexAction()
+#1 C:\xampp\htdocs\aplikacja\Core\Controller.php(24): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#3 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#4 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Home.php' on line 30
+[16-Oct-2020 14:42:57 Europe/Berlin] Uncaught exception: Error' with message 'Class 'App\User' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(32): App\Auth::getUser()
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(24): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Auth.php' on line 53
+[16-Oct-2020 14:42:59 Europe/Berlin] Uncaught exception: Error' with message 'Class 'App\User' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(32): App\Auth::getUser()
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(24): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Auth.php' on line 53
+[16-Oct-2020 14:43:13 Europe/Berlin] Uncaught exception: Error' with message 'Class 'App\User' not found'
+Stack trace: #0 C:\xampp\htdocs\aplikacja\App\Controllers\Home.php(32): App\Auth::getUser()
+#1 [internal function]: App\Controllers\Home->indexAction()
+#2 C:\xampp\htdocs\aplikacja\Core\Controller.php(24): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('index', Array)
+#4 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('')
+#5 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Auth.php' on line 53
+[16-Oct-2020 17:49:13 Europe/Berlin] Uncaught exception: Error' with message 'Call to undefined function App\Controllers\adMessage()'
+Stack trace: #0 [internal function]: App\Controllers\Login->createAction()
+#1 C:\xampp\htdocs\aplikacja\Core\Controller.php(25): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\aplikacja\Core\Router.php(79): Core\Controller->__call('create', Array)
+#3 C:\xampp\htdocs\aplikacja\public\index.php(40): Core\Router->dispatch('login/create')
+#4 {main}
+Thrown in 'C:\xampp\htdocs\aplikacja\App\Controllers\Login.php' on line 24

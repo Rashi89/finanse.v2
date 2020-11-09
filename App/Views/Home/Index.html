@@ -1,0 +1,87 @@
+{% extends "Base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<<<<<<< HEAD
+<h1>Welcome</h1>
+
+	{% if current_user %}
+		Hello {{current_user.name}}.
+	{%else%}
+		<a href="/signup/new">Sign up</a> or <a href="/login/new">Log in</a>
+	{% endif %}
+=======
+{#<h1>Welcome</h1>#}
+
+	{#% if current_user %}
+		Hello {{current_user.name}}.
+	{%else%}
+		<a href="/signup/new">Sign up1</a> or <a href="/login/new">Log in</a>
+	{% endif %#}
+	
+	
+	<main>
+		
+		<div class="container">
+		
+			<header>
+				<div style="height:40px;"></div>
+			</header>
+		
+			
+				<div class="row">
+				
+						<div class="col-sm-12 col-lg-5">
+							<img src="/img/logo.png" class="logotyp" />
+						</div>
+				
+				
+						<div class="col-sm-12 col-lg-7 formularz text-left mt-5">
+								<div class="row">
+									<form action="/login/create" method="post">
+											<div class="napis">LOGOWANIE I REJESTRACJA</div>
+											<div class="col-1 d-inline" ><i class="icon-user-1"></i></div>
+											<div class="login d-inline"><input type="email" onfocus="this.placeholder=''" onblur="this.placeholder='Email adress'" id="inputEmail" name="email" pleaceholder="Email adress" autofocus value="{{email}}"/></div>
+											<div></div>
+											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+											<div class="haslo d-inline"><input type ="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" id="inputPassword" autofocus></div>
+											<div class="blad">
+												{% for message in flash_messages %}
+													{{message.body}}
+												{% endfor %}
+											</div>
+											<div class="checkbox blad">
+												<label>
+													<input type="checkbox" name="remember_me" {% if remember_me %} checked = "checked" {% endif %} />Remember me 
+												</label>
+											</div>
+											<div class="forgot">
+												<a href="/password/forgot">Forgot password?</a>
+											</div>
+											<div class="rejestracja1"> <input type = "submit" value="Zaloguj się"></div>
+											<div class ="info">Dołącz do <b>CashPoint</b> i pozwól uporządkować swoje finanse! </div>
+											
+											<a href="/signup/new" class="inpRejestracja">Zarejestruj się!!</a>	
+									</form>	 
+								</div>
+						</div>					
+				</div>
+		</div>
+
+
+	</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+	
+	
+	
+>>>>>>> feature/login_signup
+
+{% endblock %}
+ 

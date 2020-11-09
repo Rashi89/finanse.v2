@@ -1,0 +1,10 @@
+*.phar
+*.lock
+*.cache
+/vendor/
+/build/
+
+.settings
+.buildpath
+.project
+.php_cs
