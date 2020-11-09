@@ -1,0 +1,78 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Incomes add{% endblock %}
+
+{% block body %}
+
+<main>
+		<div class="container">
+				<div class="row no-gutter">
+					<div class="order-12 order-lg-1 col-lg-4 my-auto p-0 d-none d-lg-block">
+						<div class="picture" id="picture"><img src="/img/przychod.png" class="obraz  mt-1"></div>
+					</div>
+							<div class="col-lg-8 order-1 order-lg-12  zawartosc formularz" style="position: relative; z-index: 2;">
+							
+								<form action="dodaj_przychod.php" method="post">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border"> Przychód </legend>
+												
+												<div >
+														
+														<div class="opcja"> Kwota </div>
+															<div class="kwota active"> <i class="icon-money"></i>  <input class=" col-md-12" type ="number" required placeholder="Kwota" onfocus="this.placeholder=''" 	onblur="this.placeholder='Kwota'" step="0.01" name="kwota"></div>
+														
+												</div>
+														
+												<div>
+														
+														<div class="opcja"> Data </div>
+															<div class="data"> <i class="icon-calendar"></i><input class=" col-md-12" type="date" name="data"></div>
+
+												</div>
+
+
+												
+												<div>
+												
+														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
+															<i class="icon-list"></i>
+
+												</div>
+												
+												<div>	
+													
+													<div class="Komentarz">
+															
+															<div class="opcja"><label for="komentarz">Komentarz</label></div>
+															<textarea class="col-10" name="komentarz" id="komentarz" rows="4" cols="80" name="komentarz"></textarea>
+															
+													</div>
+							
+
+												</div>
+											
+												<div class="dodaj"><input type = "submit" value="Dodaj"></div>
+												<a href="witaj.php" class="reset">Anuluj</a>
+											
+												
+										
+										</fieldset>
+								
+								</form>
+							
+							</div>
+
+				</div>
+
+
+
+				
+		</div>
+
+				
+	</main>
+
+
+{% endblock %}

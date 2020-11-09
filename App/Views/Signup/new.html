@@ -1,0 +1,148 @@
+{% extends "Base.html" %}
+
+{% block title %}Sign up{% endblock %}
+
+{% block footer %}
+	<script src="/js/hideShowPassword.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#formSignup').validate(
+			{
+					rules: {
+						name: 'required',
+						email: {
+							required: true,
+							email: true,
+							remote: '/account/validate-email'
+						},
+						password: {
+							required: true,
+							minlength: 6,
+							validPassword: true
+						}
+					},
+					messages: {
+						email: {
+							remote: 'email already taken'
+						}
+					
+<<<<<<< HEAD
+=======
+					},
+				 errorPlacement: function(error, element) {
+						if (element.attr("name") == "password") {
+							error.insertAfter(".haslo");
+						} else {
+							error.insertAfter(element);
+						}
+>>>>>>> feature/login_signup
+					}
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+		});
+		
+	</script>
+	
+{% endblock %}
+{% block body %}
+
+<<<<<<< HEAD
+	<h1>Sign up</h1>
+	
+	{% if user.errors is not empty %}
+		<p>Errors</p>
+		<ul>
+			{% for error in user.errors %}
+			<li>
+				{{error}}
+			</li>
+			{% endfor %}
+			
+		</ul>
+	{% endif %}
+
+	<form method="post" action="/signup/create" id="formSignup">
+		<div class="form-group">
+			<label for="inputName">Name</label>
+			<input id="inputName" name="name" placeholder="Name" autofocus value="{{user.name}}" required class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail">Email adress</label>
+			<input id="inputEmail" name="email" placeholder="email adress" value="{{user.email}}" required type="email" class="form-control"/>
+		</div>
+		<div class="form-group">
+			<label for="inputPassword">Password</label>
+			<input type="password" id="inputPassword" name="password" placeholder="Password" required class="form-control"/> 
+		</div>
+		<button type="submit" class="btn btn-light">Sign up</button>
+	</form>
+=======
+
+<main>
+			
+			<div class="container">
+				<header>
+					<div style="height:40px;"></div>
+				</header>
+		
+		
+				<div class="row justify-content-around">
+				
+					<div class="col-sm-12 col-lg-5">
+						<img src="/img/logo.png" class="logotyp" />
+					</div>
+						<div class="col-sm-12 col-lg-7 formularz text-left mt-5">
+							<div class="row">
+									<form method="post" action="/signup/create" id="formSignup">
+											<div class="napis">REJESTRACJA</div>
+											<div class="col-1 d-inline" ><i class="icon-user-1"></i></div>
+											<div class="login d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'" name="name" id="inputName" autofocus value="{{user.name}}" required></div>
+											<div></div>
+											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+											<div class="haslo d-inline"><input type ="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" id="inputPassword" required></div>
+											<div></div>
+											<div class="email col-1 d-inline"><i class="icon-mail-alt"></i></div>
+											<div class="email d-inline"><input type ="email" placeholder="E-mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'" name="email" id="inputEmail" value="{{user.email}}" required></div>
+											
+											{% if user.errors is not empty %}
+												<p>Errors</p>
+												<ul>
+													{% for error in user.errors %}
+													<li>
+														{{error}}
+													</li>
+													{% endfor %}
+													
+												</ul>
+											{% endif %}
+											<div class="rejestracja"> <input type = "submit" value="Zarejestruj się!"></div>
+											<a href="/" class="anuluj">Anuluj!</a>
+									</form>
+															
+								</div>
+						</div>
+					</div>
+
+			</div>
+	
+		</main>
+					<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+
+
+>>>>>>> feature/login_signup
+
+{% endblock %}
+ 

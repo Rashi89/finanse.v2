@@ -1,0 +1,42 @@
+body
+{
+	margin-top:3em !Important;
+}
+.navbar
+{
+	min-height: 65px;
+	background-color: #2c3136
+}
+.color-text
+{
+	color: #86dcf0 !Important;
+}
+ul
+{
+	font-size: 20px;
+	margin-right:auto;
+}
+
+li>a:hover
+{
+	color:black !Important;
+}
+
+li:hover
+{
+	background-color:#394754 !Important;
+}
+
+ul > li
+{
+	width:250px;
+	text-align:justify;
+}
+
+.alert
+{
+	margin-top:5px;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}

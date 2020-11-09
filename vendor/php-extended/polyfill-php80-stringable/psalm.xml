@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<psalm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    
+    errorLevel="8"
+    reportMixedIssues="true"
+    totallyTyped="true"
+    resolveFromConfigFile="true"
+    useDocblockTypes="true"
+    useDocblockPropertyTypes="true"
+    usePhpDocMethodsWithoutMagicCall="true"
+    strictBinaryOperands="true"
+    requireVoidReturnType="true"
+    useAssertForType="true"
+    rememberPropertyAssignmentsAfterCall="true"
+    allowPhpStormGenerics="false"
+    allowStringToStandInForClass="true"
+    memoizeMethodCallResults="true"
+    hoistConstants="false"
+    addParamDefaultToDocblockType="false"
+    checkForThrowsDocblock="true"
+    checkForThrowsInGlobalScope="true"
+    ignoreInternalFunctionFalseReturn="false"
+    ignoreInternalFunctionNullReturn="false"
+    findUnusedVariablesAndParams="true"
+    findUnusedCode="false"
+    loadXdebugStub="true"
+    ensureArrayStringOffsetsExist="true"
+    skipChecksOnUnresolvableIncludes="false"
+    sealAllMethods="true"
+    
+    throwExceptionOnError="false"
+    hideExternalErrors="true"
+    allowFileIncludes="true"
+>
+    <!-- https://psalm.dev -->
+    <!-- error levels (1-8)    : https://psalm.dev/docs/running_psalm/error_levels/ -->
+    <!-- configuration options : https://psalm.dev/docs/running_psalm/configuration/ -->
+    <!-- findUnusedCode turned false because of unusedClass exception on CI.php -->
+    <projectFiles>
+        <directory name="./src" />
+    </projectFiles>
+    <issueHandlers>
+        <!-- Suppress UnnecessaryVarAnnotation to have eclipse code completion -->
+        <UnnecessaryVarAnnotation errorLevel="suppress" />
+    </issueHandlers>
+</psalm>

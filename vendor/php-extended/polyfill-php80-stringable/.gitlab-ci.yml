@@ -1,0 +1,129 @@
+# HELP : https://gitlab.com/help/ci/yaml/README.md
+# Global defaults for all jobs
+default:
+  interruptible: true
+
+stages:
+  - test
+
+# // ---- Jobs ---- \\ #
+# Find container registries images at
+# https://gitlab.com/php-extended/docker-images/container_registry/
+# And image files at
+# https://gitlab.com/php-extended/docker-images
+
+# // Stage test
+
+phpstan-7.1:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.1-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpstan analyse --configuration=./phpstan.neon --error-format=gitlab
+
+phpstan-7.2:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.2-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpstan analyse --configuration=./phpstan.neon --error-format=gitlab
+
+phpstan-7.3:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.3-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpstan analyse --configuration=./phpstan.neon --error-format=gitlab
+
+phpstan-7.4:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.4-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpstan analyse --configuration=./phpstan.neon --error-format=gitlab
+
+psalm-7.1:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.1-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/psalm --config=./psalm.xml --output-format=console --long-progress --stats --show-info=true
+
+psalm-7.2:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.2-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/psalm --config=./psalm.xml --output-format=console --long-progress --stats --show-info=true
+
+psalm-7.3:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.3-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/psalm --config=./psalm.xml --output-format=console --long-progress --stats --show-info=true
+
+psalm-7.4:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.4-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/psalm --config=./psalm.xml --output-format=console --long-progress --stats --show-info=true
+
+phpmd-7.1:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.1-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpmd ./src ansi ./phpmd.xml
+
+phpmd-7.2:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.2-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpmd ./src ansi ./phpmd.xml
+
+phpmd-7.3:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.3-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpmd ./src ansi ./phpmd.xml
+
+phpmd-7.4:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.4-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/phpmd ./src ansi ./phpmd.xml
+
+phpcs-7.1:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.1-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run
+
+phpcs-7.2:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.2-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run
+
+phpcs-7.3:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.3-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run
+
+phpcs-7.4:
+  stage: test
+  image: registry.gitlab.com/php-extended/docker-images:php-7.4-buster-cli-dev
+  script:
+    - php /composer.phar install --ansi --no-interaction --no-progress --no-suggest --prefer-dist --no-dev
+    - /vendor/bin/php-cs-fixer fix -v --allow-risky=yes --dry-run
+
+## End Stage //

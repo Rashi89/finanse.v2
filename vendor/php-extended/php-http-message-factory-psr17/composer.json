@@ -1,0 +1,45 @@
+{
+	"name" : "php-extended/php-http-message-factory-psr17",
+	"description" : "An implementation of the psr-17 based on the php-http-message-psr7 library",
+	"type" : "library",
+	"homepage" : "https://gitlab.com/php-extended/php-http-message-factory-psr17",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Anastaszor",
+			"homepage" : "https://gitlab.com/Anastaszor",
+			"role" : "developer"
+		}
+	],
+	"support" : {
+		"issues" : "https://gitlab.com/php-extended/php-http-message-factory-psr17/issues",
+		"source" : "https://gitlab.com/php-extended/php-http-message-factory-psr17"
+	},
+	"require" : {
+		"php" : ">=7.1",
+		"psr/http-factory" : "^1",
+		"php-extended/php-http-message-psr7" : "^3",
+		"php-extended/polyfill-php80-stringable" : "^1"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^7 || ^8"
+	},
+	"provide" : {
+		"psr/http-factory-implementation" : "^1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"PhpExtended\\HttpMessage\\" : "src"
+		}
+	},
+	"keywords" : [
+		"php",
+		"psr-17",
+		"psr-7",
+		"http",
+		"message",
+		"factory",
+		"stream",
+		"request",
+		"response"
+	]
+}

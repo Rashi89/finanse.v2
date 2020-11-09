@@ -1,0 +1,77 @@
+.inpRejestracja
+{
+	width: 360px;
+	height:45px;
+	background-color:#13acf5;
+	font-size:15px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:100px;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-align:center;
+}
+
+.inpRejestracja:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.inpRejestracja:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#117fb4;
+}
+@media(max-width:576px)
+{
+.inpRejestracja
+{
+	width: 260px;
+}
+.log_succes
+{
+	width: 260px;
+}
+}
+.log_succes
+{
+	width: 360px;
+	height:45px;
+	background-color:#0b3c4d;
+	font-size:15px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 20px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:100px;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	text-align:center;
+}
+
+.log_succes:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.log_succes:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#06242f;
+}

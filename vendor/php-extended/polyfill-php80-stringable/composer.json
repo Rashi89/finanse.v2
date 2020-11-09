@@ -1,0 +1,31 @@
+{
+	"name" : "php-extended/polyfill-php80-stringable",
+	"description" : "A polyfill that adds the stringable interface added in php8.0 to previous versions of php",
+	"type" : "library",
+	"homepage" : "https://gitlab.com/php-extended/polyfill-php80-stringable",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Anastaszor",
+			"homepage" : "https://gitlab.com/Anastaszor",
+			"role" : "developer"
+		}
+	],
+	"support" : {
+		"issues" : "https://gitlab.com/php-extended/polyfill-php80-stringable/issues",
+		"source" : "https://gitlab.com/php-extended/polyfill-php80-stringable"
+	},
+	"autoload" : {
+		"classmap" : [
+			"src/"
+		]
+	},
+	"require" : {
+		"php" : ">=7.0"
+	},
+	"keywords" : [
+		"php",
+		"polyfill",
+		"php8",
+		"stringable"
+	]
+}
