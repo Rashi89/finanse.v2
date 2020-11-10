@@ -30,32 +30,6 @@
 {% endblock %}
 {% block body %}
 
-<<<<<<< HEAD
-	<h1>Reset password</h1>
-	
-	{% if user.errors is not empty %}
-		<p>Errors</p>
-		<ul>
-			{% for error in user.errors %}
-			<li>
-				{{error}}
-			</li>
-			{% endfor %}
-			
-		</ul>
-	{% endif %}
-
-	
-
-	<form method="post"  id="formPassword" action="/password/reset-password">
-		<input type="hidden" name="token" value="{{token}}"/>
-		<div class="form-group">
-			<label for="inputPassword">Password</label>
-			<input type="password" id="inputPassword" name="password" placeholder="Password" required class="form-control"/> 
-		</div>
-		<button type="submit" class="btn btn-light">Reset password</button>
-	</form>
-=======
 
 	<main>
 		
@@ -102,6 +76,6 @@
 							</div>
 				</footer>
 			</div>
->>>>>>> feature/login_signup
+
 
 {% endblock %}

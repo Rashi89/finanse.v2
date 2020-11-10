@@ -26,27 +26,24 @@ class Login extends \Core\Controller
 			
 			Flash::addMessage('Login successful!');
 			
-<<<<<<< HEAD
+
 			//pokazuje strone glowna index.html
 
-			$this->redirect(Auth::getReturnToPage());
-=======
+			//$this->redirect(Auth::getReturnToPage());
+
 			//Auth::getSumExpenses();
 			//User::sumExpenses($user);
 			//pokazuje strone glowna index.html
 
 			//$this->redirect(Auth::getReturnToPage());
 			View::renderTemplate('Profile/show.html');
->>>>>>> feature/login_signup
+
 			
 		} else {
 			
 			Flash::addMessage('Login unsuccessful, please try again!', Flash::WARNING);
-<<<<<<< HEAD
-			View::renderTemplate('Login/new.html',[
-=======
+
 			View::renderTemplate('Home/index.html',[
->>>>>>> feature/login_signup
 						'email'=>$_POST['email'],
 						'remember_me'=>$remember_me
 			]);

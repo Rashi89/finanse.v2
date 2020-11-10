@@ -4,73 +4,20 @@
 	<meta charset="UTF-8">
 	<title>{% block title %}{% endblock %}</title>
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-<<<<<<< HEAD
+
 	<link rel="stylesheet" href="/css/styles.css" />
 	<link rel="stylesheet" href="/css/menu.css" />
-=======
+
 	<link rel="stylesheet" href="/css/rejestracja.css">
 	<link rel="stylesheet" href="/css/logowanie.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
->>>>>>> feature/login_signup
+
 	<link rel="stylesheet" href="/css/coin.css">
 </head>
 <body>
-
-<<<<<<< HEAD
-	<header>	
-					<nav class="navbar navbar-dark bg-menu navbar-expand-lg">
-								
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
-										<span class="navbar-toggler-icon"></span>
-									</button>
-								
-									<div class="collapse navbar-collapse" id="mainmenu">
-									
-										<ul class="navbar-nav mr-auto">
-										
-											<li class="nav-item ">
-												<a class="nav-link color-text" href="#"><i class="icon-credit-card"></i> Dodaj przychód </a>
-											</li>
-											
-											<li class="nav-item">
-												<a class="nav-link color-text" href="#"><i class="icon-basket"></i> Dodaj wydatek </a>
-											</li>
-											
-											<li class="nav-item">
-												<a class="nav-link color-text" href="#"><i class="icon-chart-bar"></i> Przeglądaj bilans </a>
-											</li>
-											
-											<li class="nav-item">
-												<a class="nav-link color-text" href="#"> <i class="icon-cog-alt"></i> Ustawienia </a>
-											</li>
-											
-											<li class="nav-item">
-												<a class="nav-link color-text" href="#"> <i class="icon-logout"></i> Wyloguj się </a>
-											</li>
-										
-										</ul>
-									
-									</div>
 		
-					</nav>
-
-			</header>	
-	
 			
 	<div class="container">	
-		{% for message in flash_messages %}
-			<div class="alert alert-{{message.type}}">
-				{{message.body}}
-			</div>
-			
-		{% endfor %}
-		
-=======
-	
-	
-			
-	<div class="container">	
->>>>>>> feature/login_signup
 		{% block body %}
 		{% endblock %}
 	</div>

@@ -314,11 +314,6 @@ class User extends \Core\Model
 		
 		if(empty($this->errors))
 		{
-<<<<<<< HEAD
-				
-			
-=======
->>>>>>> feature/login_signup
 				$sql = 'UPDATE users
 							SET name=:name,
 									email=:email';
@@ -347,8 +342,7 @@ class User extends \Core\Model
 		
 		return false;
 	}
-<<<<<<< HEAD
-=======
+
 	
 	public function upgradeBase()
 	{
@@ -461,6 +455,5 @@ class User extends \Core\Model
 		return $saldo;
 		
 	}
-	
->>>>>>> feature/login_signup
+
 }

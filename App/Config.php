@@ -6,15 +6,10 @@ class Config
 {
 	const DB_HOST='localhost';
 	
-<<<<<<< HEAD
-	const DB_NAME='mvc';
-	
-	const DB_USER='mvcuser';
-=======
+
 	const DB_NAME='zabawa';
 	
 	const DB_USER='Agata';
->>>>>>> feature/login_signup
 	
 	const DB_PASSWORD='Rachanek1989!';
 	
