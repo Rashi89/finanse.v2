@@ -40,6 +40,8 @@
 
 				$twig->addGlobal('date',\App\Auth::getDate());
 				$twig->addGlobal('saldo',\App\Auth::getSaldo());
+				
+
 
 			}
 			
