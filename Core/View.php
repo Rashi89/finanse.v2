@@ -37,11 +37,12 @@
 				//$twig->addGlobal('is_logged_in', \App\Auth::isLogginedIn());
 				$twig->addGlobal('current_user', \App\Auth::getUser());
 				$twig->addGlobal('flash_messages', \App\Flash::getMessages());
-<<<<<<< HEAD
-=======
+
 				$twig->addGlobal('date',\App\Auth::getDate());
 				$twig->addGlobal('saldo',\App\Auth::getSaldo());
->>>>>>> feature/login_signup
+				
+
+
 			}
 			
 			return $twig->render($template,$args);

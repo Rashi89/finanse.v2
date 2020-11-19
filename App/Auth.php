@@ -111,9 +111,7 @@ class Auth
 			 setcookie('remember_me','',time()-3600);
 		}
 	}
-	
-<<<<<<< HEAD
-=======
+
 	public static function getDate()
 	{
 		return date("d.m.Y");
@@ -150,6 +148,4 @@ class Auth
 		}
 	}
 	
->>>>>>> feature/login_signup
-
 }

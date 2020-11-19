@@ -61,11 +61,9 @@ ul
 
 a:hover
 {
-<<<<<<< HEAD
-	color:black !Important;
-=======
+
 	color:white !Important;
->>>>>>> feature/login_signup
+
 }
 
 li:hover

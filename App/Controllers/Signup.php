@@ -17,12 +17,9 @@ class Signup extends \Core\Controller
 		$user= new User($_POST);
 		if($user->save())
 		{
-<<<<<<< HEAD
-			$user->sendActivationEmail();
-=======
+
 			//$user->sendActivationEmail();
 			$user->upgradeBase();
->>>>>>> feature/login_signup
 			//View::renderTemplate('Signup/success.html');
 			$this->redirect('/signup/success');
 		}

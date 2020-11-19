@@ -202,6 +202,7 @@ input[type=email]:focus
 }
 .forgot>a:hover
 {
+	color:black !Important;
 	text-decoration: none;
 }
 

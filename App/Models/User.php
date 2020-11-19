@@ -60,6 +60,11 @@ class User extends \Core\Model
 		{
 			$this->errors[]="Name is required";
 		}
+		
+		if(static::nameExist($this->name,$this->id ?? null))
+		{
+			$this->errors[]="Name exist!";
+		}
 		//check email
 		if(filter_var($this->email,FILTER_VALIDATE_EMAIL) === false)
 		{
@@ -112,6 +117,24 @@ class User extends \Core\Model
 		return false;
 	}
 	
+	public static function nameExist($name,$potencjal_id=null)
+	{
+		$user = static::findByName($name);
+		
+		if($user)
+		{		//jesli okaze sie ze id znalezionego usera jest rozne od potencjalnego
+				//to zwracamy true a zatem pojawi sie komunikat ze juz email jest
+				if($user->id != $potencjal_id)
+				{
+					return true;
+				}
+				else return false;
+		}
+		//jesli nie istnieje zwracamy false
+		return false;
+		
+	}
+	
 	public static function findByEmail($email)
 	{
 		$sql = "SELECT * FROM users WHERE email = :email";
@@ -119,6 +142,21 @@ class User extends \Core\Model
 		
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':email', $email ,PDO::PARAM_STR);
+		
+		$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+		
+		$stmt->execute();
+		
+		return $stmt->fetch();
+	}
+	
+		public static function findByName($name)
+	{
+		$sql = "SELECT * FROM users WHERE name= :name";
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':name', $name ,PDO::PARAM_STR);
 		
 		$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
 		
@@ -314,11 +352,6 @@ class User extends \Core\Model
 		
 		if(empty($this->errors))
 		{
-<<<<<<< HEAD
-				
-			
-=======
->>>>>>> feature/login_signup
 				$sql = 'UPDATE users
 							SET name=:name,
 									email=:email';
@@ -347,8 +380,7 @@ class User extends \Core\Model
 		
 		return false;
 	}
-<<<<<<< HEAD
-=======
+
 	
 	public function upgradeBase()
 	{
@@ -457,10 +489,46 @@ class User extends \Core\Model
 		$sum_expense=static::sumExpenses($id);
 		
 		$saldo=$sum_income-$sum_expense;
+		$saldo=number_format($saldo, 2, '.', ' ');
 		
 		return $saldo;
 		
 	}
 	
->>>>>>> feature/login_signup
+	public static function getAllIncomes($id)
+	{
+		$sql='SELECT name FROM incomes_category_assigned_to_users WHERE user_id=:id GROUP BY name';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id',$id,PDO::PARAM_INT);
+		$stmt->execute();
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $results;
+	}
+	
+	public static function getAllExpenses($id)
+	{
+		$sql='SELECT name FROM expenses_category_assigned_to_users WHERE user_id=:id GROUP BY name';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id',$id,PDO::PARAM_INT);
+		$stmt->execute();
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $results;
+	}
+	
+	public static function getAllPayMethod($id)
+	{
+		$sql='SELECT name FROM payment_methods_assigned_to_users WHERE user_id=:id GROUP BY name';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id',$id,PDO::PARAM_INT);
+		$stmt->execute();
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $results;
+	}
+
 }
