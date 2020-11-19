@@ -11,7 +11,10 @@
 			$('#formSignup').validate(
 			{
 					rules: {
-						name: 'required',
+						name: {
+							required: true,
+							remote: '/account/validate-name'
+						},
 						email: {
 							required: true,
 							email: true,
@@ -26,6 +29,9 @@
 					messages: {
 						email: {
 							remote: 'email already taken'
+						},
+						name:{
+							remote: 'Name already taken'
 						}
 					
 

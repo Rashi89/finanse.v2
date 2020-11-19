@@ -68,7 +68,7 @@
 .icon-logout:before { content: '\f02d'; margin-right:20px;} /* '' */
 .icon-money:before { content: '\f0d6'; font-size:30px; margin-right:10px; margin-left:-50px;color:#196678;} /* '' */
 .icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:40px; margin-right:5px;color:#1c525e;} /* '' */
-.icon-cc-visa:before { content: '\f1f0'; font-size:30px; margin-right:-30px; margin-left:-10px;color:#196678;} /* '' */
+.icon-cc-visa:before { content: '\f1f0'; font-size:30px; margin-right:0px; margin-left:-20px;color:#196678;} /* '' */
 .ikona.icon-list:before { content: '\e807'; font-size:30px; margin-right:10px; margin-left:-50px;color:#196678;} 
 .icon-attention-2:before { content: '\e80a'; } /* '' */
 .icon-attention-circled:before { content: '\e80b'; } /* '' */
