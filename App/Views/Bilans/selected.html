@@ -33,7 +33,11 @@
 														<div class="bilans_opcja"><label><input type="radio"  name="opcja_bilansu" value="2" > Poprzedni miesiąc </label></div>
 														<div class="bilans_opcja"><label><input type="radio"  name="opcja_bilansu" value="3" > Bieżący rok </label></div>
 														<div class="bilans_opcja"><label><input type="radio"  name="opcja_bilansu" value="4" class="btn btn-primary" data-toggle="modal" data-target="#daty" > Niestandardowy </label></div>
-														
+																		<div class="error">
+																			{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+																		</div>
 												</div>
 											
 												<div class="dodaj"><input type = "submit" value="OK"></div>
@@ -54,6 +58,7 @@
 																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="start_date"></label></div>
 																		<div class="opcja">Data końcowa</div>
 																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="end_date"></label></div>
+
 															</div>
 															<div class="modal-footer">
 																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
