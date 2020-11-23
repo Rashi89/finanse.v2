@@ -14,6 +14,7 @@ use \App\Flash;
 
 class Bilans extends Authenticated
 {
+	public $errors=[];
 	protected function before()
 	{
 		parent::before();
@@ -41,7 +42,6 @@ class Bilans extends Authenticated
 			if($bilans->showOption()==4&&!Date::goodRange($_POST))
 			{
 				Flash::addMessage('Zły zakres dat!');
-				
 				$this->redirect('/Bilans/selected');
 			}
 			else
@@ -51,13 +51,15 @@ class Bilans extends Authenticated
 			$array_expense = Expense::getArray($_SESSION['user_id'],$bilans->showOption());
 			$sum_expenses = Expense::getSumAllExpense($_SESSION['user_id'],$bilans->showOption());
 			$allBilans=$sum-$sum_expenses;
+			$info = Bilanses::infoBilans($this->user,$allBilans);
 			View::renderTemplate('Bilans/show.html',[
 				'user' => $this->user,
 				'array'=>$array,
 				'sum'=>$sum,
 				'sum_expenses'=>$sum_expenses,
 				'array_expense'=>$array_expense,
-				'allBilans'=>$allBilans
+				'allBilans'=>$allBilans,
+				'info'=>$info
 				
 			]);	
 

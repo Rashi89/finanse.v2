@@ -22,14 +22,16 @@ class Date extends \Core\Model
 	
 	public static function goodRange($data)
 	{
+		$date= new Date($_POST);
 		$start_date = $data['start_date'];
 		$end_date = $data['end_date'];
+		$date->validateDate();
 		
-		if(strtotime($start_date)>strtotime($end_date)||$start_date==""||$end_date=="")
+		if(!empty($date->errors))
 				{
 					return false;
 				}
-				else
+		else
 				{
 					return true;
 				}
@@ -45,6 +47,14 @@ class Date extends \Core\Model
 	{
 		$end_date = $data['end_date'];
 		return $end_date;
+	}
+	
+	public function validateDate()
+	{
+		if(strtotime($this->start_date)>strtotime($this->end_date)||$this->start_date==""||$this->end_date=="")
+				{
+					$this->errors[]="Złe daty!";
+				}
 	}
 	
 }
