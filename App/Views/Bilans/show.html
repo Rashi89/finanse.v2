@@ -1,9 +1,27 @@
-{% extends "Base_user.html" %}
+{% extends "Bilans_table.html" %}
 
 {% block title %}Bilans{% endblock %}
 
 {% block footer %}
+<script src="/dist/chartist.min.js"></script>
+<script>
+		
+		var przychody = {{sum_incomes|json_encode}};
+		var wydatki = {{sum_expenses|json_encode}};
 
+		var data = {
+		  series: [przychody, wydatki]
+		};
+
+		var sum = function(a, b) { return a + b };
+
+		new Chartist.Pie('.ct-chart', data, {
+		labelInterpolationFnc: function(value) {
+		return Math.round(value / data.series.reduce(sum) * 100) + '%';
+  }
+});
+
+</script>
 	
 {% endblock %}
 
@@ -20,11 +38,11 @@
 							<div class="zawartosc2">
 							<fieldset class="ramka">
 								<legend class="scheduler-border bilans">Bilans </legend>
-										<div class="zakres"></div>
+								<div class="zakres"></div>
 							
 								<div class="row">
 								
-										<div class="wydatek col-sm-12 col-md-6">
+										<div class="wydatek col-sm-12 col-lg-6">
 
 												<fieldset class="scheduler-border">
 													<legend class="scheduler-border">Wydatki</legend>
@@ -53,7 +71,7 @@
 											
 										</div>
 										
-										<div class="col-sm-12 col-md-6">
+										<div class="col-sm-12 col-lg-6">
 												<fieldset class="scheduler-border">
 													<legend class="scheduler-border">Przychody</legend>
 														<table>
@@ -69,7 +87,7 @@
 																		{% endfor %}
 																				
 															<tr>
-															<td>Suma</td> <td>{{sum}}</td>
+															<td>Suma</td> <td>{{sum_incomes}}</td>
 															</tr>
 														</table>
 
@@ -102,7 +120,26 @@
 										<div class="row">
 															<div class="ct-chart ct-golden-section col-12 col-md-6" id="chart1"></div>
 																<div class="col-12 col-md-6">
-																
+																	<fieldset class="scheduler-border">
+																		<legend class="scheduler-border"> Legenda </legend>
+																		<div class="row justify-content-center">
+																				<div class="col-auto ">
+																					<img src="/img/kolor1.png" class="square"/>
+																				</div>
+																				<div class="col-auto legenda_koloru">
+																					Przychód
+																				</div>
+																		</div>
+																		<div class="row justify-content-center">
+																				<div class="col-auto ">
+																					<img src="/img/kolor2.png" class="square"/>
+																				</div>
+																				<div class="col-auto legenda_koloru">
+																					Wydatek
+																				</div>
+																		</div>
+																	
+																	</fieldset>
 																	
 																
 															</div>
@@ -115,6 +152,12 @@
 
 
 			</main>
-
+<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
 
 {% endblock %}

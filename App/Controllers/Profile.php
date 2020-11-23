@@ -24,27 +24,38 @@ class Profile extends Authenticated
 		]);
 	}
 	
-	public function editAction()
+	public function editnameAction()
 	{
-		View::renderTemplate('Profile/edit.html', [
+		View::renderTemplate('Profile/editname.html', [
 				'user' => $this->user
 		]);		
 	}
 	
-	public function updateAction()
+	public function updatenameAction()
 	{
-		
-		if($this->user->updateProfile($_POST))
+		$name=$this->user->name;
+		if($this->user->sameLogins($_POST,$name))
 		{
-			Flash::addMessage('Changes saved');
-			
-			$this->redirect('/profile/show');
+			if($this->user->updateProfileLogin($_POST,$name))
+			{
+				Flash::addMessage('Changes saved');
+				
+				$this->redirect('/profile/show');
+			}
+			else
+			{
+				Flash::addMessage('Taka nazwa już istnieje!');
+				View::renderTemplate('Profile/editname.html', [
+							'user'=>$this->user
+				]);
+			}
 		}
 		else
 		{
-			View::renderTemplate('Profile/edit.html', [
-						'user'=>$this->user
-			]);
+			Flash::addMessage('To Twój login!');
+				View::renderTemplate('Profile/editname.html', [
+							'user'=>$this->user
+				]);
 		}
 		
 	}
