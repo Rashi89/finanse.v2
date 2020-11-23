@@ -1,0 +1,54 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Add category payment{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/options/showexpense" method="post">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border"> Dodanie kategorii </legend>
+												
+												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+													<h3>Podaj nazwę nowej kategorii wydatku: </h3>
+													<div class="col-1 d-inline" ><i class="icon-list"></i></div>
+														<div class="login d-inline"><input type ="text" placeholder="Kategoria" onfocus="this.placeholder=''" onblur="this.placeholder='Kategoria'" name="new_category" required></div>
+														<div></div>
+														<div class="error">
+																			{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+														</div>
+												</div>
+
+												<div class="dodaj"><input type = "submit" value="Dodaj"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+{% endblock %}

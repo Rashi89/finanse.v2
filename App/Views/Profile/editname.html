@@ -1,0 +1,99 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Add category payment{% endblock %}
+
+{% block footer %}
+	<script src="/js/hideShowPassword.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			var userId ='{{user.id}}';
+			$('#formProfile').validate(
+			{
+					rules: {
+						name: 'required',
+						email: {
+							required: true,
+							email: true,
+							remote: {
+									url: '/account/validate-email',
+									data: {
+											potencjal_id: function(){
+													return userId;
+											}
+									}
+							}
+						},
+						password: {
+							minlength: 6,
+							validPassword: true
+						}
+					},
+					messages: {
+						email: {
+							remote: 'email already taken'
+						}
+					
+					}
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+		});
+		
+	</script>
+	
+{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/profile/updatename" method="post" id="formProfile">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border"> Zmiana loginu </legend>
+												
+												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+													<h3>Podaj nowy login: </h3>
+													<div class="col-1 d-inline ikona" ><i class="icon-user-1"></i></div>
+														<div class="d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'" value="{{user.name}}" name="new_login" required></div>
+														<div></div>
+														<div class="error">
+																			{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+														</div>
+												</div>
+
+												<div class="dodaj"><input type = "submit" value="Zmień"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+{% endblock %}

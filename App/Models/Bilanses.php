@@ -38,7 +38,7 @@ class Bilanses extends \Core\Model
 	}
 	public static function infoBilans($user,$allBilans)
 	{
-		if($allBilans<0) return 'Uważaj!'.$user->name. 'Wpadasz w długi';
+		if($allBilans<0) return 'Uważaj '.$user->name. ' wpadasz w długi!';
 		else return $user->name.' świetnie zarządzasz finansami!';
 	}
 }

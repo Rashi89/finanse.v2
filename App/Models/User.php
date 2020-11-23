@@ -339,6 +339,43 @@ class User extends \Core\Model
 		
 	}
 	
+	public function sameLogins($data,$login)
+	{
+		$this->name = $data['new_login'];
+		$this->validate();
+		if($login == $this->name)
+			return false;
+		else return true;
+	}
+	
+	public function updateProfileLogin($data)
+	{
+		$this->name = $data['new_login'];
+		$this->validate();
+		
+		$user = static::findByName($this->name);
+		
+		
+		if(empty($this->errors)&&!$user)
+		{
+				$sql = 'UPDATE users
+							SET name=:name WHERE id=:id';
+				
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				
+				$stmt->bindValue(':name',$this->name,PDO::PARAM_STR);
+				
+				$stmt->bindValue(':id',$this->id,PDO::PARAM_INT);
+				
+				return $stmt->execute();
+		}
+		
+		return false;
+	}
+		
+	
+	
 	public function updateProfile($data)
 	{
 		$this->name = $data['name'];

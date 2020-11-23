@@ -96,7 +96,7 @@
 	text-decoration: none;
 	background-color:#1a5063;
 }
-.bilans.btn
+.bilanss.btn
 {
     width: 250px;
 	background-color:#0b3c4d;
@@ -115,14 +115,14 @@
     -moz-appearance: button;
     appearance: button;
 }
-.bilans:focus
+.bilanss:focus
 {
 	text-decoration: none;
 	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 }
-.bilans:hover
+.bilanss:hover
 {
 	color:white;
 	text-decoration: none;
@@ -153,21 +153,21 @@
 {
 	.powitanie
 	{
-		text-align: center;
+		text-align: center !Important;
 	}
 }
 @media(max-width:767px)
 {
 	.powitanie
 	{
-		text-align: center;
+		text-align: center !Important;
 	}
 }
 @media(min-width:768px) and (max-width:991px)
 {
 		.powitanie
 	{
-		text-align: center;
+		text-align: center !Important;
 	
 	
 }

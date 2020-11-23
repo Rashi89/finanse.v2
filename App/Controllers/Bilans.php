@@ -55,7 +55,7 @@ class Bilans extends Authenticated
 			View::renderTemplate('Bilans/show.html',[
 				'user' => $this->user,
 				'array'=>$array,
-				'sum'=>$sum,
+				'sum_incomes'=>$sum,
 				'sum_expenses'=>$sum_expenses,
 				'array_expense'=>$array_expense,
 				'allBilans'=>$allBilans,
