@@ -567,5 +567,46 @@ class User extends \Core\Model
 		
 		return $results;
 	}
+	
+	public function editPassword($data)
+	{
+		$this->new_password =$data['new_password'];
+		$this->old_password=$data['old_password'];
+		$hash=$this->password_hash;
+		$this->validate();
+		
+		if(empty($this->errors)&&password_verify($this->old_password, $hash))
+		{
+			$password_hash= password_hash($this->new_password,PASSWORD_DEFAULT);
+			
+			$sql = 'UPDATE users
+						SET password_hash =:password_hash,
+								password_reset_hash = NULL,
+								password_reset_expires_at = NULL
+						WHERE id=:id';
+			
+			$db=static::getDB();
+			$stmt = $db->prepare($sql);
+			
+			$stmt->bindValue(':password_hash',$password_hash,PDO::PARAM_STR);
+			$stmt->bindValue(':id',$this->id,PDO::PARAM_INT);
+			$stmt->execute();
+			
+			return true;
+		}
+		return false;
+	}
+	 public function goodOldPass($data,$hash)
+	 {
+		 $this->old_password =$data['old_password'];
+		 if(password_verify($this->old_password, $hash))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	 }
 
 }

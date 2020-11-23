@@ -59,4 +59,35 @@ class Profile extends Authenticated
 		}
 		
 	}
+	
+	public function editpassAction()
+	{
+		View::renderTemplate('Profile/editpass.html', [
+				'user' => $this->user
+		]);		
+	}
+	
+	public function updatepassAction()
+	{	
+		$hash=$this->user->password_hash;
+		
+		if($this->user->goodOldPass($_POST,$hash))
+		{
+			if($this->user->editPassword($_POST))
+			{
+				Flash::addMessage('Hasło zostało zmienione!');
+				$this->redirect('/profile/editpass');
+			}
+			else{
+				Flash::addMessage('Hasło niezostało zmienione!');
+			$this->redirect('/profile/editpass');	
+			}
+		}
+		else
+		{
+				Flash::addMessage('Błędne stare hasło!');
+				$this->redirect('/profile/editpass');
+		}
+	}
+		
 }
