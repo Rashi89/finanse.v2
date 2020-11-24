@@ -68,4 +68,24 @@ class Expenses extends Authenticated
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/show');
 	}
+	
+	public function showpaymentAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+				$category =User::getAllPayMethod($_SESSION['user_id']);
+				View::renderTemplate('Options/removepayment.html',[
+				'user' => $this->user,
+				'category' => $category
+			
+					]);	
+		}
+	}
+	public function removepaymentAction()
+	{
+		$expense= new Expense($_POST);
+		$expense->removePayment();
+		Flash::addMessage('Wybrana kategoria została usunięta!');
+		$this->redirect('/expenses/showpayment');
+	}
 }
