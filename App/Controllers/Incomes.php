@@ -7,6 +7,7 @@ use App\Models\RememberedLogin;
 use \App\Models\Income;
 use \Core\View;
 use \App\Auth;
+use \App\Flash;
 
 class Incomes extends Authenticated
 {
@@ -39,5 +40,26 @@ class Incomes extends Authenticated
 			'user' => $this->user,
 			'category' => $category
 		]);	
+	}
+	
+	public function showincomeAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+				$category =User::getAllIncomes($_SESSION['user_id']);
+				View::renderTemplate('Options/removeincome.html',[
+				'user' => $this->user,
+				'category' => $category
+			
+					]);	
+		}
+
+	}
+	public function removeincomeAction()
+	{
+		$income= new Income($_POST);
+		$income->removeIncome();
+		Flash::addMessage('Wybrana kategoria została usunięta!');
+		$this->redirect('/expenses/showpayment');
 	}
 }
