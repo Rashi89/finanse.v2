@@ -8,22 +8,31 @@
 	<script>
 		$(document).ready(function()
 		{
+			var userId ='{{user.id}}';
 			$('#formProfile').validate(
 			{
 					rules: {
-						new_password: {
-							required: true,
-							minlength: 6,
-							validPassword: true
+						name: 'required',
+						email: {
+							required:true,
+							email: true,
+							remote: {
+									url: '/account/validate-email',
+									data: {
+											potencjal_id: function(){
+													return userId;
+											}
+									}
+							}
 						}
 					},
 					messages: {
-						new_password:{
-							validPassword:'Hasło musi zawierać conajmniej jedną cyfrę i literę!',
-							minlength:'Hasło musi mieć długość 6 znaków!'
+						email: {
+							required:'Podaj adres e-mail!',
+							remote: 'Ten e-mail jest już zajęty!',
+							email:'Podaj poprawny format adresu e-mail!'
 						}
 					
-
 					},
 					errorElement : 'div',
 					errorLabelContainer: '.errorTxt'
@@ -33,7 +42,9 @@
 				show:false,
 				innerToggle: 'focus'
 			});
+			
 		});
+	
 		
 	</script>
 	
@@ -49,26 +60,23 @@
 					
 						<div class="zawartosc formularz">
 						
-								<form action="/profile/updatepass" method="post" id="formProfile">
+								<form action="/profile/updateemail" method="post" id="formProfile">
 								
 										<fieldset class="scheduler-border">
 											
-											<legend class="scheduler-border"> Zmiana hasła </legend>
-												<h3 class="old">Podaj stare hasło: </h3>
-												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
-												<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
-															<div class="haslo d-inline"><input type ="password" placeholder="Old Password" onfocus="this.placeholder=''" onblur="this.placeholder='Old Password'" name="old_password" ></div>
-															<div></div>
-													<h3 class="new">Podaj nowe hasło: </h3>
-															<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
-															<div class="haslo d-inline"><input type ="password" placeholder="New Password" onfocus="this.placeholder=''" onblur="this.placeholder='New Password'" name="new_password" required></div>
-															<div class="errorTxt d-inline"></div>
+											<legend class="scheduler-border"> Zmiana adresu e-mail </legend>
+												<h3>Podaj nowy adress e-mail</h3>
+												<div class="email col-1 d-inline"><i class="icon-mail-alt"></i></div>
+														<div class="email1 d-inline"><input type ="email" placeholder="E-mail" 
+														onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'" name="email" 
+														required value="{{user.email}}"></div>
+														<div class="errorTxt"></div>
 														<div class="error">
 																			{% for message in flash_messages %}
 																				{{message.body}}
 																			{% endfor %}
 														</div>
-												</div>
+												
 
 												<div class="dodaj"><input type = "submit" value="Zmień"></div>
 												<a href="/Profile/show" class="reset">Anuluj</a>
@@ -77,10 +85,10 @@
 								
 								</form>
 						
-						
 						</div>
 					</div>
 				</div>
+				
 
 			</main>
 			<div class="container-fluid p-0 mt-4">

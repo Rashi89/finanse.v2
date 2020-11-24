@@ -84,13 +84,18 @@
 									<form method="post" action="/signup/create" id="formSignup">
 											<div class="napis">REJESTRACJA</div>
 											<div class="col-1 d-inline" ><i class="icon-user-1"></i></div>
-											<div class="login d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" onblur="this.placeholder='Login'" name="name" id="inputName" autofocus value="{{user.name}}" required></div>
+											<div class="login d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" 
+											onblur="this.placeholder='Login'" name="name" id="inputName" autofocus value="{{user.name}}" 
+											required></div>
 											<div id="error_name" style="color:green"></div>
 											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
-											<div class="haslo d-inline"><input type ="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" id="inputPassword" required></div>
+											<div class="haslo d-inline"><input type ="password" placeholder="Password" 
+											onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" 
+											id="inputPassword" required></div>
 											<div></div>
 											<div class="email col-1 d-inline"><i class="icon-mail-alt"></i></div>
-											<div class="email d-inline"><input type ="email" placeholder="E-mail" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'" name="email" id="inputEmail" value="{{user.email}}" required></div>
+											<div class="email d-inline"><input type ="email" placeholder="E-mail" onfocus="this.placeholder=''" 
+											onblur="this.placeholder='E-mail'" name="email" id="inputEmail" value="{{user.email}}" required></div>
 											
 											{% if user.errors is not empty %}
 												<p>Errors</p>

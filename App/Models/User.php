@@ -608,5 +608,30 @@ class User extends \Core\Model
 			return false;
 		}
 	 }
+	 
+	 public function editEmail($id,$data)
+	 {
+		 $this->email=$data['email'];
+		 $emailSafe = filter_var($this->email,FILTER_SANITIZE_EMAIL);
+		 
+		 if(filter_var($emailSafe,FILTER_VALIDATE_EMAIL)==true)
+		{
+			$sql = 'UPDATE users
+						SET email =:email
+						WHERE id=:id';
+			
+			$db=static::getDB();
+			$stmt = $db->prepare($sql);
+			
+			$stmt->bindValue(':email',$this->email,PDO::PARAM_STR);
+			$stmt->bindValue(':id',$this->id,PDO::PARAM_INT);
+			$stmt->execute();
+			
+			return true;
+		}
+		 return false;
+		 
+		 
+	 }
 
 }
