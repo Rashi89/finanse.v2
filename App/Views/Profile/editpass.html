@@ -1,6 +1,6 @@
 {% extends "Base_user.html" %}
 
-{% block title %}Add category payment{% endblock %}
+{% block title %}Edit password{% endblock %}
 
 {% block footer %}
 	<script src="/js/hideShowPassword.min.js"></script>
@@ -8,34 +8,25 @@
 	<script>
 		$(document).ready(function()
 		{
-			var userId ='{{user.id}}';
 			$('#formProfile').validate(
 			{
 					rules: {
-						name: 'required',
-						email: {
+						new_password: {
 							required: true,
-							email: true,
-							remote: {
-									url: '/account/validate-email',
-									data: {
-											potencjal_id: function(){
-													return userId;
-											}
-									}
-							}
-						},
-						password: {
 							minlength: 6,
 							validPassword: true
 						}
 					},
 					messages: {
-						email: {
-							remote: 'email already taken'
+						new_password:{
+							validPassword:'Hasło musi zawierać conajmniej jedną cyfrę i literę!',
+							minlength:'Hasło musi mieć długość 6 znaków!'
 						}
 					
-					}
+
+					},
+					errorElement : 'div',
+					errorLabelContainer: '.errorTxt'
 			});
 			
 			$('#inputPassword').hideShowPassword({
@@ -58,18 +49,20 @@
 					
 						<div class="zawartosc formularz">
 						
-								<form action="/profile/updatename" method="post" id="formProfile">
+								<form action="/profile/updatepass" method="post" id="formProfile">
 								
 										<fieldset class="scheduler-border">
 											
-											<legend class="scheduler-border"> Zmiana loginu </legend>
-												
+											<legend class="scheduler-border"> Zmiana hasła </legend>
+												<h3 class="old">Podaj stare hasło: </h3>
 												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
-													<h3>Podaj nowy login: </h3>
-													<div class="col-1 d-inline ikona" ><i class="icon-user-1"></i></div>
-														<div class="d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" 
-														onblur="this.placeholder='Login'" value="{{user.name}}" name="new_login" required></div>
-														<div></div>
+												<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+															<div class="haslo d-inline"><input type ="password" placeholder="Old Password" onfocus="this.placeholder=''" onblur="this.placeholder='Old Password'" name="old_password" ></div>
+															<div></div>
+													<h3 class="new">Podaj nowe hasło: </h3>
+															<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+															<div class="haslo d-inline"><input type ="password" placeholder="New Password" onfocus="this.placeholder=''" onblur="this.placeholder='New Password'" name="new_password" required></div>
+															<div class="errorTxt d-inline"></div>
 														<div class="error">
 																			{% for message in flash_messages %}
 																				{{message.body}}
