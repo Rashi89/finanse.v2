@@ -422,4 +422,49 @@ class Expense extends \Core\Model
 		else return 0;
 		}
 	}
+	
+	public function removeExpense()
+	{
+		if(empty($this->errors))
+		{
+			$user_id =$_SESSION['user_id'];
+			
+			$expense_category=static::getCategoryExpense($user_id,$this->wybor);
+		
+		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND expense_category_assigned_to_user_id
+		=:expense_category_assigned_to_user_id;
+		DELETE FROM expenses_category_assigned_to_users WHERE user_id=:user_id AND id=:expense_category_assigned_to_user_id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':expense_category_assigned_to_user_id',$expense_category,PDO::PARAM_INT);
+
+		
+		return $stmt->execute();
+		}
+		return false;
+	}
+	public function removePayment()
+	{
+		if(empty($this->errors))
+		{
+		$user_id =$_SESSION['user_id'];
+			
+		$payment_category=static::getCategoryPayment($user_id,$this->wybor);
+		
+		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND payment_method_assigned_to_user_id
+		=:payment_category_assigned_to_user_id;
+		DELETE FROM payment_methods_assigned_to_users WHERE user_id=:user_id AND id=:payment_category_assigned_to_user_id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':payment_category_assigned_to_user_id',$payment_category,PDO::PARAM_INT);
+
+		
+		return $stmt->execute();
+		}
+		return false;
+	}
 }

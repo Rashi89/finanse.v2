@@ -418,7 +418,28 @@ class Income extends \Core\Model
 			else return 0;
 		}
 	}
-	
+	public function removeIncome()
+	{
+		if(empty($this->errors))
+		{
+		$user_id =$_SESSION['user_id'];
+			
+		$income_category=static::getCategoryIncome($user_id,$this->wybor);
+		
+		$sql = 'DELETE FROM `incomes` WHERE user_id=:user_id AND income_category_assigned_to_user_id
+		=:income_category_assigned_to_user_id;
+		DELETE FROM incomes_category_assigned_to_users WHERE user_id=:user_id AND id=:income_category_assigned_to_user_id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':income_category_assigned_to_user_id',$income_category,PDO::PARAM_INT);
+
+		
+		return $stmt->execute();
+		}
+		return false;
+	}
 	
 	
 }
