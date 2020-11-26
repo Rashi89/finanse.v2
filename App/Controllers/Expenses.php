@@ -40,11 +40,7 @@ class Expenses extends Authenticated
 		$expense->saveExpense();
 		$category =User::getAllExpenses($_SESSION['user_id']);
 		$payMethod=User::getAllPayMethod($_SESSION['user_id']);
-		View::renderTemplate('Expenses/add.html',[
-			'user' => $this->user,
-			'category' => $category,
-			'payMethod'=>$payMethod
-		]);	
+		$this->redirect('/profile/show');
 	}
 	
 	public function showAction()

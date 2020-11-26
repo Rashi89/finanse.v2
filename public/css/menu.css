@@ -123,6 +123,14 @@ ul > li
 	color: #86dcf0 !Important;
 	font-size:17px;
 }
+.disabled
+{
+	color: red !Important;
+}
+.disable:hover
+{
+	 background-color:#2c3136 !Important;
+}
 .dropdown-item:hover
 {
 	background-color:#394754 !Important;

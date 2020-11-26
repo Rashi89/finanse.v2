@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\RememberedLogin;
 use \App\Models\Option;
 use \App\Models\Income;
+use \App\Models\Expense;
 use \Core\View;
 use \App\Auth;
 use \App\Flash;
@@ -168,6 +169,47 @@ class Options extends Authenticated
 				$options -> saveIncome();
 				Flash::addMessage('Wpis został poprawiony!');
 				$this->redirect('/options/showcorrectincome');
+		}
+	}
+	public function showcorrectexpenseAction()
+	{
+		$max_id=Expense::getMax($_SESSION['user_id']);
+		if(isset($_SESSION['user_id'])&&$max_id>0)
+		{		
+				//$max_id=Income::getMax($_SESSION['user_id']);
+				$presentCategoryID=Expense::getCategory($_SESSION['user_id'],$max_id);
+				$namePresentCategory=Expense::getName($_SESSION['user_id'],$presentCategoryID);
+				$prize=Expense::getPrize($_SESSION['user_id'],$max_id);
+				$date=Expense::getData($_SESSION['user_id'],$max_id);
+				$comment=Expense::getComment($_SESSION['user_id'],$max_id);
+				$category =User::getAllExpenses($_SESSION['user_id']);
+				$presentCategoryPaymentID=Expense::getPresentCategoryPayment($_SESSION['user_id'],$max_id);
+				$namePresentCategoryPayment=Expense::getNamePayment($_SESSION['user_id'],$presentCategoryPaymentID);
+				$payment=User::getAllPayMethod($_SESSION['user_id']);
+				View::renderTemplate('Options/correctexpense.html',[
+				'user' => $this->user,
+				'name'=>$namePresentCategory,
+				'prize'=>$prize,
+				'date'=>$date,
+				'comment'=>$comment,
+				'category' => $category,
+				'category_payment'=>$payment,
+				'namepayment'=>$namePresentCategoryPayment
+					]);	
+		}
+		else
+		{
+			$this->redirect('/profile/show');
+		}
+	}
+	public function correctexpenseAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{		
+				$options = new Option($_POST);
+				$options -> saveExpense();
+				Flash::addMessage('Wpis został poprawiony!');
+				$this->redirect('/options/showcorrectexpense');
 		}
 	}
 	

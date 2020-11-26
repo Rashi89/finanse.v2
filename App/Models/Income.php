@@ -443,9 +443,10 @@ class Income extends \Core\Model
 	
 	public static function getMax($id)
 	{
-		$sql='SELECT COUNT(*) FROM incomes';
+		$sql='SELECT COUNT(*) FROM incomes WHERE user_id=:id';
 		$db=static::getDB();
 		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
 		
 		//$stmt->bindValue(':id',$user->id,PDO::PARAM_INT);
 		
@@ -538,5 +539,27 @@ class Income extends \Core\Model
 		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
 		$comment=$max['income_comment'];
 		return $comment;
+	}
+	public static function existIncome($user_id)
+	{
+		$sql='SELECT COUNT(*) FROM incomes WHERE user_id=:user_id';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		
+		//$stmt->bindValue(':id',$user->id,PDO::PARAM_INT);
+		
+		$stmt->execute();
+		$incomes=$stmt->fetch(PDO::FETCH_ASSOC); 
+		//$stmt->rowCount();
+		$empty=$incomes['COUNT(*)'];
+		if($empty==0)
+		{
+			//$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+			//$expense=$stmt->fetch(PDO::FETCH_ASSOC); 
+			//$all_expense=$expense['SUM(amount)'];
+			return false;
+		}
+		else return true;
 	}
 }

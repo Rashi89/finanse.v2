@@ -5,6 +5,8 @@ namespace App\Controllers;
 use \Core\View;
 use \App\Auth;
 use \App\Flash;
+use \App\Models\Income;
+use \App\Models\Expense;
 
 // rozszerzamy Authenticated bo musi sie najpierw zalogowac
 class Profile extends Authenticated
@@ -19,8 +21,10 @@ class Profile extends Authenticated
 	
 	public function showAction()
 	{
+
 		View::renderTemplate('Profile/show.html', [
-				'user' => $this->user
+				'user' => $this->user,
+
 		]);
 	}
 	

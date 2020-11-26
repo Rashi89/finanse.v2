@@ -24,7 +24,7 @@ class Login extends \Core\Controller
 			
 			Auth::login($user,$remember_me);
 			
-			Flash::addMessage('Login successful!');
+			//Flash::addMessage('Login successful!');
 			
 
 			//pokazuje strone glowna index.html
@@ -36,7 +36,8 @@ class Login extends \Core\Controller
 			//pokazuje strone glowna index.html
 
 			//$this->redirect(Auth::getReturnToPage());
-			View::renderTemplate('Profile/show.html');
+			//View::renderTemplate('Profile/show.html');
+			$this->redirect('/profile/show');
 
 			
 		} else {

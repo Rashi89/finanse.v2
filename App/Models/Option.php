@@ -187,4 +187,49 @@ class Option extends \Core\Model
 		
 		
 	}
+	public static function deleteExpense($user_id,$max_id)
+	{
+		$sql = 'DELETE FROM expenses WHERE id=:max_id AND user_id=:id';
+		$db = static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':max_id', $max_id,PDO::PARAM_INT);
+		return $stmt->execute();
+		
+		
+	}
+	
+	public function saveExpense()
+	{
+		$user_id=$_SESSION['user_id'];
+		$max_id=Expense::getMax($_SESSION['user_id']);
+		
+		
+		if(!static::deleteExpense($user_id,$max_id))
+		{
+			return false;
+		}
+		else
+		{
+		$expense_category=Expense::getCategoryExpense($user_id,$this->wybor);
+		$payment_category=Expense::getCategoryPayment($user_id,$this->wyborMethod);
+		$sql='INSERT INTO expenses (id, user_id, expense_category_assigned_to_user_id, payment_method_assigned_to_user_id, amount, 
+		date_of_expense, expense_comment) VALUES (:id,:user_id,:expense_category_assigned_to_user_id,:payment_category,:amount, 
+		:date_of_expense, :expense_comment)';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $max_id,PDO::PARAM_INT);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':expense_category_assigned_to_user_id',$expense_category,PDO::PARAM_INT);
+		$stmt->bindValue(':payment_category',$payment_category,PDO::PARAM_INT);
+		$stmt->bindValue(':amount', $this->kwota,PDO::PARAM_STR);
+		$stmt->bindValue(':date_of_expense', $this->date ,PDO::PARAM_STR);
+		$stmt->bindValue(':expense_comment', $this->komentarz ,PDO::PARAM_STR);
+		$stmt->execute();
+		return true;
+		}
+		
+		
+	}
 }

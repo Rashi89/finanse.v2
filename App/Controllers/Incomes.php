@@ -36,10 +36,7 @@ class Incomes extends Authenticated
 		$income= new Income($_POST);
 		$income->saveIncome();
 		$category =User::getAllIncomes($_SESSION['user_id']);
-		View::renderTemplate('Incomes/add.html',[
-			'user' => $this->user,
-			'category' => $category
-		]);	
+		$this->redirect('/profile/show');
 	}
 	
 	public function showincomeAction()
