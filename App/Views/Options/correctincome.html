@@ -1,0 +1,159 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Correct last income{% endblock %}
+
+{% block footer %}
+	<script src="/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+	
+$(document).ready(function()
+{	
+
+$( "#formAddIncomes" ).validate({
+  rules: {
+    kwota: {
+      required: true,
+      min: 0
+    },
+	date:{
+		required: true
+	}
+  },
+  messages:{
+  kwota:{
+     min: "Wartość ma być nieujemna!"
+  },
+  date:{
+	required:"Podaj datę!"
+  }
+  },
+ errorPlacement: function(error, element) {
+						if (element.attr("name") == "date") {
+							error.insertAfter(".data");
+						} else {
+							error.insertAfter(element);
+						}
+					}
+			});
+});
+		
+	</script>
+	
+{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/options/correctincome" method="post" id="formAddIncomes">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border">Popraw ostatni wpis</legend>
+												
+												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+													
+											<div >
+												
+														<div class="opcja"> Kwota </div>
+															<div class="kwota active"> <i class="icon-money"></i>  <input class=" col-md-12" 
+															type ="number" required placeholder="Kwota"  value='{{prize}}' step="0.01" name="kwota"></div>
+														<div class="error">
+														
+														</div>
+												</div>
+														
+												<div>
+														
+														<div class="opcja"> Data </div>
+															<div class="data"> <i class="icon-calendar"></i><input class=" col-md-12" type="date" 
+															value='{{date}}' name="date"></div>
+														<div class="error">
+														
+														</div>
+												</div>
+
+
+												
+												<div>
+												
+														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
+															<i class="icon-list"></i>
+															<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															{% for income in category %}
+															{% if name == income.name %}
+																<option value="{{income.name}}" selected>{{income.name}}</option>
+															{% else %}
+															
+															<option value="{{income.name}}">{{income.name}}</option>
+														
+															{% endif %}
+															{% endfor %}
+															</select>
+
+													
+												</div>
+												
+												<div>	
+													
+													<div class="Komentarz">
+															
+															<div class="opcja"><label for="komentarz">Komentarz</label></div>
+															<textarea class="col-10" name="komentarz" id="komentarz" rows="4" 
+															cols="80"  >{{comment}}</textarea>
+															
+													</div>
+							
+
+												</div>
+												<div class="error">
+														{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+												</div>
+											
+												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Popraw</a></div>
+												<div><a href="/Profile/show" class="reset">Anuluj</a></div>
+
+<!-- The Modal -->
+												<div class="modal fade" id="akcept" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle"><i class="icon-warning"></i>Uwaga!</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																  <span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body text-center">
+										
+																	<h4>Jesteś pewny, że chcesz wprawadzić zmiany?</h4>
+																		
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+																<button type="submit" class="btn btn-primary">Tak</button>
+															</div>
+														</div>
+													</div>
+												</div>
+										
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+{% endblock %}

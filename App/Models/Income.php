@@ -441,5 +441,125 @@ class Income extends \Core\Model
 		return false;
 	}
 	
-	
+	public static function getMax($id)
+	{
+		$sql='SELECT COUNT(*) FROM incomes WHERE user_id=:id';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		
+		//$stmt->bindValue(':id',$user->id,PDO::PARAM_INT);
+		
+		$stmt->execute();
+		$incomes=$stmt->fetch(PDO::FETCH_ASSOC); 
+		//$stmt->rowCount();
+		$empty=$incomes['COUNT(*)'];
+		if($empty==0)
+		{
+			//$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+			//$expense=$stmt->fetch(PDO::FETCH_ASSOC); 
+			//$all_expense=$expense['SUM(amount)'];
+			return 0;
+		}
+		else
+		{
+		$sql='SELECT MAX(id) FROM incomes WHERE user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		$stmt->execute();
+		$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$maxID=$max['MAX(id)'];
+		return $maxID;
+		}
+	}
+	public static function getCategory($id,$max_id)
+	{
+		$sql='SELECT income_category_assigned_to_user_id  FROM incomes WHERE id=:max_id AND user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		$stmt->bindValue(':max_id', $max_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$ID=$max['income_category_assigned_to_user_id'];
+		return $ID;
+	}
+	public static function getName($user_id,$cat_id)
+	{
+		$sql='SELECT name FROM incomes_category_assigned_to_users WHERE id=:cat_id AND user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':cat_id', $cat_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$name=$max['name'];
+		return $name;
+	}
+	public static function getPrize($id,$max_id)
+	{
+		$sql='SELECT amount  FROM incomes WHERE id=:max_id AND user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		$stmt->bindValue(':max_id', $max_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$prize=$max['amount'];
+		return $prize;
+	}
+	public static function getData($id,$max_id)
+	{
+		$sql='SELECT date_of_income  FROM incomes WHERE id=:max_id AND user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		$stmt->bindValue(':max_id', $max_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$date=$max['date_of_income'];
+		return $date;
+	}
+	public static function getComment($id,$max_id)
+	{
+		$sql='SELECT income_comment  FROM incomes WHERE id=:max_id AND user_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $id,PDO::PARAM_INT);
+		$stmt->bindValue(':max_id', $max_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$comment=$max['income_comment'];
+		return $comment;
+	}
+	public static function existIncome($user_id)
+	{
+		$sql='SELECT COUNT(*) FROM incomes WHERE user_id=:user_id';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		
+		//$stmt->bindValue(':id',$user->id,PDO::PARAM_INT);
+		
+		$stmt->execute();
+		$incomes=$stmt->fetch(PDO::FETCH_ASSOC); 
+		//$stmt->rowCount();
+		$empty=$incomes['COUNT(*)'];
+		if($empty==0)
+		{
+			//$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+			//$expense=$stmt->fetch(PDO::FETCH_ASSOC); 
+			//$all_expense=$expense['SUM(amount)'];
+			return false;
+		}
+		else return true;
+	}
 }
