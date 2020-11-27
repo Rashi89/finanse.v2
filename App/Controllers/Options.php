@@ -135,10 +135,9 @@ class Options extends Authenticated
 	}
 	public function showcorrectincomeAction()
 	{
-		$max_id=Income::getMax($_SESSION['user_id']);
-		if(isset($_SESSION['user_id'])&&$max_id>0)
-		{		
-				//$max_id=Income::getMax($_SESSION['user_id']);
+		$exist=Income::existIncome($_SESSION['user_id']);
+		if($exist==true){
+				$max_id=Income::getMax($_SESSION['user_id']);
 				$presentCategoryID=Income::getCategory($_SESSION['user_id'],$max_id);
 				$namePresentCategory=Income::getName($_SESSION['user_id'],$presentCategoryID);
 				$prize=Income::getPrize($_SESSION['user_id'],$max_id);
@@ -158,7 +157,9 @@ class Options extends Authenticated
 		}
 		else
 		{
-			$this->redirect('/profile/show');
+			View::renderTemplate('Incomes/info.html',[
+				'user' => $this->user
+					]);	
 		}
 	}
 	public function correctincomeAction()
@@ -173,10 +174,11 @@ class Options extends Authenticated
 	}
 	public function showcorrectexpenseAction()
 	{
-		$max_id=Expense::getMax($_SESSION['user_id']);
-		if(isset($_SESSION['user_id'])&&$max_id>0)
+		$exist=Expense::existExpense($_SESSION['user_id']);
+		
+		if($exist==true)
 		{		
-				//$max_id=Income::getMax($_SESSION['user_id']);
+				$max_id=Income::getMax($_SESSION['user_id']);
 				$presentCategoryID=Expense::getCategory($_SESSION['user_id'],$max_id);
 				$namePresentCategory=Expense::getName($_SESSION['user_id'],$presentCategoryID);
 				$prize=Expense::getPrize($_SESSION['user_id'],$max_id);
@@ -199,7 +201,9 @@ class Options extends Authenticated
 		}
 		else
 		{
-			$this->redirect('/profile/show');
+			View::renderTemplate('Expenses/info.html',[
+				'user' => $this->user
+					]);	
 		}
 	}
 	public function correctexpenseAction()
