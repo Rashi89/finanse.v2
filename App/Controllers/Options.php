@@ -178,7 +178,7 @@ class Options extends Authenticated
 		
 		if($exist==true)
 		{		
-				$max_id=Income::getMax($_SESSION['user_id']);
+				$max_id=Expense::getMax($_SESSION['user_id']);
 				$presentCategoryID=Expense::getCategory($_SESSION['user_id'],$max_id);
 				$namePresentCategory=Expense::getName($_SESSION['user_id'],$presentCategoryID);
 				$prize=Expense::getPrize($_SESSION['user_id'],$max_id);
@@ -216,5 +216,129 @@ class Options extends Authenticated
 				$this->redirect('/options/showcorrectexpense');
 		}
 	}
+	public function showdeleteincomeAction()
+	{
+		$exist=Income::existIncome($_SESSION['user_id']);
+		
+		if($exist==true&&isset($_SESSION['last_income_id']))
+		{		
+				$max_id=Income::getMax($_SESSION['user_id']);
+				if($max_id==$_SESSION['last_income_id'])
+				{
+				$presentCategoryID=Income::getCategory($_SESSION['user_id'],$max_id);
+				$namePresentCategory=Income::getName($_SESSION['user_id'],$presentCategoryID);
+				$prize=Income::getPrize($_SESSION['user_id'],$max_id);
+				$date=Income::getData($_SESSION['user_id'],$max_id);
+				$comment=Income::getComment($_SESSION['user_id'],$max_id);
+
+				View::renderTemplate('Options/deletelastincome.html',[
+				'user' => $this->user,
+				'name'=>$namePresentCategory,
+				'prize'=>$prize,
+				'date'=>$date,
+				'comment'=>$comment
+			
+		
+					]);	
+				}
+		}
+		else
+				{
+					$info ="Ostatnio nie dodałeś żadnego przychodu!";
+					View::renderTemplate('Incomes/infodelete.html',[
+					'user' => $this->user,
+					'info'=>$info
+					]);	
+				}
+	}
+	public function deleteincomeAction()
+	{
+			
+				$max_id=Income::getMax($_SESSION['user_id']);
+				$user_id=$_SESSION['user_id'];
+				if(Option::deleteIncome($user_id,$max_id))
+				{
+					$info="Wpis został usunięty!";
+					View::renderTemplate('Incomes/infodelete.html',[
+					'user' => $this->user,
+					'info' =>$info
+				
+					]);	
+				}
+		
+				else
+				{
+					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
+					View::renderTemplate('Incomes/infodelete.html',[
+						'user' => $this->user,
+						'info' =>$info
+						
+							]);	
+				}
+	}
+	public function showdeleteexpenseAction()
+	{
+		$exist=Expense::existExpense($_SESSION['user_id']);
+		
+		if($exist==true&&isset($_SESSION['last_expense_id']))
+		{		
+				$max_id=Expense::getMax($_SESSION['user_id']);
+				if($max_id==$_SESSION['last_expense_id'])
+				{
+				$presentCategoryID=Expense::getCategory($_SESSION['user_id'],$max_id);
+				$namePresentCategory=Expense::getName($_SESSION['user_id'],$presentCategoryID);
+				$prize=Expense::getPrize($_SESSION['user_id'],$max_id);
+				$date=Expense::getData($_SESSION['user_id'],$max_id);
+				$comment=Expense::getComment($_SESSION['user_id'],$max_id);
+				$category =User::getAllExpenses($_SESSION['user_id']);
+				$presentCategoryPaymentID=Expense::getPresentCategoryPayment($_SESSION['user_id'],$max_id);
+				$namePresentCategoryPayment=Expense::getNamePayment($_SESSION['user_id'],$presentCategoryPaymentID);
+				$payment=User::getAllPayMethod($_SESSION['user_id']);
+				View::renderTemplate('Options/deletelastexpense.html',[
+				'user' => $this->user,
+				'name'=>$namePresentCategory,
+				'prize'=>$prize,
+				'date'=>$date,
+				'comment'=>$comment,
+				'category' => $category,
+				'category_payment'=>$payment,
+				'namepayment'=>$namePresentCategoryPayment
+					]);	
+				}
+		}
+		else
+				{
+					$info ="Ostatnio nie dodałeś żadnego wydatku!";
+					View::renderTemplate('Expenses/infodelete.html',[
+					'user' => $this->user,
+					'info'=>$info
+					]);	
+				}
+	}
 	
+	public function deleteexpenseAction()
+	{
+			
+				$max_id=Expense::getMax($_SESSION['user_id']);
+				$user_id=$_SESSION['user_id'];
+				if(Option::deleteExpense($user_id,$max_id))
+				{
+					$info="Wpis został usunięty!";
+					View::renderTemplate('Expenses/infodelete.html',[
+					'user' => $this->user,
+					'info' =>$info
+				
+					]);	
+				}
+		
+				else
+				{
+					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
+					View::renderTemplate('Expenses/infodelete.html',[
+						'user' => $this->user,
+						'info' =>$info
+						
+							]);	
+				}
+	}
 }

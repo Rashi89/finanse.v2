@@ -630,8 +630,7 @@ class User extends \Core\Model
 			return true;
 		}
 		 return false;
-		 
-		 
+
 	 }
 
 }

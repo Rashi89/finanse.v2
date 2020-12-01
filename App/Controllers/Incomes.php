@@ -35,14 +35,19 @@ class Incomes extends Authenticated
 	{
 		$income= new Income($_POST);
 		$income->saveIncome();
+		
+		$_SESSION['last_income_id']=Income::getMax($_SESSION['user_id']);
+	
 		$category =User::getAllIncomes($_SESSION['user_id']);
 		$this->redirect('/profile/show');
+		
 	}
 	
 	public function showincomeAction()
 	{
 		if(isset($_SESSION['user_id']))
 		{
+				
 				$category =User::getAllIncomes($_SESSION['user_id']);
 				View::renderTemplate('Options/removeincome.html',[
 				'user' => $this->user,
@@ -59,4 +64,6 @@ class Incomes extends Authenticated
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/showpayment');
 	}
+	
+
 }
