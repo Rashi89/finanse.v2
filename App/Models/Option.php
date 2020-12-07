@@ -229,7 +229,5 @@ class Option extends \Core\Model
 		$stmt->execute();
 		return true;
 		}
-		
-		
 	}
 }

@@ -6,6 +6,8 @@ use \Core\View;
 use \App\Models\User;
 use \App\Auth;
 use \App\Flash;
+use \App\Models\Income;
+use \App\Models\Expense;
 
 class Login extends \Core\Controller
 {
@@ -23,6 +25,8 @@ class Login extends \Core\Controller
 		if($user){
 			
 			Auth::login($user,$remember_me);
+			//$_SESSION['last_income_id']=Income::getMax($_SESSION['user_id']);
+			//$_SESSION['last_expense_id']=Expense::getMax($_SESSION['user_id']);
 			
 			//Flash::addMessage('Login successful!');
 			
@@ -42,7 +46,7 @@ class Login extends \Core\Controller
 			
 		} else {
 			
-			Flash::addMessage('Login unsuccessful, please try again!', Flash::WARNING);
+			Flash::addMessage('Niepoprawny login lub hasło!', Flash::WARNING);
 
 			View::renderTemplate('Home/index.html',[
 						'email'=>$_POST['email'],

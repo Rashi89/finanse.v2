@@ -175,9 +175,9 @@ input[type=email]:focus
 
 .error
 {
-	color:black;
 	margin-top:5px;
 	margin-left:100px;
+	font-size:16px;
 }
 .stopka_menu
 {
@@ -193,9 +193,16 @@ input[type=email]:focus
 }
 .blad
 {
-	margin-left: 100px;
+	color:red;
+	margin-top:5px;
+	margin-left:100px;
+	font-size:16px;
 }
-
+.checkbox
+{
+	margin-left:100px;
+	font-size:20px;
+}
 .forgot
 {
 	margin-left:100px;
@@ -205,12 +212,16 @@ input[type=email]:focus
 	color:black !Important;
 	text-decoration: none;
 }
-
+.label
+{
+	margin-left:10px;
+}
 @media(max-width:576px)
 {
+
 .napis
 {
-	
+	margin-left:30px;
 	font-size:20px;
 }
 .logotyp
@@ -224,6 +235,7 @@ input[type=email]:focus
 }
 .info
 {
+	margin-left:20px;
 	font-size:12px;
 }
 .stopka_menu
@@ -249,13 +261,92 @@ input[type=email]
 .rejestracja input[type=submit]
 {
 	width: 250px;
+	margin-left:80px;
 }
 .anuluj 
 {
 	width: 250px;
-} 
+	margin-left:80px;
 }
-@media(min-width:577px) and (max-width:991px)
+.checkbox
+{
+	margin-left:80px;
+	font-size:20px;
+}
+.forgot
+{
+	margin-left:80px;
+}
+.rejestracja1 input[type=submit]
+{
+	margin-left:80px;
+}
+}
+@media(min-width:576px) and (max-width:768px)
+{
+	.napis
+{
+	margin-left:50px;
+	font-size:20px;
+}
+.logotyp
+{
+	height:250px;
+	width:192px;
+	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.info
+{
+	margin-left:60px;
+	font-size:12px;
+}
+.stopka_menu
+{
+	font-size:15px;
+}
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:250px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+.rejestracja input[type=submit]
+{
+	width: 250px;
+	margin-left:100px;
+}
+.anuluj 
+{
+	width: 250px;
+}
+.checkbox
+{
+	margin-left:100px;
+	font-size:20px;
+}
+.forgot
+{
+	margin-left:100px;
+}
+.rejestracja1 input[type=submit]
+{
+	margin-left:100px;
+}
+}
+@media(min-width:768px) and (max-width:991px)
 {
 	.logotyp
 {
@@ -269,5 +360,61 @@ input[type=email]
 .stopka_menu
 {
 	font-size:15px;
+}
+}
+@media(min-width:991px) and (max-width:1200px)
+{
+	
+.stopka_menu
+{
+	font-size:15px;
+}
+	.napis
+{
+	margin-left:50px;
+	font-size:25px;
+}
+.info
+{
+	margin-left:60px;
+	font-size:14px;
+}
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:280px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+.rejestracja input[type=submit]
+{
+	width: 280px;
+	margin-left:100px;
+}
+.anuluj 
+{
+	width: 280px;
+}
+.checkbox
+{
+	margin-left:100px;
+	font-size:20px;
+}
+.forgot
+{
+	margin-left:100px;
+}
+.rejestracja1 input[type=submit]
+{
+	margin-left:100px;
 }
 }

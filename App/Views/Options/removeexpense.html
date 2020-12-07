@@ -1,6 +1,6 @@
 {% extends "Base_user.html" %}
 
-{% block title %}Add category payment{% endblock %}
+{% block title %}Delete category expense{% endblock %}
 
 {% block body %}
 
@@ -10,15 +10,15 @@
 					
 					<div class="row">
 					
-						<div class="zawartosc formularz">
+						<div class="zawartosc1 formularz">
 						
 								<form action="/Expenses/remove" method="post">
 								
 										<fieldset class="scheduler-border">
 											
-											<legend class="scheduler-border">Usuwanie kategorii</legend>
+											<legend class="scheduler-border legenda1">Usuwanie kategorii</legend>
 												
-												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+												<div class="">
 													<h3>Wybierz nazwę kategorii do usunięcia: </h3>
 													<div>
 															<i class="icon-list"></i>
@@ -28,11 +28,11 @@
 															{% endfor %}
 															</select>
 													</div>
-														<div class="error">
-																			{% for message in flash_messages %}
-																				{{message.body}}
-																			{% endfor %}
-														</div>	
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
 												</div>
 
 												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Usuń</a></div>

@@ -45,23 +45,23 @@
 										<div class="wydatek col-sm-12 col-lg-6">
 
 												<fieldset class="scheduler-border">
-													<legend class="scheduler-border">Wydatki</legend>
+													<legend class="scheduler-border legenda">Wydatki</legend>
 													
 															
 															<table>
 															<tr>
-															<td>Kategoria wydatku </td><td>Koszt</td>
+															<td class="category">Kategoria wydatku </td><td class="category">Koszt</td>
 															</tr>
 																		{% for key,value in array_expense %}
 																				
 																					<tr>
-																					<td>{{key}}</td><td>{{value}}</td>
+																					<td class="key">{{key}}</td><td class="key">{{value}} zł</td>
 																					</tr>
 																			
 																		{% endfor %}
 																				
 															<tr>
-															<td>Suma</td> <td>{{sum_expenses}}</td>
+															<td>Suma</td> <td>{{sum_expenses}} zł</td>
 															</tr>
 															</table>
 													
@@ -73,21 +73,21 @@
 										
 										<div class="col-sm-12 col-lg-6">
 												<fieldset class="scheduler-border">
-													<legend class="scheduler-border">Przychody</legend>
+													<legend class="scheduler-border legenda">Przychody</legend>
 														<table>
 															<tr>
-															<td>Kategoria przychodu </td><td>Koszt</td>
+															<td class="category">Kategoria przychodu </td><td class="category">Koszt</td>
 															</tr>
 																		{% for key,value in array %}
 																				
 																					<tr>
-																					<td>{{key}}</td><td>{{value}}</td>
+																					<td class="key">{{key}}</td><td class="key">{{value}} zł</td>
 																					</tr>
 																			
 																		{% endfor %}
 																				
 															<tr>
-															<td>Suma</td> <td>{{sum_incomes}}</td>
+															<td>Suma</td> <td>{{sum_incomes}} zł</td>
 															</tr>
 														</table>
 
@@ -101,7 +101,7 @@
 								<div class="row">
 									<div class="info_dla_uzytkownika">
 													<fieldset class="scheduler-border">
-													<legend class="scheduler-border"> Podsumowanie </legend>
+													<legend class="scheduler-border legenda"> Podsumowanie </legend>
 																<h2 class="saldo"> Saldo:</h2>
 																<div id="saldo">
 																		{{allBilans}}
@@ -121,7 +121,7 @@
 															<div class="ct-chart ct-golden-section col-12 col-md-6" id="chart1"></div>
 																<div class="col-12 col-md-6">
 																	<fieldset class="scheduler-border">
-																		<legend class="scheduler-border"> Legenda </legend>
+																		<legend class="scheduler-border legenda"> Legenda </legend>
 																		<div class="row justify-content-center">
 																				<div class="col-auto ">
 																					<img src="/img/kolor1.png" class="square"/>

@@ -32,11 +32,16 @@ ul > li
 	width:250px;
 	text-align:justify;
 }
-
-.alert
+.error-info
 {
-	margin-top:5px;
-	width:350px;
-	margin-left:auto;
-	margin-right:auto;
+	color:black;
 }
+.error-success
+{
+	color:green;
+}
+.error-warning
+{
+	color:red;
+}
+

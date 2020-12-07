@@ -23,16 +23,21 @@ $( "#formAddExpenses" ).validate({
   },
   messages:{
   kwota:{
+  required:"Podaj kwotę!",
      min: "Wartość ma być nieujemna!"
   },
   date:{
 	required:"Podaj datę!"
   }
   },
- errorPlacement: function(error, element) {
+  errorPlacement: function(error, element) {
 						if (element.attr("name") == "date") {
 							error.insertAfter(".data");
-						} else {
+						} else if(element.attr("name") == "kwota") {
+							error.insertAfter(".kwota");
+						} 
+
+							else {
 							error.insertAfter(element);
 						}
 					}

@@ -348,6 +348,15 @@ class User extends \Core\Model
 		else return true;
 	}
 	
+	public function sameEmail($data,$email)
+	{
+		$this->email = $data['email'];
+		$this->validate();
+		if($email == $this->email)
+			return false;
+		else return true;
+	}
+	
 	public function updateProfileLogin($data)
 	{
 		$this->name = $data['new_login'];
@@ -630,8 +639,7 @@ class User extends \Core\Model
 			return true;
 		}
 		 return false;
-		 
-		 
+
 	 }
 
 }

@@ -52,6 +52,7 @@ class Bilans extends Authenticated
 			$sum_expenses = Expense::getSumAllExpense($_SESSION['user_id'],$bilans->showOption());
 			$allBilans=$sum-$sum_expenses;
 			$info = Bilanses::infoBilans($this->user,$allBilans);
+			$allBilans=$allBilans.' zł';
 			View::renderTemplate('Bilans/show.html',[
 				'user' => $this->user,
 				'array'=>$array,

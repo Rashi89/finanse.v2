@@ -38,6 +38,9 @@ class Expenses extends Authenticated
 	{
 		$expense= new Expense($_POST);
 		$expense->saveExpense();
+		
+		$_SESSION['last_expense_id']=Expense::getMax($_SESSION['user_id']);
+		
 		$category =User::getAllExpenses($_SESSION['user_id']);
 		$payMethod=User::getAllPayMethod($_SESSION['user_id']);
 		$this->redirect('/profile/show');
