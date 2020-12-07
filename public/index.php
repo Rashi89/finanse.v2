@@ -5,7 +5,7 @@
 //require '../Core/Router.php';
 
 //10 dni nie wyloguje przez 10 dni
-ini_set('session.cookie_lifetime','0');
+ini_set('session.cookie_lifetime','864000');
 
 //automatyczne ładowanie
 

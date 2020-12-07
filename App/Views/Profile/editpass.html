@@ -19,6 +19,7 @@
 					},
 					messages: {
 						new_password:{
+							required:'Podaj nowe hasło!',
 							validPassword:'Hasło musi zawierać conajmniej jedną cyfrę i literę!',
 							minlength:'Hasło musi mieć długość 6 znaków!'
 						}
@@ -53,7 +54,7 @@
 								
 										<fieldset class="scheduler-border">
 											
-											<legend class="scheduler-border"> Zmiana hasła </legend>
+											<legend class="scheduler-border legenda"> Zmiana hasła </legend>
 												<h3 class="old">Podaj stare hasło: </h3>
 												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
 												<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
@@ -63,11 +64,11 @@
 															<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
 															<div class="haslo d-inline"><input type ="password" placeholder="New Password" onfocus="this.placeholder=''" onblur="this.placeholder='New Password'" name="new_password" required></div>
 															<div class="errorTxt d-inline"></div>
-														<div class="error">
-																			{% for message in flash_messages %}
-																				{{message.body}}
-																			{% endfor %}
-														</div>
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+															{% endfor %}
 												</div>
 
 												<div class="dodaj"><input type = "submit" value="Zmień"></div>

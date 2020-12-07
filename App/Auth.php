@@ -61,7 +61,7 @@ class Auth
 	
     public static function getReturnToPage()
     {
-        return $_SESSION['return_to'] ?? '/';
+        return $_SESSION['return_to'] ?? '/profile/show';
     }
 	
     public static function getUser()
@@ -144,6 +144,7 @@ class Auth
 		if(isset($_SESSION['user_id']))
 		{
 			$saldo=User::saldo($_SESSION['user_id']);
+			$saldo=$saldo.' zł';
 			return $saldo;
 		}
 	}

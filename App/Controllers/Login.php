@@ -46,7 +46,7 @@ class Login extends \Core\Controller
 			
 		} else {
 			
-			Flash::addMessage('Login unsuccessful, please try again!', Flash::WARNING);
+			Flash::addMessage('Niepoprawny login lub hasło!', Flash::WARNING);
 
 			View::renderTemplate('Home/index.html',[
 						'email'=>$_POST['email'],

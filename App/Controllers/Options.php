@@ -38,7 +38,7 @@ class Options extends Authenticated
 			$options->existCategory();
 			if($options->existCategory() == false)
 			{
-				Flash::addMessage('Taka kategoria już istnieje!');
+				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
 				View::renderTemplate('Options/addpayment.html',[
 				'user' => $this->user
 			
@@ -77,7 +77,7 @@ class Options extends Authenticated
 			$options->existCategoryIncome();
 			if($options->existCategoryIncome() == false)
 			{
-				Flash::addMessage('Taka kategoria już istnieje!');
+				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
 				View::renderTemplate('Options/addincome.html',[
 				'user' => $this->user
 			
@@ -115,7 +115,7 @@ class Options extends Authenticated
 			$options->existCategoryExpense();
 			if($options->existCategoryExpense() == false)
 			{
-				Flash::addMessage('Taka kategoria już istnieje!');
+				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
 				View::renderTemplate('Options/addexpense.html',[
 				'user' => $this->user
 			

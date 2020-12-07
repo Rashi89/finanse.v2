@@ -1,6 +1,6 @@
 {% extends "Base_user.html" %}
 
-{% block title %}Remove category income{% endblock %}
+{% block title %}Delete category income{% endblock %}
 
 {% block body %}
 
@@ -18,7 +18,7 @@
 											
 											<legend class="scheduler-border">Usuwanie kategorii</legend>
 												
-												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+												<div>
 													<h3>Wybierz nazwę kategorii do usunięcia: </h3>
 													<div>
 															<i class="icon-list"></i>
@@ -28,11 +28,11 @@
 															{% endfor %}
 															</select>
 													</div>
-														<div class="error">
-																			{% for message in flash_messages %}
-																				{{message.body}}
-																			{% endfor %}
-														</div>	
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
 												</div>
 
 												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Usuń</a></div>

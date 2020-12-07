@@ -64,7 +64,7 @@
 .icon-credit-card-1:before { content: '\e806'; } /* '' */
 .icon-list:before { content: '\e807'; font-size:30px; margin-right:-30px; margin-left:-10px;color:#196678;} /* '' */
 .icon-user-1:before { content: '\e808'; font-size:20px;color:#1c525e;margin-left:40px;} /* '' */
-.icon-lock:before { content: '\e809'; font-size:20px;color:#1c525e;margin-left:40px;;} /* '' */
+.icon-lock:before { content: '\e809'; font-size:20px;color:#1c525e;margin-left:40px;} /* '' */
 .icon-logout:before { content: '\f02d'; margin-right:20px;} /* '' */
 .icon-money:before { content: '\f0d6'; font-size:30px; margin-right:10px; margin-left:-50px;color:#196678;} /* '' */
 .icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:40px; margin-right:5px;color:#1c525e;} /* '' */
@@ -80,3 +80,10 @@
 .icon-warning-1:before { content: '\e811'; } /* '' */
 .icon-exclamation:before { content: '\e812'; } /* '' */
 .icon-attention-3:before { content: '\e813'; } /* '' */
+
+@media(max-width:576px)
+{
+	.icon-user-1:before { content: '\e808'; font-size:20px;color:#1c525e;margin-left:20px;} /* '' */
+	.icon-lock:before { content: '\e809'; font-size:20px;color:#1c525e;margin-left:20px;}
+	.icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:20px; margin-right:5px;color:#1c525e;} /* '' */
+}

@@ -28,11 +28,11 @@
 															{% endfor %}
 															</select>
 													</div>
-														<div class="error">
-																			{% for message in flash_messages %}
-																				{{message.body}}
-																			{% endfor %}
-														</div>	
+														{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
 												</div>
 
 												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Usuń</a></div>

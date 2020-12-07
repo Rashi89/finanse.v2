@@ -65,25 +65,35 @@ class Profile extends Authenticated
 		]);		
 	}
 	
+	public function editpassinfoAction()
+	{
+		View::renderTemplate('Profile/editpassinfo.html', [
+				'user' => $this->user
+		]);	
+	}
+	
 	public function updatepassAction()
 	{	
 		$hash=$this->user->password_hash;
 		
 		if($this->user->goodOldPass($_POST,$hash))
-		{
+		{		
 			if($this->user->editPassword($_POST))
 			{
-				Flash::addMessage('Hasło zostało zmienione!');
-				$this->redirect('/profile/editpass');
+				$info='Hasło zostało zmienione!';
+				View::renderTemplate('Profile/editpassinfo.html', [
+				'user' => $this->user,
+				'info' => $info
+		]);
 			}
 			else{
-				Flash::addMessage('Hasło niezostało zmienione!');
-			$this->redirect('/profile/editpass');	
+				Flash::addMessage('Hasło niezostało zmienione!',Flash::WARNING);
+				$this->redirect('/profile/editpass');	
 			}
 		}
 		else
 		{
-				Flash::addMessage('Błędne stare hasło!');
+				Flash::addMessage('Błędne stare hasło!',Flash::WARNING);
 				$this->redirect('/profile/editpass');
 		}
 	}
@@ -93,21 +103,37 @@ class Profile extends Authenticated
 				'user' => $this->user
 		]);		
 	}
-	
+	public function editemailinfoAction()
+	{
+		View::renderTemplate('Profile/editemailinfo.html', [
+				'user' => $this->user
+		]);	
+	}	
 	public function updateemailAction()
 	{
 			$id=$this->user->id;
-			
+			$email=$this->user->email;
+		if($this->user->sameEmail($_POST,$email))
+		{
 			if($this->user->editEmail($id,$_POST))
 			{
-				Flash::addMessage('Adres e-mail został zmieniony!');
-				$this->redirect('/profile/editemail');
+				$info='Adres e-mail został zmieniony!';
+				View::renderTemplate('Profile/editemailinfo.html', [
+				'user' => $this->user,
+				'info' => $info
+		]);
 			}
 			else
 			{
 				Flash::addMessage('Adres e-mail niezostał zmieniony!');
 				$this->redirect('/profile/editemail');
 			}
+		}
+		else
+		{
+			Flash::addMessage('To Twój email!');
+				$this->redirect('/profile/editemail');
+		}
 	}
 		
 }

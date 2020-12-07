@@ -62,7 +62,7 @@ class Incomes extends Authenticated
 		$income= new Income($_POST);
 		$income->removeIncome();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
-		$this->redirect('/expenses/showpayment');
+		$this->redirect('/incomes/showincome');
 	}
 	
 

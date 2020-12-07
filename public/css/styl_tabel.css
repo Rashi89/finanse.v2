@@ -120,23 +120,23 @@ input[type=reset]
 }
 .login
 {
-	margin-left:20px;
+	margin-left:16px;
 }
 input[type=text],
 input[type=password],
 input[type=email]
 {
 	width:250px;
-	background-color:#efefef;
+	background-color:white;
 	color:#666;
-	border: 2px solid #ddd;
+	
 	border-radius: 5px;
 	font-size:20px;
 	padding:10px;
 	box-sizing: border-box;
 	outline:none;
 	margin-top:10px;
-
+	border: 3px solid #196678;
 	
 }
 .icon-user-1:before
@@ -354,7 +354,7 @@ input[type=text]
 
 #kategoria
 {
-	width: 250px;
+	width: 220px;
 	font-size:15px;
 	color: black;
 	padding: 10px 10px;
@@ -583,6 +583,27 @@ h5
 	padding-right:0 !Important;
 	padding-left:0 !Important;
 }
+.category
+{
+	font-weight:bold;
+}
+.name input[type=text]
+	{
+		width: 220px;
+	}
+.haslo input[type=password]
+	{
+		width: 230px;
+	}
+.email1 input[type=email]
+{
+	width: 230px;
+	font-size:18px;
+}
+.login input[type=text]
+	{
+		width: 220px;
+	}
 @media(max-width:576px)
 {
 	.picture
@@ -601,18 +622,21 @@ h5
 	}
 	.kwota input[type=number]
 	{
-		width: 250px;
+		width: 230px;
 		margin-left:0px;
 	}
 	input[type=text]
 	{
 		width: 250px;
 		margin-left:0px;
-	
+	}
+	.name input[type=text]
+	{
+		width: 210px;
 	}
 	.data input[type=date]
 	{
-		width: 250px;
+		width: 230px;
 		margin-left:0px;
 	}
 	.icon-list,
@@ -630,11 +654,75 @@ h5
 	{
 		font-size:20px !Important;
 	}
+		.powitanie
+	{
+		text-align: center !Important;
+	}
+	h3
+	{
+		font-size:28px;
+	}
+	.bilans_opcja
+	{
+		font-size:24px;
+	}
+	.legenda
+	{
+		font-size:28px !Important;
+	
+	}
+	.legenda1
+	{
+		font-size:27px !Important;
+	
+	}
+	.category
+	{
+		font-size:25px !Important;
+	}
+	.key
+	{
+		font-size:22px !Important;
+	}
+	.saldo
+	{
+		font-size:30px;
+	}
+	.wykres
+	{
+		font-size: 25px;
+	}
+	#saldo
+	{
+		font-size:50px !Important;
+		font-weight:bold;
+	}
+	#informacja
+	{
+		font-size:25px !Important;
+	}
+	.old
+	{
+		font-size: 25px;
+	}
+	.new
+	{
+		font-size: 25px;
+	}
+	.kat input[type=text]
+	{
+		width: 230px;
+	}
+	.opcja
+	{
+		font-size:22px !Important;
+	}
+
 
 }
 @media(max-width:767px)
 {
-		.picture
+	.picture
 	{
 		text-align:center;
 	}
@@ -647,16 +735,6 @@ h5
 	{
 	height:15px;
 	width:15px;
-	}
-	#saldo
-	{
-		font-size:30px;
-	}
-
-	#informacja
-	{
-	margin-top:15px;
-	font-size:20px;
 	}
 	legend
 	{
@@ -685,6 +763,40 @@ h5
 	.zakres
 	{
 		font-size:20px !Important;
+	}
+	.powitanie
+	{
+		text-align: center !Important;
+	}
+	.legenda
+	{
+		font-size:35px !Important;
+	
+	}
+	#saldo
+	{
+		font-size:50px !Important;
+		font-weight:bold;
+	}
+	#informacja
+	{
+		font-size:28px !Important;
+	}
+	.category
+	{
+		font-size:28px !Important;
+	}
+	.key
+	{
+		font-size:25px !Important;
+	}
+	.name input[type=text]
+	{
+		width: 210px;
+	}
+	.opcja
+	{
+		font-size:22px !Important;
 	}
 
 }
@@ -727,6 +839,15 @@ h5
 	{
 		font-size:28px !Important;
 	}
+			.powitanie
+	{
+		text-align: center !Important;
+	}
+	.name input[type=text]
+	{
+		width: 220px;
+	}
+
 	
 }
 .errorTxt

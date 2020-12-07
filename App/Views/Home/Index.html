@@ -32,19 +32,22 @@
 								<div class="row">
 									<form action="/login/create" method="post">
 											<div class="napis">LOGOWANIE I REJESTRACJA</div>
+											
 											<div class="col-1 d-inline" ><i class="icon-user-1"></i></div>
 											<div class="login d-inline"><input type="email" onfocus="this.placeholder=''" onblur="this.placeholder='Email adress'" id="inputEmail" name="email" pleaceholder="Email adress" autofocus value="{{email}}"/></div>
+											
 											<div></div>
 											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
 											<div class="haslo d-inline"><input type ="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" id="inputPassword" autofocus></div>
-											<div class="blad">
 												{% for message in flash_messages %}
+													<div class="error error-{{message.type}}">
 													{{message.body}}
+													</div>
 												{% endfor %}
-											</div>
-											<div class="checkbox blad">
+											
+											<div class="checkbox">
 												<label>
-													<input type="checkbox" name="remember_me" {% if remember_me %} checked = "checked" {% endif %} />Remember me 
+													<input type="checkbox" name="remember_me" {% if remember_me %} checked = "checked" {% endif %} /><span class="label">Remember me</span>
 												</label>
 											</div>
 											<div class="forgot">
