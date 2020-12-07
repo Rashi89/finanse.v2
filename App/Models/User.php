@@ -31,7 +31,7 @@ class User extends \Core\Model
 		if(empty($this->errors))
 		{
 		$password_hash = password_hash($this->password,PASSWORD_DEFAULT);
-		
+		/*to gdy wysle email aktywacyjny is_active USTAW IS_ACTIVE NA 0
 		$token = new Token();
 		$hashed_token = $token->getHash();
 		
@@ -45,6 +45,15 @@ class User extends \Core\Model
 		$stmt->bindValue(':email', $this->email,PDO::PARAM_STR);
 		$stmt->bindValue(':password_hash', $password_hash,PDO::PARAM_STR);
 		$stmt->bindValue(':activation_hash', $hashed_token,PDO::PARAM_STR);
+		*/
+		$sql = "INSERT INTO users (name, email, password_hash,activation_hash) VALUES (:name,:email,:password_hash,activation_hash=NULL)";
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':name', $this->name,PDO::PARAM_STR);
+		$stmt->bindValue(':email', $this->email,PDO::PARAM_STR);
+		$stmt->bindValue(':password_hash', $password_hash,PDO::PARAM_STR);
+		
 		
 		return $stmt->execute();
 		}

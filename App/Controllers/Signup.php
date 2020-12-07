@@ -21,7 +21,9 @@ class Signup extends \Core\Controller
 			//$user->sendActivationEmail();
 			$user->upgradeBase();
 			//View::renderTemplate('Signup/success.html');
-			$this->redirect('/signup/success');
+			//jesli chce wyslac emaila aktywacyjnego:
+			//$this->redirect('/signup/success');
+			$this->redirect('/signup/activated');
 		}
 		else
 		{
