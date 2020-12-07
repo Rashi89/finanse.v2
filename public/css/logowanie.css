@@ -31,16 +31,45 @@
 	text-decoration: none;
 	background-color:#117fb4;
 }
+.info2
+{
+	color:#1c525e !important;
+	font-size:28px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	margin-left:50px
+}
+.napis2
+{
+	color:#1c525e !important;
+	font-size: 35px;
+	letter-spacing: 3px;
+	font-weight:bold;
+	margin-left:50px;
+}
 @media(max-width:576px)
 {
 .inpRejestracja
 {
-	margin-left:80px;
-	width: 260px;
+	width: 300px !Important;
+	margin-left:30px !Important;
 }
 .log_succes
 {
-	width: 260px;
+	width: 300px !Important;
+	margin-left:30px !Important;
+}
+.napis2
+{
+	font-size: 24px;
+	margin-left:30px;
+
+}
+.info2
+{
+	
+	font-size:20px;
+	margin-left:30px;
 }
 }
 
@@ -48,24 +77,75 @@
 {
 	.inpRejestracja
 {
-	margin-left:100px;
-	width: 260px;
+	width: 280px !Important;
+	margin-left:40px !Important;
 }
 .log_succes
 {
-	width: 260px;
+	width: 280px !Important;
+	margin-left:40px !Important;
+}
+.napis2
+{
+	font-size: 28px;
+	margin-left:40px;
+
+}
+.info2
+{
+	
+	font-size:24px;
+	margin-left:40px;
+}
+}
+@media(min-width:767px) and (max-width:990px)
+{
+.inpRejestracja
+{
+	width: 340px !Important;
+	margin-left:80px !Important;
+}
+.napis2
+{
+	font-size: 30px;
+	margin-left:80px;
+
+}
+.info2
+{
+	
+	font-size:26px;
+	margin-left:80px;
+}
+.log_succes
+{
+	width: 340px !Important;
+	margin-left:80px !Important;
 }
 }
 @media(min-width:991px) and (max-width:1200px)
 {
 .inpRejestracja
 {
-	margin-left:100px;
-	width: 300px;
+	width: 320px !Important;
+	margin-left:50px !Important;
 }
 .log_succes
 {
-	width: 260px;
+	width: 320px !Important;
+	margin-left:50px !Important;
+}
+	.napis2
+{
+	font-size: 30px;
+	margin-left:50px;
+
+}
+.info2
+{
+	
+	font-size:26px;
+	margin-left:50px;
 }
 }
 
