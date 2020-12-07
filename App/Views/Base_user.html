@@ -25,8 +25,13 @@
 									Witaj {{current_user.name}}!
 								</div>
 							 </div>
-							 <div class="col-lg-3 col-sm-12 zegarek" id="zegar">
-							 </div>
+							 <div class="col-lg-2 col-sm-12 zegarek" id="zegar"></div>
+							 						<div class="col-lg-1 col-sm-12 theme-switch-wrapper">
+														<label class="theme-switch" for="checkbox">
+															<input type="checkbox" id="checkbox" />
+															<div class="slider round"></div>
+														</label>
+													</div>
 						</div>
 					</div>
 	
@@ -137,6 +142,7 @@
 	<script src="/js/submenu.js"></script>
 	<script type="text/javascript" src="/js/zegarek.js"></script>
 	<script type="text/javascript" src="/js/sticky-menu.js"></script>
+	<script src="/js/dark.js"></script>
 	{%block footer %}
 	{% endblock %}
 </body>
