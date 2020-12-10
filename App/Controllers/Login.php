@@ -11,10 +11,6 @@ use \App\Models\Expense;
 
 class Login extends \Core\Controller
 {
-	public function newAction()
-	{
-		View::renderTemplate('Login/new.html');
-	}
 	
 	public function createAction()
 	{

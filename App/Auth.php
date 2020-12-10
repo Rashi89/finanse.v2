@@ -76,7 +76,7 @@ class Auth
         }
     }
 	
-	public static function loginFromRememberCookie()
+	protected static function loginFromRememberCookie()
     {//sprawdzamy czy istnieje cookie o nazwie remember me jesli tak to zwracamy jego wartość a jesli nie to zwracamy false
         $cookie = $_COOKIE['remember_me'] ?? false;
 
