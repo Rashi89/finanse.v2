@@ -1,6 +1,16 @@
+:root {
+	--rgba:rgba(234,234,234,1);
+	--color-welcome:black;
+}
+[data-theme="dark"] {
+	--rgba:rgba(11,60,77,1);
+	--color-welcome:white;
+}
+
 .welcome
 {
-
+	background-color:var(--bg-color-form);
+	color:var(--color-welcome);
 	width:765px;
 	padding: 10px 20px 20px 20px;
 	margin-left:auto;
@@ -8,9 +18,9 @@
 	margin-top:27px;
 	margin-bottom:10px;
 	text-align: center;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	-webkit-box-shadow: 3px 3px 30px 5px var(--rgba);
+	-moz-box-shadow: 3px 3px 30px 5px var(--rgba);
+	box-shadow: 3px 3px 30px 5px var(--rgba);
 }
 .new
 {
@@ -35,7 +45,6 @@
 	margin-left:auto;
 	margin-right:auto;
 	font-size: 30px;
-	color: black;
 	justify-content: center;
 	text-align: center;
 }

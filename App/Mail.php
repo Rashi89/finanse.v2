@@ -12,7 +12,8 @@ class Mail
 		$mg = Mailgun::create(Config::MAILGUN_API_KEY); // For US servers
 		//$mg = Mailgun::create(Config::MAILGUN_API_KEY, 'https://api.eu.mailgun.net'); // For EU servers
 		 //from to od kogo ma byc wyslany email
-		$mg->messages()->send(Config::MAILGUN_DOMAIN, [
+		 $domain=Config::MAILGUN_DOMAIN;
+		$mg->messages()->send($domain, [
 			'from'    => 'sender@example.com',
 			'to'      => $to,
 			'subject' => $subject,

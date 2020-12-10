@@ -1,5 +1,17 @@
+:root {
+    --font-color: #1c525e;
+    --bg-color:#fff;
+	--bg-color-form:white;
+}
+[data-theme="dark"] {
+    --font-color: white;
+    --bg-color: #0b2329;
+	--bg-color-form:#0b3c4d;
+}
+
 body
 {
+	background-color:var(--bg-color);
 	font-family: 'Open Sans', sans-serif;
 	margin:0 !important;
 	position:relative;

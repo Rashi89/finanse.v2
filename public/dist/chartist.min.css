@@ -1,7 +1,13 @@
+:root{
+	--color:rgba(255,255,255,.9);
+}
+[data-theme="dark"] {
+	--color:#0b3c4d;
+}
 .ct-double-octave:after,.ct-golden-section:after,.ct-major-eleventh:after,.ct-major-second:after,.ct-major-seventh:after,.ct-major-sixth:after,.ct-major-tenth:after,.ct-major-third:after,.ct-major-twelfth:after,.ct-minor-second:after,.ct-minor-seventh:after,.ct-minor-sixth:after,.ct-minor-third:after,.ct-octave:after,.ct-perfect-fifth:after,.ct-perfect-fourth:after,.ct-square:after
 {content:"";clear:both}
-.ct-label{fill:rgba(255,255,255,.9);color:rgba(0,0,0,0.9);font-size:35px;line-height:1}
-.ct-label:hover{fill:rgba(0,0,0,.9);color:rgba(0,0,0,0.9);font-size:35px;line-height:1}
+.ct-label{fill:var(--color);color:rgba(0,0,0,0.9);font-size:35px;line-height:1}
+.ct-label:hover{fill:var(--color);color:rgba(0,0,0,0.9);font-size:35px;line-height:1}
 .ct-chart-bar .ct-label,.ct-chart-line .ct-label{display:block;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}
 .ct-chart-donut .ct-label,.ct-chart-pie .ct-label{dominant-baseline:central}
 .ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}
@@ -22,11 +28,11 @@
 .ct-bar{fill:none;stroke-width:10px}
 .ct-slice-donut{fill:none;stroke-width:60px}
 .ct-series-a .ct-bar,.ct-series-a .ct-line,.ct-series-a .ct-point,.ct-series-a .ct-slice-donut{stroke:#1148b8}
-.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie{fill:#1148b8}
+.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie{fill:#1c90fc}
 .ct-series-b .ct-bar,.ct-series-b .ct-line,.ct-series-b .ct-point,.ct-series-b .ct-slice-donut{stroke:#d41515}
-.ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie{fill:#d41515}
+.ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie{fill:#ff2626}
 .ct-series-a .ct-bar,.ct-series-a .ct-line,.ct-series-a .ct-point,.ct-series-a .ct-slice-donut:hover{stroke:#266dfc}
-.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie:hover{fill:#266dfc}
+.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie:hover{fill:#1c90fc}
 .ct-series-b .ct-bar,.ct-series-b .ct-line,.ct-series-b .ct-point,.ct-series-b .ct-slice-donut:hover{stroke:#ff2626}
 .ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie:hover{fill:#ff2626}
 

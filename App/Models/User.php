@@ -44,8 +44,8 @@ class User extends \Core\Model
 		$stmt->bindValue(':name', $this->name,PDO::PARAM_STR);
 		$stmt->bindValue(':email', $this->email,PDO::PARAM_STR);
 		$stmt->bindValue(':password_hash', $password_hash,PDO::PARAM_STR);
-		$stmt->bindValue(':activation_hash', $hashed_token,PDO::PARAM_STR);
-		*/
+		$stmt->bindValue(':activation_hash', $hashed_token,PDO::PARAM_STR);*/
+		/*bez maila aktywacyjnego ustaw is active na 1 w bazie*/
 		$sql = "INSERT INTO users (name, email, password_hash,activation_hash) VALUES (:name,:email,:password_hash,activation_hash=NULL)";
 		$db = static::getDB();
 		
@@ -231,8 +231,10 @@ class User extends \Core\Model
 		if($user)
 		{
 			if($user->startPasswordReset())
-			{
-				$user->sendPasswordResetEmail();
+			{	/*to gdy wysylam e mail z resetem*/
+				//$user->sendPasswordResetEmail();
+				/*gdy nie wysylam zwracam to*/
+				return $user->sendPasswordResetEmail();
 			}
 		}
 	}
@@ -261,11 +263,16 @@ class User extends \Core\Model
 	
 	protected function sendPasswordResetEmail()
 	{
-		$url = 'http://'.$_SERVER['HTTP_HOST'].'/password/reset/'.$this->password_reset_token;
+		/*wysylam email z adresem do resetu*/
+		/*$url = 'http://'.$_SERVER['HTTP_HOST'].'/password/reset/'.$this->password_reset_token;
 		
 		$text = View::getTemplate('Password/reset_password.txt',['url' => $url]);
 		$html=View::getTemplate('Password/reset_password.html',['url' => $url]);
-		Mail::send($this->email,'Password reset',$text,$html);
+		Mail::send($this->email,'Password reset',$text,$html);*/
+		
+		/*gdy nie wysylam*/
+		return $this->password_reset_token;
+		
 	}
 	
 	public static function findByPasswordReset($token)
