@@ -229,7 +229,7 @@ ul > li
 }
 
 .slider:before {
-  background-color: red;
+  background: url("/img/ksiezyc1.png");
   bottom: 3px;
   content: "";
   height: 20px;
@@ -240,12 +240,12 @@ ul > li
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #ccc;
 }
 
 input:checked + .slider:before {
   transform: translateX(18px);
-  background-color: yellow;
+ background: url("/img/slonce.png");
 }
 
 .slider.round {

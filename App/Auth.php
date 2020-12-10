@@ -61,7 +61,7 @@ class Auth
 	
     public static function getReturnToPage()
     {
-        return $_SESSION['return_to'] ?? '/profile/show';
+        return $_SESSION['return_to'] ?? '/';
     }
 	
     public static function getUser()
@@ -76,7 +76,7 @@ class Auth
         }
     }
 	
-	protected static function loginFromRememberCookie()
+	public static function loginFromRememberCookie()
     {//sprawdzamy czy istnieje cookie o nazwie remember me jesli tak to zwracamy jego wartość a jesli nie to zwracamy false
         $cookie = $_COOKIE['remember_me'] ?? false;
 
