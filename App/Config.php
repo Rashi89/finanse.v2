@@ -18,7 +18,7 @@ class Config
 	
 	const SECRET_KEY = 'your-secret-key';
 	
-	const MAILGUN_API_KEY='6026a1717331835916da56fbac147be8-53c13666-ebb566f7';
+	const MAILGUN_API_KEY='764529781f0eae4c20447f7611e69c87-4879ff27-25005c72';
 	
-	const MAILGUN_DOMAIN = 'sandbox307aa750ad5d400f81b36f0d5b73d8bc.mailgun.org';
+	const MAILGUN_DOMAIN ='sandbox02ed4a0018024589824fbf3c15f93e63.mailgun.org';
 }

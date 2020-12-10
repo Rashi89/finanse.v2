@@ -1,3 +1,23 @@
+:root {
+	--rgba:rgba(234,234,234,1);
+	--color-welcome:black;
+	--fieldset:#1c525e;
+	--option:black;
+	--icon-color:#196678;
+	--modal-header-color:#0b3c4d;
+	--modal-footer-bgc:white;
+	--tb-color:#444444;
+}
+[data-theme="dark"] {
+	--rgba:rgba(11,60,77,1);
+	--color-welcome:white;
+	--fieldset:white;
+	--option:#86dcf0;
+	--icon-color:white;
+	--modal-header-color:#0b2329;
+	--modal-footer-bgc:#0b2329;
+	--tb-color:white;
+}
 body
 {
 	margin:0 !important;
@@ -29,6 +49,7 @@ h2
 
 .zawartosc
 {
+	
 	margin-top:30px !Important;
 	margin-bottom:30px !Important;
 	/*width:1000px !Important;*/
@@ -42,15 +63,15 @@ h2
 
 .formularz
 {
-	background-color:white !Important;
+	background-color:var(--bg-color-form) !Important;
 	width:700px !Important;
 	padding: 10px 50px 30px 50px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:50px;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	-webkit-box-shadow: 3px 3px 30px 5px var(--rgba);
+	-moz-box-shadow: 3px 3px 30px 5px var(--rgba);
+	box-shadow: 3px 3px 30px 5px var(--rgba);
 }
 
 .obraz
@@ -84,19 +105,19 @@ legend.scheduler-border
 
 fieldset
 {
-	border: 10px double #1c525e !Important;
-	background-color:white !important;
+	border: 10px double var(--fieldset) !Important;
+	background-color:var(--bg-color-form) !Important; 
 }
 
 legend
 {
 	font-size:50px !Important;
-	color:#1c525e !Important;
+	color:var(--fieldset) !Important;
 }
 
 legend:hover
 {
-	color:black !Important;
+	color:var(--option) !Important;
 }
 
 #komentarz
@@ -372,18 +393,29 @@ input[type=text]
 	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 }
 
+.option_modal
+{
+	color:var(--fieldset); 
+	font-size:30px !Important;
+	margin-left:auto !Important;
+	margin-right:auto !Important;
+}
+
+.option_modal:hover
+{
+	color:var(--option);
+}
 .opcja
 {
-	color:#287c8f;
+	color:var(--fieldset); 
 	font-size:30px !Important;
 	text-align:center !Important;
 }
 
 .opcja:hover
 {
-	color:black;
+	color:var(--option);
 }
-
 textarea
 {
 	border: 3px solid #196678;
@@ -420,13 +452,14 @@ textarea:focus
 .napis
 {
 	margin-top:0;
-	color:#1c525e;
+	color:var(--fieldset) ;
 	margin-bottom:10px;
 	margin-left:10px;
+	font-weight:bold;
 }
 .bilans_opcja
 {
-	color:#287c8f;
+	color:var(--fieldset);
 }
 
 .zawartosc1
@@ -444,15 +477,15 @@ textarea:focus
 {
 	margin-top:30px !Important;
 	margin-bottom:30px !Important;
-	color:black;
+	color:var(--color-welcome);
 	font-size:30px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	background-color:white;
-	-webkit-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	-moz-box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
-	box-shadow: 3px 3px 30px 5px rgba(234,234,234,1);
+	background-color:var(--bg-color-form) !Important;
+	-webkit-box-shadow: 3px 3px 30px 5px var(--rgba);
+	-moz-box-shadow: 3px 3px 30px 5px var(--rgba);
+	box-shadow: 3px 3px 30px 5px var(--rgba);
 	padding:10px;
 }
 
@@ -465,12 +498,12 @@ tr>td
 
 tr:first-child td
 {
-	border-bottom: 2px dotted #444444;
+	border-bottom: 2px dotted var(--tb-color);
 }
 
 tr:last-child td
 {
-	border-top: 2px dotted #444444;
+	border-top: 2px dotted var(--tb-color);
 }
 
 .info_dla_uzytkownikow
@@ -540,9 +573,11 @@ h5
 	color:white !Important;
 	font-size:30px !Important;
 }
-
+.modal-body{
+	background-color:var(--bg-color-form);
+}
 .modal-header {
-	background-color:#0b3c4d;
+	background-color:var(--modal-header-color);
 	font-size:25px !Important;
 	opacity:0.9 !Important;
 }
@@ -557,7 +592,10 @@ h5
 {
 	 border: 1px solid rgba(11,60,77,.9) !Important;
 }
-
+.modal-footer
+{
+	background-color:var(--modal-footer-bgc);
+}
 .zakres
 {
 	font-size:45px;
@@ -578,6 +616,10 @@ h5
 {
 	color:#287c8f;
 }
+.bla
+{
+	margin-left:7.526px !Important;
+}
 .col-1
 {
 	padding-right:0 !Important;
@@ -586,6 +628,7 @@ h5
 .category
 {
 	font-weight:bold;
+	color:var(--color-welcome);
 }
 .name input[type=text]
 	{
@@ -604,6 +647,10 @@ h5
 	{
 		width: 220px;
 	}
+.edit_text
+{
+	color:var(--color-welcome);
+}
 @media(max-width:576px)
 {
 	.picture
@@ -619,6 +666,10 @@ h5
 	{
 	height:10px;
 	width:10px;
+	}
+	.bla
+	{
+	margin-left:5.526px !Important;
 	}
 	.kwota input[type=number]
 	{
@@ -739,7 +790,7 @@ h5
 	legend
 	{
 		font-size:25px !Important;
-		color:#1c525e !Important;
+		
 	}
 	.zawartosc2
 	{
@@ -798,6 +849,10 @@ h5
 	{
 		font-size:22px !Important;
 	}
+		.bla
+	{
+	margin-left:5px !Important;
+	}
 
 }
 @media(min-width:768px) and (max-width:991px)
@@ -825,7 +880,7 @@ h5
 	legend
 	{
 		font-size:35px !Important;
-		color:#1c525e !Important;
+
 	}
 	.bilans
 	{

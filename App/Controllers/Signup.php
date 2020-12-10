@@ -17,11 +17,14 @@ class Signup extends \Core\Controller
 		$user= new User($_POST);
 		if($user->save())
 		{
-
-			//$user->sendActivationEmail();
+			/*aktywacja mailem
+			$user->sendActivationEmail();
 			$user->upgradeBase();
-			//View::renderTemplate('Signup/success.html');
 			$this->redirect('/signup/success');
+			//$this->redirect('/signup/activated');*/
+			/*bez aktywacji*/
+			$user->upgradeBase();
+			$this->redirect('/signup/activated');
 		}
 		else
 		{
