@@ -8,8 +8,10 @@ class Config
 	
 
 	const DB_NAME='zabawa';
+	//const DB_NAME='agatarac_cashpoint';
 	
 	const DB_USER='Agata';
+	//const DB_USER='agatarac_agata';
 	
 	const DB_PASSWORD='Rachanek1989!';
 	
