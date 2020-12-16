@@ -87,3 +87,15 @@
 	.icon-lock:before { content: '\e809'; font-size:20px;color:var(--icon-color);margin-left:20px;}
 	.icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:20px; margin-right:5px;color:var(--icon-color);} /* '' */
 }
+@media(min-width:768px) and (max-width:991px)
+{
+    	.icon-user-1:before { content: '\e808'; font-size:30px;color:var(--icon-color);margin-left:80px;} /* '' */
+    	.icon-lock:before { content: '\e809'; font-size:30px;color:var(--icon-color);margin-left:80px;} /* '' */
+    	.icon-mail-alt:before { content: '\f0e0'; font-size:30px; margin-left:80px; margin-right:5px;color:var(--icon-color);} /* '' */
+}
+@media(min-width:991px) and (max-width:1200px)
+{
+      	.icon-user-1:before { content: '\e808'; font-size:20px;color:var(--icon-color);margin-left:20px;} /* '' */
+    	.icon-lock:before { content: '\e809'; font-size:20px;color:var(--icon-color);margin-left:20px;} /* '' */
+    	.icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:20px; margin-right:5px;color:var(--icon-color);} /* '' */  
+}

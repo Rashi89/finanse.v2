@@ -64,7 +64,7 @@ h2
 .formularz
 {
 	background-color:var(--bg-color-form) !Important;
-	width:700px !Important;
+	width:700px;
 	padding: 10px 50px 30px 50px;
 	margin-left:auto;
 	margin-right:auto;
@@ -357,6 +357,7 @@ input[type=text]
 	width: 300px;
 	font-size:15px;
 	color: black;
+	background-color:white;
 	padding: 10px 10px;
 	margin-top: 10px;
 	border-radius:5px;
@@ -378,6 +379,7 @@ input[type=text]
 	width: 220px;
 	font-size:15px;
 	color: black;
+	background-color:white;
 	padding: 10px 10px;
 	margin-top: 10px;
 	border-radius:5px;
@@ -396,7 +398,7 @@ input[type=text]
 .option_modal
 {
 	color:var(--fieldset); 
-	font-size:30px !Important;
+	font-size:30px;
 	margin-left:auto !Important;
 	margin-right:auto !Important;
 }
@@ -408,7 +410,7 @@ input[type=text]
 .opcja
 {
 	color:var(--fieldset); 
-	font-size:30px !Important;
+	font-size:30px;
 	text-align:center !Important;
 }
 
@@ -630,6 +632,10 @@ h5
 	font-weight:bold;
 	color:var(--color-welcome);
 }
+.table
+{
+    color:var(--color-welcome);
+}
 .name input[type=text]
 	{
 		width: 220px;
@@ -650,6 +656,35 @@ h5
 .edit_text
 {
 	color:var(--color-welcome);
+}
+ .bilans_opcja input[type="radio"]
+ {
+     margin-right: 10px;
+     vertical-align: middle;
+     display: none;
+ }
+ #fourth
+ {
+     margin-right:0px !Important;
+ }
+.bilans_opcja input[type="radio"] + label:before {
+  content: "";
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  margin-right: 5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+.bilans_opcja input[type="radio"]:checked + label:before {
+  background-color: #318cab;
+  margin-bottom: 4px;
 }
 @media(max-width:576px)
 {
@@ -712,6 +747,7 @@ h5
 	h3
 	{
 		font-size:28px;
+		margin-right:10px;
 	}
 	.bilans_opcja
 	{
@@ -771,7 +807,7 @@ h5
 
 
 }
-@media(max-width:767px)
+@media(max-width:768px)
 {
 	.picture
 	{
@@ -874,12 +910,12 @@ h5
 	#informacja
 	{
 	margin-top:15px;
-	font-size:30px;
+	font-size:38px;
 	}
 	
 	legend
 	{
-		font-size:35px !Important;
+		font-size:50px;
 
 	}
 	.bilans
@@ -897,13 +933,149 @@ h5
 			.powitanie
 	{
 		text-align: center !Important;
+		font-size:55px;
 	}
 	.name input[type=text]
 	{
-		width: 220px;
+		width: 300px;
+		font-size:30px;
+		margin-right:30px;
 	}
-
-	
+	.formularz
+	{
+	    width:1000px;
+	}
+	.opcja
+	{
+	   font-size:45px; 
+	}
+	.kwota input[type=number]
+	{
+	    width: 350px;
+	    font-size:30px;
+	}
+	.data input[type=date]
+	{
+	   	width: 350px;
+	    font-size:30px; 
+	}
+	#kategoria
+	{
+	    width: 320px;
+	    font-size:30px; 
+	}
+	.dodaj input[type=submit],.reset
+	{
+	  width: 300px;
+	  font-size: 30px;
+	  height: 65px;
+	}
+	.napis
+	{
+	    font-size: 40px;
+	}
+	.bilans_opcja
+	{
+	    font-size:40px;
+	}
+	h5
+	{
+	    font-size:45px !Important;
+	}
+	.option_modal
+	{
+	    font-size:45px;
+	}
+    .btn-secondary, .zapisz
+	{
+    width: 220px;
+    height: 70px;
+    font-size: 35px;
+	}
+	.modal-dialog
+	{
+	    max-width: 800px !Important;
+	}
+	.container, .container-md, .container-sm 
+	{
+    max-width:900px;
+    }
+    .category,.key,.sum
+    {
+        font-size:40px !Important;
+    }
+    #saldo
+    {
+        margin-top:10px;
+        font-size:60px;
+    }
+    .wykres
+    {
+        font-size:40px;
+    }
+    .edit_text
+    {
+        font-size:40px;
+    }
+    .haslo input[type=password] 
+    {
+        width: 300px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    .email1 input[type=email]
+    {
+        width: 300px;
+        margin-right: 30px;
+        font-size: 26px;        
+    }
+    .akcept
+    {
+        width: 300px;
+        font-size:30px;
+        height: 60px;
+        margin-bottom:15px;
+    }
+    .login input[type=text]
+    {
+	    width: 300px;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+    .opcja_2
+    {
+        width: 300px !Important;
+        font-size: 30px !Important;
+        margin-right: 30px;
+    }
+    .opcja_3
+    {
+        width: 350px !Important;
+        margin-right: 0px;
+    }
+    input[type="radio"]
+    {
+        vertical-align:middle;
+        height: 30px !Important;
+        width: 30px !Important;
+    }
+    .bilans_opcja input[type="radio"] + label:before {
+      content: "";
+      /* create custom radiobutton appearance */
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      padding: 6px;
+      margin-right: 5px;
+      /* background-color only for content */
+      background-clip: content-box;
+      border: 1px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+    }
+    .bilans_opcja input[type="radio"]:checked + label:before {
+      background-color: #318cab;
+    }
 }
 .errorTxt
 {

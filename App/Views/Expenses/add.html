@@ -85,7 +85,7 @@ $( "#formAddExpenses" ).validate({
 														
 														<div class="opcja"><label for="platnosc"> Sposób płatności </label></div>
 														<i class="icon-cc-visa"></i>
-														<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wyborMethod">
+														<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wyborMethod">
 														{% for method in payMethod %}
 															<option value="{{method.name}}">{{method.name}}</option>
 														{% endfor %}
@@ -97,7 +97,7 @@ $( "#formAddExpenses" ).validate({
 												
 														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
 															<i class="icon-list"></i>
-															<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
 															{% for expense in category %}
 																<option value="{{expense.name}}">{{expense.name}}</option>
 															{% endfor %}

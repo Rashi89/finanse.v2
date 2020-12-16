@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use \Core\View;
 use \App\Models\User;
+use \App\Flash;
 
 class Password extends \Core\Controller
 {
@@ -18,8 +19,15 @@ class Password extends \Core\Controller
 		//User::sendPasswordReset($_POST['email']);
 		//View::renderTemplate('Password/reset_requested.html');
 		/*to gdy nie wysylam emaila z resetem */
-		$token=User::sendPasswordReset($_POST['email']);
+		if($token=User::sendPasswordReset($_POST['email']))
+		{
 		$this->redirect('/password/reset/'.$token);
+		}
+		else
+		{
+		   Flash::addMessage('Zły adres e-mail!',Flash::WARNING);
+		   View::renderTemplate('Password/forgot.html');
+		}
 	}
 	
 	public function resetAction()

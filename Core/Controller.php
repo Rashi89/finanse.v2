@@ -55,7 +55,7 @@ abstract class Controller
 		{
 			Flash::addMessage('Please login to access that page',Flash::INFO);
 			Auth::rememberRequestedPage();
-			$this->redirect('/');
+			$this->redirect('/login');
 		}
 	}
 	

@@ -443,7 +443,7 @@ class Expense extends \Core\Model
 		
 		return $stmt->execute();
 		}
-		return false;
+		else return false;
 	}
 	public function removePayment()
 	{

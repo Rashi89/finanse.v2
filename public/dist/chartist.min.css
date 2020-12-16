@@ -94,7 +94,7 @@
 .ct-minor-sixth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:62.5%}
 .ct-minor-sixth:after{display:table}
 .ct-minor-sixth>svg{display:block;position:absolute;top:0;left:0}
-.ct-golden-section{display:block;position:relative;width:100%; margin-top:20px}
+.ct-golden-section{display:block;position:relative;width:100%; margin-top:20px;margin-bottom: 20px;}
 .ct-golden-section:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:61.804697157%}
 .ct-golden-section:after{display:table}
 .ct-golden-section>svg{display:block;position:absolute;top:0;left:0}

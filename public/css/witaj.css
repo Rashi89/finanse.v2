@@ -166,6 +166,27 @@
 	margin-bottom:20px;
 	text-align: center;
 }
+@media (min-width: 576px)and (max-width:991px)
+{
+.container, .container-md, .container-sm {
+    max-width:900px;
+}
+.welcome
+{
+ width:850px;   
+}
+.data
+{
+   font-size:42px; 
+}
+.income.btn,.bilanss.btn,.expense.btn
+{
+    width: 380px;
+	font-size:26px;
+	height:60px;
+}
+}
+
 @media(max-width:576px)
 {
 	.powitanie

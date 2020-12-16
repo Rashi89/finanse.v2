@@ -48,7 +48,7 @@
 													<legend class="scheduler-border legenda">Wydatki</legend>
 													
 															
-															<table>
+														<table class="table">
 															<tr>
 															<td class="category">Kategoria wydatku </td><td class="category">Koszt</td>
 															</tr>
@@ -61,7 +61,7 @@
 																		{% endfor %}
 																				
 															<tr>
-															<td>Suma</td> <td>{{sum_expenses}} zł</td>
+															<td class="sum">Suma</td> <td class="sum">{{sum_expenses}} zł</td>
 															</tr>
 															</table>
 													
@@ -74,7 +74,7 @@
 										<div class="col-sm-12 col-lg-6">
 												<fieldset class="scheduler-border">
 													<legend class="scheduler-border legenda">Przychody</legend>
-														<table>
+													<table class="table">
 															<tr>
 															<td class="category">Kategoria przychodu </td><td class="category">Koszt</td>
 															</tr>
@@ -87,7 +87,7 @@
 																		{% endfor %}
 																				
 															<tr>
-															<td>Suma</td> <td>{{sum_incomes}} zł</td>
+															<td class="sum">Suma</td> <td class="sum">{{sum_incomes}} zł</td>
 															</tr>
 														</table>
 

@@ -36,8 +36,8 @@ class Login extends \Core\Controller
 			//pokazuje strone glowna index.html
 
 			//$this->redirect(Auth::getReturnToPage());
-			//View::renderTemplate('Profile/show.html');
-			$this->redirect('/profile/show');
+			View::renderTemplate('Profile/show.html');
+			//$this->redirect('/profile/show');
 
 			
 		} else {

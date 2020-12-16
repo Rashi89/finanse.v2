@@ -2,11 +2,16 @@
     --font-color: #1c525e;
     --bg-color:#fff;
 	--bg-color-form:white;
+	--success:green;
+	--warning:red;
+	
 }
 [data-theme="dark"] {
     --font-color: white;
     --bg-color: #0b2329;
 	--bg-color-form:#0b3c4d;
+	--success:#23fa96;
+	--warning:#ff4d29;
 }
 
 body
@@ -127,11 +132,11 @@ ul > li
 }
 .error-success
 {
-	color:green;
+	color:var(--success);
 }
 .error-warning
 {
-	color:red;
+	color:var(--warning);
 }
 .dropdown-menu
 {
@@ -192,13 +197,58 @@ ul > li
 		font-size:12px !Important;
 	}
 }
-@media(max-width:767px)
+@media(max-width:768px)
 {
 	.stopka_menu
 	{
 		font-size:15px !Important;
 	}
 
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .logo
+    {
+        height:110px;
+        width:340px;
+    }
+    .theme-switch
+    {
+        height: 32px !Important;
+        width: 55px !Important;
+    }
+    .slider:before
+    {
+        bottom:6px !Important;
+    }
+    input:checked + .slider:before {
+    transform: translateX(26px) !Important;
+    }
+    .navbar-toggler-icon 
+    {
+    width: 2.5em;
+    height: 2.5em;
+    }
+    ul
+    {
+        font-size:38px;
+    }
+    ul>li
+    {
+        width:380px;
+    }
+    .dropdown-menu
+    {
+	    width:380px;
+    }
+    .dropdown-item
+    {
+        font-size:30px;
+    }
+    .error
+    {
+      font-size:32px;  
+    }
 }
 
 .theme-switch-wrapper {

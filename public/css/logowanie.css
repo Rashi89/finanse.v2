@@ -51,8 +51,8 @@
 {
 .inpRejestracja
 {
-	width: 300px !Important;
-	margin-left:30px !Important;
+	width: 280px !Important;
+	margin-left:80px !Important;
 }
 .log_succes
 {
@@ -72,13 +72,12 @@
 	margin-left:30px;
 }
 }
-
 @media(min-width:576px) and (max-width:768px)
 {
 	.inpRejestracja
 {
 	width: 280px !Important;
-	margin-left:40px !Important;
+	margin-left:100px !Important;
 }
 .log_succes
 {
@@ -98,12 +97,14 @@
 	margin-left:40px;
 }
 }
-@media(min-width:767px) and (max-width:990px)
+@media(min-width:768px) and (max-width:991px)
 {
 .inpRejestracja
 {
-	width: 340px !Important;
-	margin-left:80px !Important;
+	width: 520px !Important;
+	margin-left:150px !Important;
+	font-size:30px;
+	height:60px;
 }
 .napis2
 {
@@ -128,7 +129,7 @@
 .inpRejestracja
 {
 	width: 320px !Important;
-	margin-left:50px !Important;
+	margin-left:80px !Important;
 }
 .log_succes
 {

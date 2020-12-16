@@ -78,7 +78,7 @@ $( "#formAddExpenses" ).validate({
 												<div>
 												<div class="opcja"><label for="platnosc"> Sposób płatności </label></div>
 														<i class="icon-cc-visa"></i>
-														<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wyborMethod">
+														<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wyborMethod">
 														{% for payment in category_payment %}
 															{% if namepayment == payment.name %}
 																<option value="{{payment.name}}" selected>{{payment.name}}</option>
@@ -95,7 +95,7 @@ $( "#formAddExpenses" ).validate({
 												
 														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
 															<i class="icon-list"></i>
-															<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
 															{% for expense in category %}
 															{% if name == expense.name %}
 																<option value="{{expense.name}}" selected>{{expense.name}}</option>
@@ -143,12 +143,12 @@ $( "#formAddExpenses" ).validate({
 															</div>
 															<div class="modal-body text-center">
 										
-																	<h4>Jesteś pewny, że chcesz wprawadzić zmiany?</h4>
+																	<h4 class="edit_text">Jesteś pewny, że chcesz wprawadzić zmiany?</h4>
 																		
 															</div>
 															<div class="modal-footer">
 																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
-																<button type="submit" class="btn btn-primary">Tak</button>
+																<button type="submit" class="btn btn-primary zapisz">Tak</button>
 															</div>
 														</div>
 													</div>

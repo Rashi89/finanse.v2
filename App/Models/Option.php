@@ -142,7 +142,6 @@ class Option extends \Core\Model
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':category', $category ,PDO::PARAM_STR);
 		$stmt->bindValue(':user_id', $user_id ,PDO::PARAM_INT);
-		$stmt->execute();
 		return $stmt->execute();
 	}
 	

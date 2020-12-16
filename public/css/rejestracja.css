@@ -31,8 +31,7 @@ body
 
 .napis
 {
-	color:#1c525e !important;
-	font-size: 28px;
+	color:#1c525e !Important;
 	letter-spacing: 3px;
 	margin-left:50px;
 	font-weight:bold;
@@ -217,13 +216,18 @@ input[type=email]:focus
 {
 	margin-left:10px;
 }
-@media(max-width:576px)
+@media (min-width: 0px)and (max-width:991px)
 {
-
+.container, .container-md, .container-sm {
+    max-width:900px;
+}
+}
+@media (max-width:575px)
+{
 .napis
-{
+{   
 	margin-left:30px;
-	font-size:20px;
+	font-size:23px;
 }
 .logotyp
 {
@@ -236,7 +240,7 @@ input[type=email]:focus
 }
 .info
 {
-	margin-left:20px;
+	margin-left:50px;
 	font-size:12px;
 }
 .stopka_menu
@@ -247,7 +251,7 @@ input[type=text],
 input[type=password],
 input[type=email]
 {
-	width:250px;
+	width:290px;
 	background-color:white;
 	color:#666;
 	border: 2px solid #ddd;
@@ -261,12 +265,12 @@ input[type=email]
 }
 .rejestracja input[type=submit]
 {
-	width: 250px;
+	width: 290px;
 	margin-left:80px;
 }
 .anuluj 
 {
-	width: 250px;
+	width: 290px;
 	margin-left:80px;
 }
 .checkbox
@@ -282,13 +286,18 @@ input[type=email]
 {
 	margin-left:80px;
 }
+.error
+{
+    margin-left:80px;
 }
-@media(min-width:576px) and (max-width:768px)
+}
+@media(min-width:575px) and (max-width:768px)
 {
 	.napis
-{
+{ 
+    
 	margin-left:50px;
-	font-size:20px;
+	font-size:28px;
 }
 .logotyp
 {
@@ -312,7 +321,7 @@ input[type=text],
 input[type=password],
 input[type=email]
 {
-	width:250px;
+	width:350px;
 	background-color:white;
 	color:#666;
 	border: 2px solid #ddd;
@@ -326,12 +335,12 @@ input[type=email]
 }
 .rejestracja input[type=submit]
 {
-	width: 250px;
+	width: 350px;
 	margin-left:100px;
 }
 .anuluj 
 {
-	width: 250px;
+	width: 350px;
 }
 .checkbox
 {
@@ -349,7 +358,7 @@ input[type=email]
 }
 @media(min-width:768px) and (max-width:991px)
 {
-	.logotyp
+    .logotyp
 {
 	height:250px;
 	width:192px;
@@ -358,33 +367,100 @@ input[type=email]
 	margin-right: auto;
 	display: block;
 }
+    .napis
+    {
+    margin-left: 100px;
+     
+     font-size:38px;
+    }
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:480px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:32px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+.error
+{
+    margin-left: 150px;
+    font-size: 30px;
+}
+.checkbox {
+    margin-left: 150px;
+    font-size: 26px;
+}
+.forgot
+{
+    margin-left: 150px;
+    font-size: 26px;
+}
+.rejestracja1 input[type=submit]
+{
+	width: 340px;
+	height:60px;
+	font-size:26px;
+	margin-left:150px;
+}
+.info
+{
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 100px;   
+}
 .stopka_menu
 {
-	font-size:15px;
+	font-size:22px;
+}
+.rejestracja input[type=submit]
+{
+	width: 480px;
+	height:60px;
+	font-size:26px;
+	margin-left:150px;
+}
+.anuluj
+{
+    width: 480px;
+    height:60px;
+    font-size:26px;
+    margin-left:150px;
+}
+.info1
+{
+    margin-left: 100px;
+    font-size: 34px;
 }
 }
 @media(min-width:991px) and (max-width:1200px)
 {
-	
 .stopka_menu
 {
 	font-size:15px;
 }
 	.napis
-{
-	margin-left:50px;
-	font-size:25px;
+{   
+	margin-left:30px;
+	font-size:28px;
 }
 .info
 {
-	margin-left:60px;
+	margin-left:40px;
 	font-size:14px;
 }
 input[type=text],
 input[type=password],
 input[type=email]
 {
-	width:280px;
+	width:350px;
 	background-color:white;
 	color:#666;
 	border: 2px solid #ddd;
@@ -398,12 +474,73 @@ input[type=email]
 }
 .rejestracja input[type=submit]
 {
-	width: 280px;
+	width: 350px;
+	margin-left:80px;
+}
+.anuluj 
+{
+	width: 350px;
+	margin-left:80px;
+}
+.checkbox
+{
+	margin-left:80px;
+	font-size:20px;
+}
+.forgot
+{
+	margin-left:80px;
+}
+.rejestracja1 input[type=submit]
+{
+	margin-left:80px;
+}
+.error
+{
+    margin-left:80px;
+}
+}
+@media(min-width:1200px)
+{
+	
+.stopka_menu
+{
+	font-size:15px;
+}
+	.napis
+{   
+	margin-left:50px;
+	font-size:28px;
+}
+.info
+{
+	margin-left:60px;
+	font-size:14px;
+}
+input[type=text],
+input[type=password],
+input[type=email]
+{
+	width:360px;
+	background-color:white;
+	color:#666;
+	border: 2px solid #ddd;
+	font-size:20px;
+	padding:10px;
+	box-sizing: border-box;
+	outline:none;
+	margin-top:10px;
+	margin-left:0px;
+	
+}
+.rejestracja input[type=submit]
+{
+	width: 360px;
 	margin-left:100px;
 }
 .anuluj 
 {
-	width: 280px;
+	width: 360px;
 }
 .checkbox
 {
@@ -418,4 +555,5 @@ input[type=email]
 {
 	margin-left:100px;
 }
+
 }
