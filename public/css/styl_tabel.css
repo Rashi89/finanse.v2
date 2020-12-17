@@ -686,6 +686,135 @@ h5
   background-color: #318cab;
   margin-bottom: 4px;
 }
+.buttons
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:30px;
+	text-align: center;
+}
+.button
+{
+	display:inline-block;
+}
+.first.btn
+{
+    width: 250px;
+	background-color:#7bbbd1;
+	border-radius: 0px;
+	font-size:15px;
+	height:40px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 7px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:5px;
+}
+.first:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.first:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#68b1ca;
+}
+.second.btn
+{
+    width: 250px;
+	background-color:#55a8c3;
+	border-radius: 0px;
+	font-size:15px;
+	height:40px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 7px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:5px;
+}
+.second:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.second:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#3c8eaa;
+}
+.third.btn
+{
+    width: 250px;
+	background-color:#357e97;
+	font-size:15px;
+	border-radius: 0px;
+	height:40px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 7px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:5px;
+}
+.third:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.third:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#285f71;
+}
+.forth.btn
+{
+    width: 250px;
+	background-color:#214f5e;
+	font-size:15px;
+	border-radius: 0px;
+	height:40px;
+	color: white;
+	padding: 10px 10px;
+	margin-top: 7px;
+	border: none;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	margin-left:5px;
+}
+.forth:focus
+{
+	text-decoration: none;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
+.forth:hover
+{
+	color:white;
+	text-decoration: none;
+	background-color:#142f39;
+}
+
 @media(max-width:576px)
 {
 	.picture

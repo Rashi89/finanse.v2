@@ -44,6 +44,31 @@ class Bilans extends Authenticated
 				Flash::addMessage('Zły zakres dat!');
 				$this->redirect('/Bilans/selected');
 			}
+			else if($bilans->showOption()==5&&!Date::goodRange($_POST))
+			{
+			$array = Income::getArray($_SESSION['user_id'],1);
+			$sum = Income::getSumAllIncomes($_SESSION['user_id'],1);
+			$array_expense = Expense::getArray($_SESSION['user_id'],1);
+			$sum_expenses = Expense::getSumAllExpense($_SESSION['user_id'],1);
+			$allBilans=$sum-$sum_expenses;
+			$info = Bilanses::infoBilans($this->user,$allBilans);
+			$allBilans=$allBilans.' zł';
+			$tablica_nazw =  Expense::getExpenseBilans($_SESSION['user_id'],1);
+			$tablica_wartosci = Expense::getExpenseSum($_SESSION['user_id'],1);
+			Flash::addMessage('Zły zakres dat!');
+			View::renderTemplate('Bilans/show.html',[
+				'user' => $this->user,
+				'array'=>$array,
+				'sum_incomes'=>$sum,
+				'sum_expenses'=>$sum_expenses,
+				'array_expense'=>$array_expense,
+				'allBilans'=>$allBilans,
+				'info'=>$info,
+				'nazwy'=>$tablica_nazw,
+				'wartosci'=>$tablica_wartosci
+				
+			]);	
+			}
 			else
 			{
 			$array = Income::getArray($_SESSION['user_id'],$bilans->showOption());
@@ -53,6 +78,8 @@ class Bilans extends Authenticated
 			$allBilans=$sum-$sum_expenses;
 			$info = Bilanses::infoBilans($this->user,$allBilans);
 			$allBilans=$allBilans.' zł';
+			$tablica_nazw =  Expense::getExpenseBilans($_SESSION['user_id'],$bilans->showOption());
+			$tablica_wartosci = Expense::getExpenseSum($_SESSION['user_id'],$bilans->showOption());
 			View::renderTemplate('Bilans/show.html',[
 				'user' => $this->user,
 				'array'=>$array,
@@ -60,7 +87,9 @@ class Bilans extends Authenticated
 				'sum_expenses'=>$sum_expenses,
 				'array_expense'=>$array_expense,
 				'allBilans'=>$allBilans,
-				'info'=>$info
+				'info'=>$info,
+				'nazwy'=>$tablica_nazw,
+				'wartosci'=>$tablica_wartosci
 				
 			]);	
 

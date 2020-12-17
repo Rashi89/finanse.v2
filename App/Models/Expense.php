@@ -176,7 +176,7 @@ class Expense extends \Core\Model
 											}
 			return $tablica_nazw;
 		}
-		else if($opcja ==4)
+		else if($opcja ==4||$opcja==5)
 		{
 			$start_date=Date::getStartData($_POST);
 			$end_date=Date::getEndData($_POST);
@@ -269,7 +269,7 @@ class Expense extends \Core\Model
 											}
 			return $tablica_sum;
 		}
-		else if($opcja ==4)
+		else if($opcja ==4||$opcja==5)
 		{
 			$start_date=Date::getStartData($_POST);
 			$end_date=Date::getEndData($_POST);
@@ -394,7 +394,7 @@ class Expense extends \Core\Model
 		}
 		else return 0;
 		}
-		else if($opcja==4)
+		else if($opcja==4||$opcja==5)
 		{
 			$start_date=Date::getStartData($_POST);
 			$end_date=Date::getEndData($_POST);
