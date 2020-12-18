@@ -157,8 +157,10 @@ class Options extends Authenticated
 		}
 		else
 		{
+			$info='Nie ma żadnego wpisu w wydatkach!';
 			View::renderTemplate('Incomes/info.html',[
-				'user' => $this->user
+				'user' => $this->user,
+				'info'=>$info
 					]);	
 		}
 	}
@@ -201,8 +203,10 @@ class Options extends Authenticated
 		}
 		else
 		{
+			$info='Nie ma żadnego wpisu w wydatkach!';
 			View::renderTemplate('Expenses/info.html',[
-				'user' => $this->user
+				'user' => $this->user,
+				'info' =>$info
 					]);	
 		}
 	}
@@ -241,11 +245,19 @@ class Options extends Authenticated
 		
 					]);	
 				}
+				else
+				{
+					$info ="Ostatnio nie dodałeś żadnego przychodu!";
+					View::renderTemplate('Incomes/info.html',[
+					'user' => $this->user,
+					'info'=>$info
+					]);	
+				}
 		}
 		else
 				{
 					$info ="Ostatnio nie dodałeś żadnego przychodu!";
-					View::renderTemplate('Incomes/infodelete.html',[
+					View::renderTemplate('Incomes/info.html',[
 					'user' => $this->user,
 					'info'=>$info
 					]);	
@@ -259,7 +271,7 @@ class Options extends Authenticated
 				if(Option::deleteIncome($user_id,$max_id))
 				{
 					$info="Wpis został usunięty!";
-					View::renderTemplate('Incomes/infodelete.html',[
+					View::renderTemplate('Incomes/info.html',[
 					'user' => $this->user,
 					'info' =>$info
 				
@@ -269,7 +281,7 @@ class Options extends Authenticated
 				else
 				{
 					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
-					View::renderTemplate('Incomes/infodelete.html',[
+					View::renderTemplate('Incomes/info.html',[
 						'user' => $this->user,
 						'info' =>$info
 						
@@ -305,11 +317,19 @@ class Options extends Authenticated
 				'namepayment'=>$namePresentCategoryPayment
 					]);	
 				}
+				else
+				{
+					$info ="Ostatnio nie dodałeś żadnego wydatku!";
+					View::renderTemplate('Expenses/info.html',[
+					'user' => $this->user,
+					'info'=>$info
+					]);	
+				}
 		}
 		else
 				{
 					$info ="Ostatnio nie dodałeś żadnego wydatku!";
-					View::renderTemplate('Expenses/infodelete.html',[
+					View::renderTemplate('Expenses/info.html',[
 					'user' => $this->user,
 					'info'=>$info
 					]);	
@@ -324,7 +344,7 @@ class Options extends Authenticated
 				if(Option::deleteExpense($user_id,$max_id))
 				{
 					$info="Wpis został usunięty!";
-					View::renderTemplate('Expenses/infodelete.html',[
+					View::renderTemplate('Expenses/info.html',[
 					'user' => $this->user,
 					'info' =>$info
 				
@@ -334,7 +354,7 @@ class Options extends Authenticated
 				else
 				{
 					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
-					View::renderTemplate('Expenses/infodelete.html',[
+					View::renderTemplate('Expenses/info.html',[
 						'user' => $this->user,
 						'info' =>$info
 						

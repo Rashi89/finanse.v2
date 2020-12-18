@@ -26,14 +26,16 @@ class Bilanses extends \Core\Model
 	
 	public static function getOption($user_id,$option)
 	{
-		if($option ==1)
+		if($option ==1||$option=="Bieżący miesiąc")
 			return 1;
-		else if($option ==2)
+		else if($option ==2||$option=="Poprzedni miesiąc")
 			return 2;
-		else if($option ==3)
+		else if($option ==3||$option=="Bieżący rok")
 			return 3;
 		else if($option == 4)
-		return 4;
+			return 4;
+		else if($option == 5||$option=="Niestandardowy")
+			return 5;
 		
 	}
 	public static function infoBilans($user,$allBilans)
