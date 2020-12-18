@@ -1205,6 +1205,13 @@ h5
     .bilans_opcja input[type="radio"]:checked + label:before {
       background-color: #318cab;
     }
+	.first.btn,.second.btn,.third.btn,.forth.btn
+	{
+	width: 380px;
+    font-size: 26px;
+    height: 60px;
+	}
+	
 }
 .errorTxt
 {

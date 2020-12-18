@@ -24,7 +24,8 @@ if(color==color1)
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	title: {
-		text: "Wykres kołowy wydatków"
+		text: "Wykres kołowy wydatków",
+		fontSize: 40
 	},
 	legend:{
 		fontSize: 20,
@@ -55,7 +56,8 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	title: {
 		text: "Wykres kołowy wydatków",
-		fontColor: "white"
+		fontColor: "white",
+		fontSize: 40
 	},
 	legend:{
 		fontSize: 20,
@@ -176,9 +178,10 @@ chart.data[0].addTo("dataPoints", {y: (ilosc[i]/suma)*100,label: nazwa[i]});
 													</fieldset>
 									</div>
 								</div>
+								<div style="margin-top:20px"></div>
 								{% if wartosci|length >0 %}
 										<div class="row">
-													<div id="chartContainer" style="height: 370px; width: 90%;margin-left:auto;margin-right:auto;margin-bottom:10px"></div>
+													<div id="chartContainer" style="height: 370px; width: 90%;margin-left:auto;margin-right:auto;margin-bottom:20px"></div>
 										</div>
 								{% endif %}
 							<div class ="row">
