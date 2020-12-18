@@ -122,8 +122,9 @@ $( "#formAddExpenses" ).validate({
 							
 
 												</div>
-												<div class="error">
-														{% for message in flash_messages %}
+												{% for message in flash_messages %}
+												<div class="error error-{{message.type}}">
+														
 																				{{message.body}}
 																			{% endfor %}
 												</div>

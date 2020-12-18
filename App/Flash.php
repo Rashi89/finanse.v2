@@ -5,7 +5,7 @@ namespace App;
 class Flash
 {
 	//type message
-	const SUCCES = 'success';
+	const SUCCESS = 'success';
 	const INFO = 'info';
 	const WARNING = 'warning';
 	
