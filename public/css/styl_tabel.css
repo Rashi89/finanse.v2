@@ -601,7 +601,7 @@ h5
 .zakres
 {
 	font-size:45px;
-	color:red;
+	color:var(--color-welcome);
 }
 
 .square
@@ -1057,7 +1057,7 @@ h5
 	}
 		.zakres
 	{
-		font-size:28px !Important;
+		font-size:34px !Important;
 	}
 			.powitanie
 	{
