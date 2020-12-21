@@ -100,6 +100,7 @@ chart.data[0].addTo("dataPoints", {y: (ilosc[i]/suma)*100,label: nazwa[i]});
 						<div class="zawartosc2" id="za">
 							<fieldset class="ramka">
 								<legend class="scheduler-border bilans">Bilans </legend>
+								<div class="zakres">{{zakres}}</div>
 								<div class="error">
 									{% for message in flash_messages %}
 										{{message.body}}

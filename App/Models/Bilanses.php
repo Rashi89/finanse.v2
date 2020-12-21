@@ -24,7 +24,7 @@ class Bilanses extends \Core\Model
 		return $opcja;
 	}
 	
-	public static function getOption($user_id,$option)
+	private static function getOption($user_id,$option)
 	{
 		if($option ==1||$option=="Bieżący miesiąc")
 			return 1;
@@ -42,5 +42,25 @@ class Bilanses extends \Core\Model
 	{
 		if($allBilans<0) return 'Uważaj '.$user->name. ' wpadasz w długi!';
 		else return $user->name.' świetnie zarządzasz finansami!';
+	}
+	public function getOptionName()
+	{
+		$user_id =$_SESSION['user_id'];
+		$option = $this->opcja_bilansu;
+		$option_name=static::getName($user_id,$option);
+		return $option_name;
+	}
+	private static function getName($user_id,$option)
+	{
+		if($option ==1||$option=="Bieżący miesiąc")
+			return "Bieżący miesiąc";
+		else if($option ==2||$option=="Poprzedni miesiąc")
+			return "Poprzedni miesiąc";
+		else if($option ==3||$option=="Bieżący rok")
+			return "Bieżący rok";
+		else if($option == 4)
+			return "Niestandardowy";
+		else if($option == 5||$option=="Niestandardowy")
+			return "Niestandardowy";
 	}
 }

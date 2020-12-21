@@ -38,6 +38,7 @@ class Bilans extends Authenticated
 		{	
 			$bilans =new Bilanses($_POST);
 			$bilans->showOption();
+			$zakres=$bilans->getOptionName();
 			
 			if($bilans->showOption()==4&&!Date::goodRange($_POST))
 			{
@@ -55,6 +56,7 @@ class Bilans extends Authenticated
 			$allBilans=$allBilans.' zł';
 			$tablica_nazw =  Expense::getExpenseBilans($_SESSION['user_id'],1);
 			$tablica_wartosci = Expense::getExpenseSum($_SESSION['user_id'],1);
+			$zakres="Bieżący miesiąc";
 			Flash::addMessage('Zły zakres dat!');
 			View::renderTemplate('Bilans/show.html',[
 				'user' => $this->user,
@@ -65,7 +67,8 @@ class Bilans extends Authenticated
 				'allBilans'=>$allBilans,
 				'info'=>$info,
 				'nazwy'=>$tablica_nazw,
-				'wartosci'=>$tablica_wartosci
+				'wartosci'=>$tablica_wartosci,
+				'zakres'=>$zakres
 				
 			]);	
 			}
@@ -89,7 +92,8 @@ class Bilans extends Authenticated
 				'allBilans'=>$allBilans,
 				'info'=>$info,
 				'nazwy'=>$tablica_nazw,
-				'wartosci'=>$tablica_wartosci
+				'wartosci'=>$tablica_wartosci,
+				'zakres'=>$zakres
 				
 			]);	
 
