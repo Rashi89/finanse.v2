@@ -126,12 +126,20 @@ class Income extends \Core\Model
 		else if($opcja ==2)
 		{
 		$month=date('n')-1;
-		$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
+		$year = date('Y');
+		if($month == 0)
+		{
+			$month = 12;
+			$year = $year-1;
+			
+		}
+		$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND YEAR(date_of_income)=:year AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
 		$db=static::getDB();
 		$stmt = $db->prepare($sql);
 		
 		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 		$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+		$stmt->bindValue(':year',$year,PDO::PARAM_INT);
 		$stmt->execute();
 		
 		$count = $stmt->rowCount();
@@ -223,12 +231,20 @@ class Income extends \Core\Model
 		else if($opcja ==2)
 		{
 		$month=date('n')-1;
-		$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
+		$year = date('Y');
+		if($month == 0)
+		{
+			$month = 12;
+			$year = $year-1;
+			
+		}
+		$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND YEAR(date_of_income)=:year AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
 		$db=static::getDB();
 		$stmt = $db->prepare($sql);
 		
 		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 		$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+		$stmt->bindValue(':year',$year,PDO::PARAM_INT);
 		$stmt->execute();
 		$count = $stmt->rowCount();
 		$tablica_sum = array();
@@ -342,12 +358,20 @@ class Income extends \Core\Model
 		else if($opcja==2)
 		{
 			$month=date('n')-1;
-			$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
+			$year = date('Y');
+			if($month == 0)
+			{
+				$month = 12;
+				$year = $year-1;
+				
+			}
+			$sql ='SELECT income_category_assigned_to_user_id,SUM(amount), incomes_category_assigned_to_users.name FROM incomes INNER JOIN incomes_category_assigned_to_users ON incomes.income_category_assigned_to_user_id=incomes_category_assigned_to_users.id WHERE MONTH(date_of_income)=:month AND YEAR(date_of_income)=:year AND incomes.user_id=:user_id GROUP BY income_category_assigned_to_user_id';
 			$db=static::getDB();
 			$stmt = $db->prepare($sql);
 			
 			$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 			$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+			$stmt->bindValue(':year',$year,PDO::PARAM_INT);
 			$stmt->execute();
 			
 			$count = $stmt->rowCount();

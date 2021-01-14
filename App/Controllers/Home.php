@@ -19,10 +19,15 @@ class Home extends \Core\Controller
 		*/
 		//tu do kogo, temat, tresc i ewentualnie jakis html 
 		//\App\Mail::send('rachanek@yahoo.com','Test','This is a test','<h1>This is a big test</h1>');
-		$user = Auth::getUser();
-		if($user)
+		
+		$cookie = $_COOKIE['remember_me'] ?? false;
+		if($cookie)
 		{
-				$this->redirect('/profile/show');
+					$user = Auth::getUser();
+		if($user)
+			{
+					$this->redirect('/profile/show');
+			}
 		}
 		else
         View::renderTemplate('Home/index.html', [

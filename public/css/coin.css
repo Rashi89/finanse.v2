@@ -67,6 +67,8 @@
 .icon-lock:before { content: '\e809'; font-size:20px;color:var(--icon-color);margin-left:40px;} /* '' */
 .icon-logout:before { content: '\f02d'; margin-right:20px;} /* '' */
 .icon-money:before { content: '\f0d6'; font-size:30px; margin-right:10px; margin-left:-50px;color:var(--icon-color);} /* '' */
+.icon-money1:before { content: '\f0d6'; font-size:30px; margin-right:10px; margin-left:-50px;color:var(--icon-color);} /* '' */
+.icon-lista:before { content: '\e807'; font-size:30px; margin-right:10px; margin-left:-50px;color:var(--icon-color);} /* '' */
 .icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:40px; margin-right:5px;color:var(--icon-color);} /* '' */
 .icon-cc-visa:before { content: '\f1f0'; font-size:30px; margin-right:0px; margin-left:-20px;color:var(--icon-color);} /* '' */
 .ikona.icon-list:before { content: '\e807'; font-size:30px; margin-right:10px; margin-left:-50px;color:#196678;} 
@@ -86,6 +88,9 @@
 	.icon-user-1:before { content: '\e808'; font-size:20px;color:var(--icon-color);margin-left:20px;} /* '' */
 	.icon-lock:before { content: '\e809'; font-size:20px;color:var(--icon-color);margin-left:20px;}
 	.icon-mail-alt:before { content: '\f0e0'; font-size:20px; margin-left:20px; margin-right:5px;color:var(--icon-color);} /* '' */
+	.icon-lista:before { content: '\e807'; font-size:30px; margin-right:0px; margin-left:-40px;color:var(--icon-color);} /* '' */
+	.icon-money1:before { content: '\f0d6'; font-size:30px; margin-right:0px; margin-left:-40px;color:var(--icon-color);} /* '' */
+	
 }
 @media(min-width:768px) and (max-width:991px)
 {

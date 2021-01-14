@@ -11,6 +11,185 @@
 $(document).ready(function()
 {	
 
+	var kategoria = $("#kategoria_limit").val();   
+	
+		$.post("/Expenses/limit",{
+		dane: kategoria
+	}, function(limit,status){
+			if(limit =="Brak")
+			{
+			$("#limit").text('Miesięczny limit: '+ limit);
+			$("#limit4").text('');
+			$("#limit5").text('');
+			}else
+			$("#limit").text('Miesięczny limit: '+ limit+' zł');
+	});
+
+	$("#kategoria_limit").on("change", function(){
+    kategoria = $(this).val();    
+	//alert(kategoria);
+	
+	$.post("/Expenses/limit",{
+		dane: kategoria
+	}, function(limit,status){
+			if(limit =="Brak")
+			{
+			$("#limit").text('Miesięczny limit: '+ limit);
+			$("#limit4").text('');
+			$("#limit5").text('');
+			}else
+			$("#limit").text('Miesięczny limit: '+ limit+' zł');
+	});
+	
+	if(data!="") 
+	{
+		$.post("/Expenses/comment",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+	
+			if(rezult<0)
+			{
+				var rezultat = -rezult;
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").css('color','red');
+			}
+			else
+			{
+				$("#limit5").text('');
+			}
+	});
+	
+$.post("/Expenses/spendInfo",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+		if(rezult>=0)
+			{
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").css('color','green');
+			}
+			else if(rezult<0)
+			{
+				$("#limit4").text('Uwaga! W tym miesiącu przekroczyłeś już ustalony limit!');
+				$("#limit4").css('color','red');
+			}
+			else if(rezult =="Brak")
+			{
+				$("#limit4").text('');
+			}
+	});
+}	
+if(kwota>0)
+	{
+		$.post("/Expenses/comment",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+	
+			if(rezult<0)
+			{
+				var rezultat = -rezult;
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").css('color','red');
+			}
+			else
+			{
+				$("#limit5").text('');
+			}
+	});
+}
+	});
+
+var kwota = $("#kwota").val();
+var data= $("#data_wybor").val();
+var data1=new Date(data);
+var miesiac = data1.getMonth()+1; 
+var rok = data1.getFullYear();
+
+
+
+$("#data_wybor").on("change", function(){
+    data = $(this).val();
+	data1=new Date(data);
+	miesiac = data1.getMonth()+1;
+	rok = data1.getFullYear();
+	
+		$.post("/Expenses/spendInfo",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+		if(rezult>=0)
+			{
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").css('color','green');
+			}
+			else if(rezult<0)
+			{
+				$("#limit4").text('Uwaga! W tym miesiącu przekroczyłeś już ustalony limit!');
+				$("#limit4").css('color','red');
+			}
+			else if(rezult =="Brak")
+			{
+				$("#limit4").text('');
+			}
+	});
+	if(kwota>0)
+	{
+		$.post("/Expenses/comment",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+	
+			if(rezult<0)
+			{
+				var rezultat = -rezult;
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").css('color','red');
+			}
+			else
+			{
+				$("#limit5").text('');
+			}
+	});
+	}
+	});
+
+$("#kwota").on("change", function(){
+    kwota = $(this).val();
+	if(data!="") 
+	{
+		$.post("/Expenses/comment",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+	
+			if(rezult<0)
+			{
+				var rezultat = -rezult;
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").css('color','red');
+			}
+			else
+			{
+				$("#limit5").text('');
+			}
+	});
+	}
+	});
+
 $( "#formAddExpenses" ).validate({
   rules: {
     kwota: {
@@ -42,10 +221,62 @@ $( "#formAddExpenses" ).validate({
 						}
 					}
 			});
+var form = $( "#formAddExpenses" );
+
+$('#akcept').click(function(e){
+  
+$('#limit_info').css('color','green');
+
+if(form.valid()==true)
+{
+ $('#daty').modal('show');
+	$.post("/Expenses/limit",{
+		dane: kategoria
+	}, function(limit,status){
+			if(limit =="Brak")
+			{
+			$("#limit1").text('Miesięczny limit: '+ limit);
+			}else
+			$("#limit1").text('Miesięczny limit: '+ limit+' zł');
+	});
+	$.post("/Expenses/suma",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(suma,status){
+			if(suma =="Brak")
+			{
+			$("#limit2").text('Obecna suma wydatków z kategorii '+kategoria+': '+ suma);
+			}else
+			$("#limit2").text('Obecna suma wydatków z kategorii '+kategoria+': '+ suma+' zł');
+	});
+	$.post("/Expenses/comment",{
+		dane: kategoria,
+		year: rok,
+		month: miesiac,
+		amount: kwota
+	}, function(rezult,status){
+	
+			if(rezult<0)
+			{
+				var rezultat = -rezult;
+				$("#limit3").text('Miesięczny limit został przekroczony o '+ rezultat +' zł!');
+				$("#limit3").css('color','red');
+			}
+			else if(rezult>=0)
+			{
+				$("#limit3").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit3").css('color','green');
+			}
+	});
+}
+e.preventDefault();
+});
+
 });
 
 </script>
-	
 {% endblock %}
 
 {% block body %}
@@ -53,10 +284,10 @@ $( "#formAddExpenses" ).validate({
 	<main>
 		<div class="container">
 				<div class="row no-gutter ">
-					<div class="order-12 order-lg-1 col-lg-4 my-auto p-0 d-none d-lg-block">
+					<div class="order-12 order-lg-1 col-lg-4 my-auto p-0 d-none d-lg-block" style="position: relative; z-index: 0;">
 						<div class="picture" id="picture"><img src="/img/wydatek.png" class="obraz  mt-1"></div>
 					</div>
-							<div class="col-lg-8 order-1 order-lg-12  zawartosc formularz" style="position: relative; z-index: 2;">
+							<div class="col-lg-8 order-1 order-lg-12  zawartosc formularz" >
 							
 								<form action="/expenses/create" method="post" id="formAddExpenses">
 								
@@ -64,6 +295,25 @@ $( "#formAddExpenses" ).validate({
 											
 											<legend class="scheduler-border"> Wydatek </legend>
 												
+												<div>
+												
+														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
+															<i class="icon-list"></i>
+															<select class="kat opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria_limit" name="wybor">
+															{% for expense in category %}
+																<option value="{{expense.name}}">{{expense.name}}</option>
+															{% endfor %}
+															</select>
+													
+												</div>
+												
+												<div >
+														<div class="opcja limit_info" id="limit"></div>						
+												</div>
+												<div >
+														<div class="opcja limit_info" id="limit4"></div>						
+												</div>
+
 												<div >
 														
 														<div class="opcja"> Kwota </div>
@@ -73,14 +323,16 @@ $( "#formAddExpenses" ).validate({
 
 															
 												</div>
-														
+												<div >
+														<div class="opcja limit_info" id="limit5"></div>						
+												</div>
 												<div>
 														
 														<div class="opcja"> Data </div>
-															<div class="data"> <i class="icon-calendar"></i><label><input class=" col-md-12" type="date" name="date" required></label></div>
+															<div class="data"> <i class="icon-calendar"></i><label><input class=" col-md-12" type="date" id="data_wybor" name="date" required></label></div>
 										
 												</div>
-												
+										
 												<div>
 														
 														<div class="opcja"><label for="platnosc"> Sposób płatności </label></div>
@@ -93,17 +345,7 @@ $( "#formAddExpenses" ).validate({
 														
 												</div>
 												
-												<div>
 												
-														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
-															<i class="icon-list"></i>
-															<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
-															{% for expense in category %}
-																<option value="{{expense.name}}">{{expense.name}}</option>
-															{% endfor %}
-															</select>
-													
-												</div>
 												
 												<div>	
 													
@@ -116,10 +358,29 @@ $( "#formAddExpenses" ).validate({
 							
 
 												</div>
-											
-												<div class="dodaj"><input type = "submit" value="Dodaj"></div>
+
+												<div><a href="#" class="akcept" id="akcept">Dodaj</a></div>
 												<a href="/Profile/show" class="reset">Anuluj</a>
-														
+											<div class="modal fade"  id="daty" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle">Podsumowanie</h5>
+															</div>
+															<div class="modal-body text-center">
+																		<div class="opcja" id="limit_info">Wydatek został dodany!</div>
+																		<div class="opcja limit_info_modal" id="limit1"></div> 
+																		<div class="opcja limit_info_modal" id="limit2"></div>
+																		<div class="opcja limit_info_modal" id="limit3"></div> 																		
+
+															</div>
+															<div class="modal-footer">
+																<button type="submit" class="btn btn-primary zapisz">OK!</button>
+															</div>
+														</div>
+													</div>
+												</div>
+				</div>	
 											
 												
 										
@@ -128,7 +389,7 @@ $( "#formAddExpenses" ).validate({
 								</form>
 							
 							</div>
-				</div>
+
 
 
 

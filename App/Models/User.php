@@ -594,6 +594,30 @@ class User extends \Core\Model
 		return $results;
 	}
 	
+	public static function getAllExpensesLimit($id)
+	{
+		$sql ='SELECT name FROM `expenses_category_assigned_to_users` INNER JOIN limits ON expenses_category_assigned_to_users.id=limits.expense_id WHERE user_id=:id';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id',$id,PDO::PARAM_INT);
+		$stmt->execute();
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $results;
+	}
+	
+	public static function getOtherExpense($id)
+	{
+		$sql ='select name from expenses_category_assigned_to_users where user_id=:id AND id not in (select expense_id from limits)';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id',$id,PDO::PARAM_INT);
+		$stmt->execute();
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $results;
+	}
+	
 	public function editPassword($data)
 	{
 		$this->new_password =$data['new_password'];
