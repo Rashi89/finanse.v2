@@ -108,6 +108,39 @@ class Expense extends \Core\Model
 		}
 	}
 	
+	public static function getLimitsMaxID()
+	{
+		$sql='SELECT COUNT(*) FROM limits';
+		$db=static::getDB();
+		$stmt = $db->prepare($sql);
+		
+		//$stmt->bindValue(':id',$user->id,PDO::PARAM_INT);
+		
+		$stmt->execute();
+		$incomes=$stmt->fetch(PDO::FETCH_ASSOC); 
+		//$stmt->rowCount();
+		$empty=$incomes['COUNT(*)'];
+		if($empty==0)
+		{
+			//$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+			//$expense=$stmt->fetch(PDO::FETCH_ASSOC); 
+			//$all_expense=$expense['SUM(amount)'];
+			return 1;
+		}
+		else
+		{
+		$sql='SELECT MAX(id) FROM limits';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->execute();
+		$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+		$max=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$maxID=$max['MAX(id)'];
+		return $maxID +1;
+		}
+	}
+	
 	public static function getExpenseBilans($user_id,$opcja)
 	{
 		if($opcja ==1)
@@ -135,12 +168,20 @@ class Expense extends \Core\Model
 		else if($opcja==2)
 		{
 			$month=date('n')-1;
-			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
+			$year = date('Y');
+			if($month == 0)
+			{
+				$month = 12;
+				$year = $year-1;
+				
+			}
+			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND YEAR(date_of_expense)=:year AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
 			$db=static::getDB();
 			$stmt = $db->prepare($sql);
 			
 			$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 			$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+			$stmt->bindValue(':year', $year,PDO::PARAM_INT);
 			$stmt->execute();
 			
 			$count = $stmt->rowCount();
@@ -230,12 +271,20 @@ class Expense extends \Core\Model
 		else if($opcja==2)
 		{
 			$month=date('n')-1;
-			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
+			$year = date('Y');
+			if($month == 0)
+			{
+				$month = 12;
+				$year = $year-1;
+				
+			}
+			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND YEAR(date_of_expense)=:year AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
 			$db=static::getDB();
 			$stmt = $db->prepare($sql);
 			
 			$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 			$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+			$stmt->bindValue(':year', $year,PDO::PARAM_INT);
 			$stmt->execute();
 			$count = $stmt->rowCount();
 			$tablica_sum = array();
@@ -349,12 +398,20 @@ class Expense extends \Core\Model
 		else if($opcja==2)
 		{
 			$month=date('n')-1;
-			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
+			$year = date('Y');
+			if($month == 0)
+			{
+				$month = 12;
+				$year = $year-1;
+				
+			}
+			$sql ='SELECT expense_category_assigned_to_user_id,SUM(amount),expenses_category_assigned_to_users.name FROM `expenses` INNER JOIN expenses_category_assigned_to_users ON expenses.expense_category_assigned_to_user_id=expenses_category_assigned_to_users.id WHERE MONTH(date_of_expense)=:month AND YEAR(date_of_expense)=:year AND expenses.user_id=:user_id GROUP BY expense_category_assigned_to_user_id';
 			$db=static::getDB();
 			$stmt = $db->prepare($sql);
 			
 			$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 			$stmt->bindValue(':month', $month,PDO::PARAM_INT);
+			$stmt->bindValue(':year', $year,PDO::PARAM_INT);
 			$stmt->execute();
 			
 			$count = $stmt->rowCount();
@@ -430,9 +487,9 @@ class Expense extends \Core\Model
 			$user_id =$_SESSION['user_id'];
 			
 			$expense_category=static::getCategoryExpense($user_id,$this->wybor);
+			$name_expense =$this->wybor;
 		
-		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND expense_category_assigned_to_user_id
-		=:expense_category_assigned_to_user_id;
+		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND expense_category_assigned_to_user_id=:expense_category_assigned_to_user_id;
 		DELETE FROM expenses_category_assigned_to_users WHERE user_id=:user_id AND id=:expense_category_assigned_to_user_id';
 		$db = static::getDB();
 		
@@ -612,5 +669,157 @@ class Expense extends \Core\Model
 			return false;
 		}
 		else return true;
+	}
+	
+	public function addLimits()
+	{
+		if(empty($this->errors))
+		{
+			$user_id =$_SESSION['user_id'];
+		
+			$expense_category=static::getCategoryExpense($user_id,$this->wybor);
+			$max_id = static::getLimitsMaxID();
+
+			$existLimit = static:: existLimits($user_id,$expense_category);
+			if($existLimit == false)
+			{
+				$sql = 'INSERT INTO limits (id, users_id, expense_id, kwota) VALUES (:id,:user_id,:expense_category_assigned_to_user_id,:amount)';
+				$db = static::getDB();
+				
+				$stmt = $db->prepare($sql);
+				$stmt->bindValue(':id', $max_id,PDO::PARAM_INT);
+				$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+				$stmt->bindValue(':expense_category_assigned_to_user_id',$expense_category,PDO::PARAM_INT);
+				$stmt->bindValue(':amount', $this->kwota,PDO::PARAM_STR);
+				
+				return $stmt->execute();
+		
+			}
+			else{
+				$id=static::getlimitsID($user_id,$expense_category);
+				$sql = 'UPDATE limits SET kwota=:amount WHERE id=:id';
+				$db = static::getDB();
+				
+				$stmt = $db->prepare($sql);
+				
+				$stmt->bindValue(':id', $id,PDO::PARAM_STR);
+				$stmt->bindValue(':amount', $this->kwota,PDO::PARAM_STR);
+				
+				return $stmt->execute();
+			}
+		}
+		return false;
+	}
+	
+	public static function getlimitsID($user_id,$expense_category)
+	{
+		$sql='SELECT id FROM limits WHERE expense_id=:cat_id AND users_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':cat_id', $expense_category,PDO::PARAM_INT);
+		$stmt->execute();
+		$limit=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$empty=$limit['id'];
+		return $empty;
+	}
+	
+	public static function existLimits($user_id,$cat_id)
+	{
+		$sql='SELECT COUNT(*) FROM limits WHERE expense_id=:cat_id AND users_id=:id';
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':cat_id', $cat_id,PDO::PARAM_INT);
+		$stmt->execute();
+		$limit=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$empty=$limit['COUNT(*)'];
+		if($empty==0)
+		{
+			//$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+			//$expense=$stmt->fetch(PDO::FETCH_ASSOC); 
+			//$all_expense=$expense['SUM(amount)'];
+			return false;
+		}
+		else return true;
+	
+	}
+	public static function getLimit($user_id,$id_kategory)
+	{
+		$exist = static::existLimits($user_id,$id_kategory);
+		if($exist == false) return false;
+		else{
+			$sql='SELECT kwota FROM limits WHERE expense_id=:id_kategory AND users_id=:id';
+			$db = static::getDB();
+			
+			$stmt = $db->prepare($sql);
+			$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+			$stmt->bindValue(':id_kategory', $id_kategory,PDO::PARAM_INT);
+			$stmt->execute();
+			$limit=$stmt->fetch(PDO::FETCH_ASSOC); 
+			$kwota=$limit['kwota'];
+			
+			return $kwota;
+		
+		}
+		
+	}
+	
+	
+		public static function getSumLimit($user_id,$id_kategory,$month,$year)
+	{
+		$sql='SELECT COUNT(*) FROM expenses WHERE expense_category_assigned_to_user_id=:id_kategory AND user_id=:id AND YEAR(date_of_expense)=:year AND MONTH(date_of_expense)=:month';
+		$db = static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':id_kategory',$id_kategory ,PDO::PARAM_INT);
+		$stmt->bindValue(':year',$year,PDO::PARAM_INT);
+		$stmt->bindValue(':month',$month,PDO::PARAM_INT);
+		$stmt->execute();
+		$limit=$stmt->fetch(PDO::FETCH_ASSOC); 
+		$empty=$limit['COUNT(*)'];
+		if($empty==0)
+		{
+			return 0;
+		}
+		else
+		{
+				$sql='SELECT SUM(amount) FROM expenses WHERE expense_category_assigned_to_user_id=:id_kategory AND user_id=:id AND YEAR(date_of_expense)=:year AND MONTH(date_of_expense)=:month';
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				$stmt->bindValue(':id', $user_id,PDO::PARAM_INT);
+				$stmt->bindValue(':id_kategory',$id_kategory ,PDO::PARAM_INT);
+				$stmt->bindValue(':year',$year,PDO::PARAM_INT);
+				$stmt->bindValue(':month',$month,PDO::PARAM_INT);
+				
+				$stmt->execute();
+				$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+				$sum=$stmt->fetch(PDO::FETCH_ASSOC); 
+				$suma=$sum['SUM(amount)'];
+				return $suma;	
+		}
+	}
+public function removeLimit()
+	{
+		if(empty($this->errors))
+		{
+			$user_id =$_SESSION['user_id'];
+			
+			$expense_category=static::getCategoryExpense($user_id,$this->wybor);
+		
+		$sql = 'DELETE FROM `limits` WHERE users_id=:user_id AND expense_id=:expense_id';
+		
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+		$stmt->bindValue(':expense_id',$expense_category,PDO::PARAM_INT);
+
+		
+		return $stmt->execute();
+		}
+		else return false;
 	}
 }

@@ -124,6 +124,10 @@ class Options extends Authenticated
 			else
 			{
 				$options->addCategoryExpense();
+				if(isset($_POST['kwota']))
+				{
+				$options->addLimit();
+				}
 				Flash::addMessage('Kategoria dodana poprawnie!');
 				View::renderTemplate('Options/addexpense.html',[
 				'user' => $this->user

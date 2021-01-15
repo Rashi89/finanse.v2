@@ -1,0 +1,114 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Delete expenses limit{% endblock %}
+
+{% block footer %}
+	<script src="/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+	
+$(document).ready(function()
+{	
+	var kategoria = $("#kategoria").val();   
+	$("#kategoria").on('change', function(){
+    kategoria = $(this).val();    
+	//alert(kategoria);
+	
+	$.post("/Expenses/limit",{
+		dane: kategoria
+	}, function(limit,status){
+			if(limit =="Brak")
+			{
+			$("#limit").text('Obecna kwota limitu: '+ limit);
+			}else
+			$("#limit").text('Obecna kwota limitu: '+ limit+' zł');
+	});
+	
+	/*$.ajax({
+			url: '/Expenses/addlimits',
+			type: 'POST',
+			data:{myData: kategoria},
+			contentType: 'application/json',
+			error: function() {
+                alert('Some error found. Please try again!');
+            },
+			success:function() {
+                alert('ok!');
+				
+            }
+	});*/
+	});
+	$.post("/Expenses/limit",{
+		dane: kategoria
+	}, function(limit,status){
+			if(limit =="Brak")
+			{
+			$("#limit").text('Obecna kwota limitu: '+ limit);
+			}else
+			$("#limit").text('Obecna kwota limitu: '+ limit+' zł');
+	});
+});
+
+</script>
+	
+{% endblock %}
+
+{% block body %}
+
+	<main>
+		<div class="container">
+				<div class="row no-gutter ">
+
+							<div class="col-lg-8 order-1 order-lg-12  zawartosc formularz" style="position: relative; z-index: 2;">
+							
+								<form action="/expenses/deletelimit" method="post" id="formAddLimits">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border">Usuwanie limitu</legend>
+												
+
+												<div>
+														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
+															<i class="icon-list"></i>
+															<select class="opcja_2 opcja_3 opcja_4 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															{% for expense in category %}
+																<option value="{{expense.name}}">{{expense.name}}</option>
+															{% endfor %}
+															</select>
+													
+												</div>
+												<div >
+														<div class="opcja limit_info" id="limit"> Obecna kwota limitu:</div>						
+												</div>
+												
+												{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
+												<div class="dodaj"><input type = "submit" value="Usuń limit"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+							
+							</div>
+				</div>
+
+
+
+				
+		</div>
+				
+	</main>
+<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+{% endblock %}

@@ -63,9 +63,11 @@ class Expenses extends Authenticated
 	public function removeAction()
 	{
 		$expense= new Expense($_POST);
+		$expense->removeLimit();
 		$expense->removeExpense();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/show');
+		
 	}
 	
 	public function showpaymentAction()
@@ -86,5 +88,246 @@ class Expenses extends Authenticated
 		$expense->removePayment();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/showpayment');
+	}
+	
+	public function limitAction()
+	{
+		if(isset($_POST['dane'])){
+			$category_name = $_POST['dane'];
+			$user_id=$_SESSION['user_id'];
+			$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+			$kwota = Expense::getLimit($user_id,$id_kategory); 
+			if($kwota == false) echo "Brak";
+			else 
+			{
+				$kwota=round($kwota,2);
+				echo $kwota;
+			}
+
+		}
+	}
+	
+		public function sumaAction()
+	{
+		if(isset($_POST['dane'])){
+			$category_name = $_POST['dane'];
+			$user_id=$_SESSION['user_id'];
+			$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+			$month=$_POST['month'];
+			$year=$_POST['year'];
+		    $amount = $_POST['amount'];
+			$kwota = Expense::getSumLimit($user_id,$id_kategory,$month,$year);
+			$kwota +=$amount;
+			if($kwota == false) echo 0;
+			else
+			{
+				$kwota =round($kwota,2);
+				echo $kwota;
+			}
+		}
+	}
+	
+	public function commentAction()
+	{
+		if(isset($_POST['dane'])){
+			$category_name = $_POST['dane'];
+			$user_id=$_SESSION['user_id'];
+			$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+			$month=$_POST['month'];
+			$year=$_POST['year'];
+		    $amount = $_POST['amount'];
+			$kwota = Expense::getSumLimit($user_id,$id_kategory,$month,$year);
+			$kwota +=$amount;
+			$limit = Expense::getLimit($user_id,$id_kategory);
+			if($limit !=false)
+			{
+				$roznica = $limit - $kwota;
+				$roznica=round($roznica,2);
+					echo $roznica;
+			}
+			else echo "Brak";
+
+		}
+	}
+	public function spendInfoAction()
+	{
+		if(isset($_POST['dane'])){
+			$category_name = $_POST['dane'];
+			$user_id=$_SESSION['user_id'];
+			$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+			$month=$_POST['month'];
+			$year=$_POST['year'];
+		    $amount = $_POST['amount'];
+			$kwota = Expense::getSumLimit($user_id,$id_kategory,$month,$year);
+			$limit = Expense::getLimit($user_id,$id_kategory);
+			if($limit !=false)
+			{
+				$roznica = $limit - $kwota;
+				$roznica=round($roznica,2);
+					echo $roznica;
+			}
+			else echo "Brak";
+
+		}
+	}
+	public function addlimitsAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+			if(isset($_POST['myData']))
+			{
+				$user_id=$_SESSION['user_id'];
+				$category_name = $_POST['myData'];
+				$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+				$limit = Expense::getLimit($user_id,$id_kategory);
+				$category =User::getOtherExpense($_SESSION['user_id']);
+				if($limit!=0){
+				View::renderTemplate('Expenses/addlimits.html',[
+				'user' => $this->user,
+				'category' => $category
+					]);	
+				}
+			}
+			else
+			{
+					$category =User::getOtherExpense($_SESSION['user_id']);
+					if(empty($category))
+					{
+						$info ='Wszystkie kategorie mają ustalone limity!';
+						View::renderTemplate('Expenses/info.html',[
+						'user' => $this->user,
+						'info'=>$info
+							]);	
+					}
+					else{
+						View::renderTemplate('Expenses/addlimits.html',[
+						'user' => $this->user,
+						'category' => $category
+							]);	
+						}
+			}
+		}
+	}
+	public function addlimitAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+		
+		$expense= new Expense($_POST);
+		$expense->addLimits();
+		Flash::addMessage('Wybrany limit został dodany!');
+		$category =User::getOtherExpense($_SESSION['user_id']);
+		$this->redirect('/expenses/addlimits');
+
+		}
+	}
+	public function deletelimitsAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+			if(isset($_POST['myData']))
+			{
+				$user_id=$_SESSION['user_id'];
+				$category_name = $_POST['myData'];
+				$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+				$limit = Expense::getLimit($user_id,$id_kategory);
+				$category =User::getAllExpensesLimit($_SESSION['user_id']);
+				if($limit!=0){
+				View::renderTemplate('Expenses/deletelimits.html',[
+				'user' => $this->user,
+				'category' => $category
+					]);	
+				}
+				
+			}
+			else
+			{
+					$category =User::getAllExpensesLimit($_SESSION['user_id']);
+					if(empty($category))
+					{
+						$info ='Żadna kategoria nie ma limitu!';
+						View::renderTemplate('Expenses/info.html',[
+						'user' => $this->user,
+						'info'=>$info
+							]);	
+					}
+					else{
+					View::renderTemplate('Expenses/deletelimits.html',[
+					'user' => $this->user,
+					'category' => $category
+						]);	
+				}
+	
+			
+			}
+		}
+	}
+		public function deleteLimitAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+			$expense= new Expense($_POST);
+			$expense->removeLimit();
+			Flash::addMessage('Wybrany limit został usunięty!');
+			$this->redirect('/expenses/deletelimits');
+
+		}
+	}
+	
+		public function editlimitsAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+			if(isset($_POST['myData']))
+			{
+				$user_id=$_SESSION['user_id'];
+				$category_name = $_POST['myData'];
+				$id_kategory =Expense::getCategoryExpense($user_id,$category_name);
+				$limit = Expense::getLimit($user_id,$id_kategory);
+				$category =User::getAllExpensesLimit($_SESSION['user_id']);
+				if($limit!=0){
+				View::renderTemplate('Expenses/editlimits.html',[
+				'user' => $this->user,
+				'category' => $category
+					]);	
+				}
+				
+			}
+			else
+			{
+					$category =User::getAllExpensesLimit($_SESSION['user_id']);
+					if(empty($category))
+					{
+						$info ='Żadna kategoria nie ma limitu!';
+						View::renderTemplate('Expenses/info.html',[
+						'user' => $this->user,
+						'info'=>$info
+							]);	
+					}
+					else
+					{
+					View::renderTemplate('Expenses/editlimits.html',[
+					'user' => $this->user,
+					'category' => $category,
+						]);	
+					}
+			}
+		}
+	}
+	public function editlimitAction()
+	{
+		if(isset($_SESSION['user_id']))
+		{
+		
+		$expense= new Expense($_POST);
+		$expense->addLimits();
+		Flash::addMessage('Wybrany limit został edytowany!');
+		$category =User::getAllExpensesLimit($_SESSION['user_id']);
+		View::renderTemplate('Expenses/editlimits.html',[
+			'user' => $this->user,
+			'category' => $category
+		]);	
+
+		}
 	}
 }

@@ -108,7 +108,7 @@ class Auth
 				 $remembered_login->delete();
 			 }
 			 //usuwanie cookie o nazwie remember me
-			 setcookie('remember_me','',time()-3600);
+			 setcookie('remember_me','',time()-3600,'/');
 		}
 	}
 

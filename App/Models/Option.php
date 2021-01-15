@@ -229,4 +229,22 @@ class Option extends \Core\Model
 		return true;
 		}
 	}
+	
+	public function addLimit()
+	{
+		$user_id =$_SESSION['user_id'];
+		$category_id =Expense::getCategoryExpense($user_id,$this->new_category);
+		$max_id=Expense::getLimitsMaxID();
+		
+		$sql = 'INSERT INTO limits (id, users_id, expense_id, kwota) VALUES (:id,:user_id,:expense_category_assigned_to_user_id,:amount)';
+				$db = static::getDB();
+				
+				$stmt = $db->prepare($sql);
+				$stmt->bindValue(':id', $max_id,PDO::PARAM_INT);
+				$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
+				$stmt->bindValue(':expense_category_assigned_to_user_id',$category_id,PDO::PARAM_INT);
+				$stmt->bindValue(':amount', $this->kwota,PDO::PARAM_STR);
+				
+				return $stmt->execute();
+	}
 }

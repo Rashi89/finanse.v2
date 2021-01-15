@@ -7,7 +7,7 @@
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 <script type="text/javascript">
-window.onload = function() {
+function wykres(){
 var nazwa  = {{nazwy|json_encode|raw}};
 var ilosc = {{wartosci|json_encode|raw}};
 var suma ={{sum_expenses|json_encode}};
@@ -84,6 +84,9 @@ chart.data[0].addTo("dataPoints", {y: (ilosc[i]/suma)*100,label: nazwa[i]});
 }
 }
 }
+</script>
+<script type="text/javascript">
+window.addEventListener('load', wykres());
 </script>
 {% endblock %}
 

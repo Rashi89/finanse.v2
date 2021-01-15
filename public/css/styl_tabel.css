@@ -288,6 +288,10 @@ input[type=email]
 {
 	margin-left:15px !Important;
 }
+.opcja_4
+{
+	margin-right: 30px;
+}
 
 .kwota input[type=number]
 {
@@ -394,7 +398,26 @@ input[type=text]
 	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
 }
-
+.kat
+{
+	width: 220px;
+	font-size:15px;
+	color: black;
+	background-color:white;
+	padding: 10px 10px;
+	margin-top: 10px;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	border: 3px solid #196678;
+}
+.kat:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+	box-shadow: 0px 0px 15px 5px rgba(28,82,94,1);
+}
 .option_modal
 {
 	color:var(--fieldset); 
@@ -490,7 +513,6 @@ textarea:focus
 	box-shadow: 3px 3px 30px 5px var(--rgba);
 	padding:10px;
 }
-
 
 tr>td
 {
@@ -663,6 +685,12 @@ h5
      vertical-align: middle;
      display: none;
  }
+  .bilans_opcja input[type="checkbox"]
+ {
+     margin-right: 10px;
+     vertical-align: middle;
+     display: none;
+ }
  #fourth
  {
      margin-right:0px !Important;
@@ -683,6 +711,25 @@ h5
   margin-bottom: 4px;
 }
 .bilans_opcja input[type="radio"]:checked + label:before {
+  background-color: #318cab;
+  margin-bottom: 4px;
+}
+.bilans_opcja input[type="checkbox"] + label:before {
+  content: "";
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  margin-right: 5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+.bilans_opcja input[type="checkbox"]:checked + label:before {
   background-color: #318cab;
   margin-bottom: 4px;
 }
@@ -814,7 +861,48 @@ h5
 	text-decoration: none;
 	background-color:#142f39;
 }
-
+.opcja label
+{
+	margin-bottom:0;
+}
+.limit_info
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:30px;
+	margin-right:30px;
+}
+.limit_info_modal
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.limit_kwota input[type=number]
+{
+	width: 250px;
+	font-size:15px;
+	color: black;
+	padding: 10px 10px;
+	margin-top: 10px;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	border: 3px solid #196678;
+}
+.nazwa input[type=text]
+{
+	width: 250px;
+	font-size:15px;
+	color: black;
+	padding: 10px 10px;
+	margin-top: 10px;
+	border-radius:5px;
+	cursor:pointer;
+	letter-spacing:2px;
+	outline:none;
+	border: 3px solid #196678;
+}
 @media(max-width:576px)
 {
 	.picture
@@ -1078,7 +1166,7 @@ h5
 	{
 	   font-size:45px; 
 	}
-	.kwota input[type=number]
+	.kwota input[type=number],.limit_kwota input[type=number],.nazwa input[type=text]
 	{
 	    width: 350px;
 	    font-size:30px;
@@ -1088,7 +1176,7 @@ h5
 	   	width: 350px;
 	    font-size:30px; 
 	}
-	#kategoria
+	#kategoria,#kategoria_limit
 	{
 	    width: 320px;
 	    font-size:30px; 
@@ -1182,7 +1270,11 @@ h5
         width: 350px !Important;
         margin-right: 0px;
     }
-    input[type="radio"]
+	.opcja_4
+	{
+		margin-right: 25px;
+	}
+    input[type="radio"], input[type="checkbox"]
     {
         vertical-align:middle;
         height: 30px !Important;
@@ -1205,6 +1297,25 @@ h5
     .bilans_opcja input[type="radio"]:checked + label:before {
       background-color: #318cab;
     }
+	
+	.bilans_opcja input[type="checkbox"] + label:before {
+      content: "";
+      /* create custom radiobutton appearance */
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      padding: 6px;
+      margin-right: 5px;
+      /* background-color only for content */
+      background-clip: content-box;
+      border: 1px solid #bbbbbb;
+      background-color: #e7e6e7;
+      border-radius: 50%;
+    }
+    .bilans_opcja input[type="checkbox"]:checked + label:before {
+      background-color: #318cab;
+    }
+	
 	.first.btn,.second.btn,.third.btn,.forth.btn
 	{
 	width: 380px;
