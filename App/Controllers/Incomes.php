@@ -60,9 +60,18 @@ class Incomes extends Authenticated
 	public function removeincomeAction()
 	{
 		$income= new Income($_POST);
+		
+		//$income->isInne();
+		if($income->isInne()==true)
+		{
+		Flash::addMessage('Wybrana kategoria nie została usunięta!');
+		$this->redirect('/incomes/showincome');
+		}
+		else{
 		$income->removeIncome();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/incomes/showincome');
+		}
 	}
 	
 

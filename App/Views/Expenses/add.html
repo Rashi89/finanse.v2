@@ -59,7 +59,7 @@ $(document).ready(function()
 			if(rezult<0)
 			{
 				var rezultat = -rezult;
-				$("#limit5").text('1.Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
 				$("#limit5").css('color','red');
 			}
 			else
@@ -77,12 +77,12 @@ $.post("/Expenses/spendInfo",{
 	}, function(rezult,status){
 		if(rezult>=0)
 			{
-				$("#limit4").text('2,W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
 			}
 			else if(rezult<0)
 			{
-				$("#limit4").text('3.Uwaga! W tym miesiącu przekroczyłeś już ustalony limit!');
+				$("#limit4").text('Uwaga! W tym miesiącu przekroczyłeś już ustalony limit!');
 				$("#limit4").css('color','red');
 			}
 			else if(rezult =="Brak")
@@ -103,7 +103,7 @@ if(kwota>0)
 			if(rezult<0)
 			{
 				var rezultat = -rezult;
-				$("#limit5").text('4.Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
 				$("#limit5").css('color','red');
 			}
 			else
@@ -138,13 +138,13 @@ $("#data_wybor").on("change", function(){
 	}, function(rezult,status){
 		if(rezult>=0)
 			{
-				$("#limit4").text('5.W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
 			}
 			else if(rezult<0)
 			{
 				var rezultat = -rezult;
-				$("#limit4").text('6.Uwaga! W tym miesiącu przekroczyłeś już ustalony limit o '+rezultat+' zł!');
+				$("#limit4").text('Uwaga! W tym miesiącu przekroczyłeś już ustalony limit o '+rezultat+' zł!');
 				$("#limit4").css('color','red');
 			}
 			else if(rezult =="Brak")
@@ -164,13 +164,13 @@ $("#data_wybor").on("change", function(){
 			if(rezult<0)
 			{
 				var rezultat = -rezult;
-				$("#limit5").text('7.Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
 				$("#limit5").css('color','red');
 				$("#limit4").text('');
 			}
 			else
 			{
-				$("#limit4").text('5a.W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
 				$("#limit5").text('');
 
@@ -196,13 +196,13 @@ $("#kwota").on("change", function(){
 			{
 				var rezultat = -rezult;
 				$("#limit4").text('');
-				$("#limit5").text('8.Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
 				$("#limit5").css('color','red');
 			}
 			else
 			{
 				$("#limit5").text('');
-				$("#limit4").text('9.W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
 			}
 	});

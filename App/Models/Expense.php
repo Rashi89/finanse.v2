@@ -506,15 +506,37 @@ class Expense extends \Core\Model
 		}
 		else return false;
 	}
-	public function removePayment()
+	
+	public function isInne()
 	{
 		if(empty($this->errors))
 		{
 		$user_id =$_SESSION['user_id'];
 			
-		$payment_category=static::getCategoryPayment($user_id,$this->wybor);
+		$expense_category=static::getCategoryExpense($user_id,$this->wybor);
+		$category_another_id=static::getCategoryExpense($user_id,"Inne");
 		
-		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND payment_method_assigned_to_user_id
+		if($expense_category==$category_another_id)
+		{
+			return true;
+		}
+		else return false;
+		}
+		return false;
+	}
+	
+	public function removePayment()
+	{
+		if(empty($this->errors))
+		{
+		$user_id =$_SESSION['user_id'];
+		$payment_category=static::getCategoryPayment($user_id,$this->wybor);	
+		if(static::existCategoryInne()==false)
+		{
+			static::addCategoryPayment();
+		}
+		$payment_category_inne=static::getCategoryPayment($user_id,"Inne");	
+		$sql = 'UPDATE `expenses` SET payment_method_assigned_to_user_id=:payment_category_inne WHERE user_id=:user_id AND payment_method_assigned_to_user_id
 		=:payment_category_assigned_to_user_id;
 		DELETE FROM payment_methods_assigned_to_users WHERE user_id=:user_id AND id=:payment_category_assigned_to_user_id';
 		$db = static::getDB();
@@ -522,12 +544,72 @@ class Expense extends \Core\Model
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 		$stmt->bindValue(':payment_category_assigned_to_user_id',$payment_category,PDO::PARAM_INT);
+		$stmt->bindValue(':payment_category_inne',$payment_category_inne,PDO::PARAM_INT);
 
 		
 		return $stmt->execute();
 		}
 		return false;
 	}
+	
+	public function existCategoryInne()
+	{
+		$user_id =$_SESSION['user_id'];
+	
+			$option = static::findCategoryPayment($user_id,"Inne");
+		
+			if($option) return true;
+			else return false;
+		
+	}
+	
+	public static function findCategoryPayment($user_id,$category)
+	{
+		$sql = "SELECT id FROM payment_methods_assigned_to_users WHERE name=:category AND user_id=:user_id";
+		$db = static::getDB();
+		
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':category', $category ,PDO::PARAM_STR);
+		$stmt->bindValue(':user_id', $user_id ,PDO::PARAM_INT);
+		
+		$stmt->setFetchMode(PDO::FETCH_CLASS,get_called_class());
+		
+		$stmt->execute();
+		
+		return $stmt->fetch();
+		
+	}
+	public function isPaymentInne()
+	{
+		if(empty($this->errors))
+		{
+		$user_id =$_SESSION['user_id'];
+			
+		$payment_category=static::getCategoryPayment($user_id,$this->wybor);
+		$category_another_id=static::getCategoryPayment($user_id,"Inne");
+		
+		if($payment_category==$category_another_id)
+		{
+			return true;
+		}
+		else return false;
+		}
+		return false;
+	}
+	public function addCategoryPayment()
+	{
+		$user_id =$_SESSION['user_id'];
+		$category ="Inne";
+		
+		$sql = "INSERT INTO payment_methods_assigned_to_users VALUES (NULL,:user_id,:category)";
+		$db = static::getDB();
+		$stmt = $db->prepare($sql);
+		$stmt->bindValue(':category', $category ,PDO::PARAM_STR);
+		$stmt->bindValue(':user_id', $user_id ,PDO::PARAM_INT);
+		
+		return $stmt->execute();
+	}
+	
 	public static function getMax($id)
 	{
 		$sql='SELECT COUNT(*) FROM expenses WHERE user_id=:id';

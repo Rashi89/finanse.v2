@@ -471,6 +471,24 @@ class Income extends \Core\Model
 		return false;
 	}
 	
+	public function isInne()
+	{
+		if(empty($this->errors))
+		{
+		$user_id =$_SESSION['user_id'];
+			
+		$income_category=static::getCategoryIncome($user_id,$this->wybor);
+		$category_another_id=static::getCategoryIncome($user_id,"Inne");
+		
+		if($income_category==$category_another_id)
+		{
+			return true;
+		}
+		else return false;
+		}
+		return false;
+	}
+	
 	public static function getMax($id)
 	{
 		$sql='SELECT COUNT(*) FROM incomes WHERE user_id=:id';
