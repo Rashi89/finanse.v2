@@ -488,15 +488,19 @@ class Expense extends \Core\Model
 			
 			$expense_category=static::getCategoryExpense($user_id,$this->wybor);
 			$name_expense =$this->wybor;
+			
+			$category_another_id=static::getCategoryExpense($user_id,"Inne");
 		
-		$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND expense_category_assigned_to_user_id=:expense_category_assigned_to_user_id;
+		//$sql = 'DELETE FROM `expenses` WHERE user_id=:user_id AND expense_category_assigned_to_user_id=:expense_category_assigned_to_user_id;
+		//DELETE FROM expenses_category_assigned_to_users WHERE user_id=:user_id AND id=:expense_category_assigned_to_user_id';
+		$sql = 'UPDATE `expenses` SET expense_category_assigned_to_user_id=:category_another_id WHERE user_id=:user_id AND expense_category_assigned_to_user_id=:expense_category_assigned_to_user_id;
 		DELETE FROM expenses_category_assigned_to_users WHERE user_id=:user_id AND id=:expense_category_assigned_to_user_id';
 		$db = static::getDB();
 		
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 		$stmt->bindValue(':expense_category_assigned_to_user_id',$expense_category,PDO::PARAM_INT);
-
+		$stmt->bindValue(':category_another_id',$category_another_id,PDO::PARAM_INT);
 		
 		return $stmt->execute();
 		}

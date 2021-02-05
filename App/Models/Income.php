@@ -449,16 +449,22 @@ class Income extends \Core\Model
 		$user_id =$_SESSION['user_id'];
 			
 		$income_category=static::getCategoryIncome($user_id,$this->wybor);
+		$category_another_id=static::getCategoryIncome($user_id,"Inne");
 		
-		$sql = 'DELETE FROM `incomes` WHERE user_id=:user_id AND income_category_assigned_to_user_id
+		//$sql = 'DELETE FROM `incomes` WHERE user_id=:user_id AND income_category_assigned_to_user_id
+		//=:income_category_assigned_to_user_id;
+		//DELETE FROM incomes_category_assigned_to_users WHERE user_id=:user_id AND id=:income_category_assigned_to_user_id';
+		
+		$sql = 'UPDATE`incomes` SET income_category_assigned_to_user_id=:category_another_id WHERE user_id=:user_id AND income_category_assigned_to_user_id
 		=:income_category_assigned_to_user_id;
 		DELETE FROM incomes_category_assigned_to_users WHERE user_id=:user_id AND id=:income_category_assigned_to_user_id';
+		
 		$db = static::getDB();
 		
 		$stmt = $db->prepare($sql);
 		$stmt->bindValue(':user_id', $user_id,PDO::PARAM_INT);
 		$stmt->bindValue(':income_category_assigned_to_user_id',$income_category,PDO::PARAM_INT);
-
+		$stmt->bindValue(':category_another_id',$category_another_id,PDO::PARAM_INT);
 		
 		return $stmt->execute();
 		}
