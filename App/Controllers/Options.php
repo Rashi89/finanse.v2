@@ -39,21 +39,17 @@ class Options extends Authenticated
 			if($options->existCategory() == false)
 			{
 				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
-				View::renderTemplate('Options/addpayment.html',[
-				'user' => $this->user
-			
-					]);	
 			}
 			else
 			{
 				$options->addCategoryPayment();
 				Flash::addMessage('Kategoria dodana poprawnie!');
+	
+			}
 				View::renderTemplate('Options/addpayment.html',[
 				'user' => $this->user
 			
-					]);	
-			}
-
+					]);
 		}
 	}
 	
@@ -78,21 +74,16 @@ class Options extends Authenticated
 			if($options->existCategoryIncome() == false)
 			{
 				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
-				View::renderTemplate('Options/addincome.html',[
-				'user' => $this->user
-			
-					]);	
 			}
 			else
 			{
 				$options->addCategoryIncome();
 				Flash::addMessage('Kategoria dodana poprawnie!');
+			}
 				View::renderTemplate('Options/addincome.html',[
 				'user' => $this->user
 			
 					]);	
-			}
-
 		}
 	}
 	
@@ -116,10 +107,6 @@ class Options extends Authenticated
 			if($options->existCategoryExpense() == false)
 			{
 				Flash::addMessage('Taka kategoria już istnieje!',Flash::WARNING);
-				View::renderTemplate('Options/addexpense.html',[
-				'user' => $this->user
-			
-					]);	
 			}
 			else
 			{
@@ -127,13 +114,12 @@ class Options extends Authenticated
 				if(isset($_POST['kwota']))
 				{
 				$options->addLimit();
+				Flash::addMessage('Kategoria została dodana!');
 				}
-				Flash::addMessage('Kategoria dodana poprawnie!');
+			}
 				View::renderTemplate('Options/addexpense.html',[
 				'user' => $this->user
-			
 					]);	
-			}
 
 		}
 	}
@@ -275,22 +261,15 @@ class Options extends Authenticated
 				if(Option::deleteIncome($user_id,$max_id))
 				{
 					$info="Wpis został usunięty!";
-					View::renderTemplate('Incomes/info.html',[
-					'user' => $this->user,
-					'info' =>$info
-				
-					]);	
 				}
-		
 				else
 				{
 					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
-					View::renderTemplate('Incomes/info.html',[
+				}
+				View::renderTemplate('Incomes/info.html',[
 						'user' => $this->user,
 						'info' =>$info
-						
-							]);	
-				}
+							]);
 	}
 	public function showdeleteexpenseAction()
 	{
@@ -348,21 +327,15 @@ class Options extends Authenticated
 				if(Option::deleteExpense($user_id,$max_id))
 				{
 					$info="Wpis został usunięty!";
+				}
+				else
+				{
+					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
+				}
 					View::renderTemplate('Expenses/info.html',[
 					'user' => $this->user,
 					'info' =>$info
 				
 					]);	
-				}
-		
-				else
-				{
-					$info="Niestety coś poszło nie tak! Wpis nie został usunięty!";
-					View::renderTemplate('Expenses/info.html',[
-						'user' => $this->user,
-						'info' =>$info
-						
-							]);	
-				}
 	}
 }
