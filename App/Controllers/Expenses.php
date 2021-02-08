@@ -63,10 +63,19 @@ class Expenses extends Authenticated
 	public function removeAction()
 	{
 		$expense= new Expense($_POST);
+		
+		if($expense->isInne()==true)
+		{
+			Flash::addMessage('Wybrana kategoria nie została usunięta!');
+			$this->redirect('/expenses/show');
+		}
+		else
+		{
 		$expense->removeLimit();
 		$expense->removeExpense();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/show');
+		}
 		
 	}
 	
@@ -85,9 +94,18 @@ class Expenses extends Authenticated
 	public function removepaymentAction()
 	{
 		$expense= new Expense($_POST);
+		
+		if($expense->isPaymentInne()==true)
+		{
+		Flash::addMessage('Wybrana kategoria nie została usunięta!');
+		$this->redirect('/expenses/showpayment');
+		}
+		else
+		{
 		$expense->removePayment();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		$this->redirect('/expenses/showpayment');
+		}
 	}
 	
 	public function limitAction()
