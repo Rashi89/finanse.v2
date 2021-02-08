@@ -47,72 +47,54 @@ $(document).ready(function()
 			$("#limit").text('Miesięczny limit: '+ limit+' zł');
 	});
 	
-	if(data!="") 
+	//if(data!="") 
 	{
-		$.post("/Expenses/comment",{
-		dane: kategoria,
-		year: rok,
-		month: miesiac,
-		amount: kwota
-	}, function(rezult,status){
-	
-			if(rezult<0)
-			{
-				var rezultat = -rezult;
-				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
-				$("#limit5").css('color','red');
-			}
-			else
-			{
+				$.post("/Expenses/spendInfo",{
+				dane: kategoria,
+				year: rok,
+				month: miesiac,
+				amount: kwota
+			}, function(rezult,status){
+			
+					if(rezult<0)
+					{
+						var rezultat = -rezult;
+						$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+						$("#limit5").css('color','red');
+					}
+					else
+					{
+						
+						$("#limit5").text('');
+					}
+			});
 				
-				$("#limit5").text('');
-			}
-	});
-	
-$.post("/Expenses/spendInfo",{
-		dane: kategoria,
-		year: rok,
-		month: miesiac,
-		amount: kwota
-	}, function(rezult,status){
-		if(rezult>=0)
-			{
-				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
-				$("#limit4").css('color','green');
-			}
-			else if(rezult<0)
-			{
-				$("#limit4").text('Uwaga! W tym miesiącu przekroczyłeś już ustalony limit!');
-				$("#limit4").css('color','red');
-			}
-			else if(rezult =="Brak")
-			{
-				$("#limit4").text('');
-			}
-	});
+					$.post("/Expenses/comment",{
+						dane: kategoria,
+						year: rok,
+						month: miesiac,
+						amount: kwota
+					}, function(rezult,status){
+						if(rezult>=0)
+							{
+								$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
+								$("#limit4").css('color','green');
+							}
+							else if(rezult<0)
+							{
+								var rezultat = -rezult;
+								$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
+								$("#limit5").css('color','red');
+								$("#limit4").text('');
+							}
+							else if(rezult =="Brak")
+							{
+								$("#limit4").text('');
+							}
+					});
+					
 }	
-if(kwota>0)
-	{
-		$.post("/Expenses/comment",{
-		dane: kategoria,
-		year: rok,
-		month: miesiac,
-		amount: kwota
-	}, function(rezult,status){
-	
-			if(rezult<0)
-			{
-				var rezultat = -rezult;
-				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
-				$("#limit5").css('color','red');
-			}
-			else
-			{
 
-				$("#limit5").text('');
-			}
-	});
-}
 	});
 
 var kwota = $("#kwota").val();
@@ -130,7 +112,10 @@ $("#data_wybor").on("change", function(){
 	rok = data1.getFullYear();
 	$("#limit4").text('');
 	$("#limit5").text('');
-		$.post("/Expenses/spendinfo",{
+	
+	if(kwota==""){
+		kwota=0;
+		$.post("/Expenses/comment",{
 		dane: kategoria,
 		year: rok,
 		month: miesiac,
@@ -152,7 +137,8 @@ $("#data_wybor").on("change", function(){
 				$("#limit4").text('');
 			}
 	});
-	if(kwota>0)
+	}
+	else if(kwota>0)
 	{
 		$.post("/Expenses/comment",{
 		dane: kategoria,
@@ -168,12 +154,16 @@ $("#data_wybor").on("change", function(){
 				$("#limit5").css('color','red');
 				$("#limit4").text('');
 			}
-			else
+			else if(rezult>=0)
 			{
 				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
 				$("#limit5").text('');
-
+			}
+			else
+			{
+				$("#limit4").text('');
+				$("#limit5").text('');
 			}
 	});
 	}
@@ -199,11 +189,16 @@ $("#kwota").on("change", function(){
 				$("#limit5").text('Miesięczny limit zostanie przekroczony o '+ rezultat +' zł!');
 				$("#limit5").css('color','red');
 			}
-			else
+			else if (rezult>=0)
 			{
 				$("#limit5").text('');
 				$("#limit4").text('W tym miesiącu można jeszcze wydać '+ rezult+' zł!');
 				$("#limit4").css('color','green');
+			}
+			else
+			{
+				$("#limit5").text('');
+				$("#limit4").text('');
 			}
 	});
 	}
