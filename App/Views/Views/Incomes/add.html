@@ -1,0 +1,157 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Incomes add{% endblock %}
+
+{% block footer %}
+	<script src="/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+	
+$(document).ready(function()
+{	
+
+$( "#formAddIncomes" ).validate({
+  rules: {
+    kwota: {
+      required: true,
+      min: 0
+    },
+	date:{
+		required: true
+	}
+  },
+  messages:{
+  kwota:{
+  required:"Podaj kwotę!",
+     min: "Wartość ma być nieujemna!"
+  },
+  date:{
+	required:"Podaj datę!"
+  }
+  },
+  highlight: function(element) {
+						$(element).addClass('error');
+					}, unhighlight: function(element) {
+						$(element).removeClass('error');
+					},
+ errorPlacement: function(error, element) {
+						if (element.attr("name") == "date") {
+							error.insertAfter(".data");
+						} else if(element.attr("name") == "kwota") {
+							error.insertAfter(".kwota");
+						} 
+
+							else {
+							error.insertAfter(element);
+						}
+					}
+			});
+});
+		
+	</script>
+	
+{% endblock %}
+
+
+
+{% block body %}
+
+<main>
+		<div class="container">
+				<div class="row no-gutter">
+					<div class="order-12 order-lg-1 col-lg-4 my-auto p-0 d-none d-lg-block">
+						<div class="picture" id="picture"><img src="/img/przychod.png" class="obraz  mt-1"></div>
+					</div>
+							<div class="col-lg-8 order-1 order-lg-12  zawartosc formularz" style="position: relative; z-index: 2;">
+							
+								<form action="/incomes/create" method="post" id="formAddIncomes">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border"> Przychód </legend>
+												
+												<div >
+														
+														<div class="opcja"> Kwota </div>
+															<div class="kwota active"> <i class="icon-money"></i>  <input class=" col-md-12" 
+															type ="number"  placeholder="Kwota" onfocus="this.placeholder=''" 
+															required	onblur="this.placeholder='Kwota'" step="0.01" id="kwota" name="kwota"></div>
+														
+												</div>
+														
+												<div>
+														
+														<div class="opcja"> Data </div>
+															<div class="data"> <i class="icon-calendar"></i><input class=" col-md-12" 
+															type="date" name="date" id="inputData" required></div>
+
+												</div>
+
+
+												
+												<div>
+												
+														<div class="opcja"><label for="kategoria"> Kategoria </label></div>
+															<i class="icon-list"></i>
+														<select class="opcja_2 opcja_3 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															{% for income in category %}
+															<option value="{{income.name}}">{{income.name}}</option>
+															{% endfor %}
+														</select>
+												</div>
+												
+												<div>	
+													
+													<div class="Komentarz">
+															
+															<div class="opcja"><label for="komentarz">Komentarz</label></div>
+															<textarea class="col-10" name="komentarz" id="komentarz" rows="4" cols="80" 
+																name="komentarz"></textarea>
+															
+													</div>
+							
+
+												</div>
+												
+												{% if user.errors is not empty %}
+												<p>Errors</p>
+												<ul>
+													{% for error in user.errors %}
+													<li>
+														{{error}}
+													</li>
+													{% endfor %}
+													
+												</ul>
+											{% endif %}
+											
+												<div class="dodaj"><input type = "submit" value="Dodaj"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+											
+												
+										
+										</fieldset>
+								
+								</form>
+							
+							</div>
+
+				</div>
+
+
+
+				
+		</div>
+
+				
+	</main>
+<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+{% endblock %}

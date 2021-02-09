@@ -92,13 +92,11 @@ class Expenses extends Authenticated
 	public function removepaymentAction()
 	{
 		$expense= new Expense($_POST);
-		
-		if($expense->isPaymentInne()==true)
+		if($expense->itisInne()==true)
 		{
-		Flash::addMessage('Wybrana kategoria nie została usunięta!');
+		  Flash::addMessage('Wybrana kategoria nie została usunięta!');
 		}
-		else
-		{
+		else{
 		$expense->removePayment();
 		Flash::addMessage('Wybrana kategoria została usunięta!');
 		}

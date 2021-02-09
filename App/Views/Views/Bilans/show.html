@@ -1,0 +1,250 @@
+{% extends "Bilans_table.html" %}
+
+{% block title %}Bilans{% endblock %}
+
+{% block footer %}
+<script src="/dist/chartist.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+var nazwa  = {{nazwy|json_encode|raw}};
+var ilosc = {{wartosci|json_encode|raw}};
+var suma ={{sum_expenses|json_encode}};
+var elem = document.getElementById('za');
+const styles = window.getComputedStyle(elem);
+var color =styles.getPropertyValue('background-color');
+var color1="rgb(255, 255, 255)";
+var przycisk = document.getElementById('przycisk');
+przycisk.addEventListener("click", function() {
+ window.location.reload(true);
+});
+if(color==color1)
+{
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Wykres kołowy wydatków",
+		fontSize: 40
+	},
+	legend:{
+		fontSize: 20,
+	},
+	backgroundColor: "transparent",
+	data: [{
+			type: "pie",
+			startAngle: 240,
+			indexLabelFontSize: 16,
+			showInLegend: "true",
+			indexLabelFontColor: "black",
+			legendText: "{label}",
+			indexLabel: "{label} ({y})",
+			yValueFormatString: "##0.00\"%\"",
+		dataPoints:[]
+	}]
+});
+chart.render();
+
+for(var i=0;i<ilosc.length;i++)
+{
+chart.data[0].addTo("dataPoints", {y: (ilosc[i]/suma)*100,label: nazwa[i]});
+}
+}
+else
+{
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Wykres kołowy wydatków",
+		fontColor: "white",
+		fontSize: 40
+	},
+	legend:{
+		fontSize: 20,
+		fontColor: "white"
+	},
+	backgroundColor: "transparent",
+	data: [{
+			type: "pie",
+			startAngle: 240,
+			indexLabelFontSize: 16,
+			showInLegend: "true",
+			indexLabelFontColor: "white",
+			legendText: "{label}",
+			indexLabel: "{label} ({y})",
+			yValueFormatString: "##0.00\"%\"",
+		dataPoints:[]
+	}]
+});
+chart.render();
+
+for(var i=0;i<ilosc.length;i++)
+{
+chart.data[0].addTo("dataPoints", {y: (ilosc[i]/suma)*100,label: nazwa[i]});
+}
+}
+}
+</script>
+{% endblock %}
+
+
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc2" id="za">
+							<fieldset class="ramka">
+								<legend class="scheduler-border bilans">Bilans </legend>
+								<div class="error">
+									{% for message in flash_messages %}
+										{{message.body}}
+									{% endfor %}
+								</div>
+							
+								<div class="row">
+								
+										<div class="wydatek col-sm-12 col-lg-6">
+
+												<fieldset class="scheduler-border">
+													<legend class="scheduler-border legenda">Wydatki</legend>
+													
+															
+														<table class="table">
+															<tr>
+															<td class="category">Kategoria wydatku </td><td class="category">Koszt</td>
+															</tr>
+																		{% for key,value in array_expense %}
+																				
+																					<tr>
+																					<td class="key">{{key}}</td><td class="key">{{value}} zł</td>
+																					</tr>
+																			
+																		{% endfor %}
+																				
+															<tr>
+															<td class="sum">Suma</td> <td class="sum">{{sum_expenses}} zł</td>
+															</tr>
+															</table>
+													
+													
+
+												</fieldset>
+											
+										</div>
+										
+										<div class="col-sm-12 col-lg-6">
+												<fieldset class="scheduler-border">
+													<legend class="scheduler-border legenda">Przychody</legend>
+													<table class="table">
+															<tr>
+															<td class="category">Kategoria przychodu </td><td class="category">Koszt</td>
+															</tr>
+																		{% for key,value in array %}
+																				
+																					<tr>
+																					<td class="key">{{key}}</td><td class="key">{{value}} zł</td>
+																					</tr>
+																			
+																		{% endfor %}
+																				
+															<tr>
+															<td class="sum">Suma</td> <td class="sum">{{sum_incomes}} zł</td>
+															</tr>
+														</table>
+
+													</fieldset>
+													
+											
+										</div>
+										
+										
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-lg-6 info_dla_uzytkownika">
+													<fieldset class="scheduler-border">
+													<legend class="scheduler-border legenda"> Podsumowanie </legend>
+																<h2 class="saldo"> Saldo:</h2>
+																<div id="saldo">
+																		{{allBilans}}
+																</div>
+													<div id="informacja">
+													{{info}}
+													</div>
+													</fieldset>
+									</div>
+								</div>
+								<div style="margin-top:20px"></div>
+								{% if wartosci|length >0 %}
+										<div class="row">
+													<div id="chartContainer" style="height: 370px; width: 90%;margin-left:auto;margin-right:auto;margin-bottom:20px"></div>
+										</div>
+								{% endif %}
+							<div class ="row">
+								<div class="col-sm-12">
+								<form action="/bilans/show" method="post">
+													<article>
+														<h3 class="napis">Wybierz interesujący Cię okres czasu z&nbsp;jakiego chcesz przejrzeć swój bilans</h3>
+													</article>
+												
+												<div class="buttons">
+														
+														<div class="button"><button type="submit" class="first btn"	name="opcja_bilansu" value="1">Bieżący miesiąc</div>
+														<div class="button"><button type="submit" class="second btn" 	name="opcja_bilansu"  value="2" >Poprzedni miesiąc</div>
+														<div class="button"><button type="submit"  class="third btn"	name="opcja_bilansu"  value="3" >Bieżący rok</div>
+														<div class="button"><button type="button" class="forth btn btn" name="opcja_bilansu"  value="5" data-toggle="modal" data-target="#daty" >Niestandardowy</div>
+																		
+												</div>
+												
+												<div class="modal fade" id="daty" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle">Ustawienie dat</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																  <span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body text-center">
+										
+																		<div class="option_modal">Data początkowa</div>
+																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="start_date"></label></div>
+																		<div class="option_modal">Data końcowa</div>
+																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="end_date"></label></div>
+
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+																<button type="submit" name="opcja_bilansu"  value="5" class="btn btn-primary zapisz">Zapisz</button>
+															</div>
+														</div>
+													</div>
+												</div>
+										
+
+									
+												<!-- Modal -->
+												
+								</form>
+							</div>
+							</div>
+						</div>
+							</fieldset>
+					</div>
+					
+					</div>
+
+			</main>
+<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+{% endblock %}

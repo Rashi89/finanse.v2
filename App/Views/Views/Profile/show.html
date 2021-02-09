@@ -1,0 +1,51 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="welcome">
+								<div class="data">	
+								Dzisiejsza data: {{date}}
+								</div>
+								<div class="data">
+								Twoje saldo: {{saldo}}
+								</div>
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="buttons">
+								<div class="button">
+								<a href="/Incomes/add" class="income btn">Dodaj przychód</a>
+								</div>
+								<div class="button">
+								<a href="/Expenses/add" class="expense btn">Dodaj wydatek</a>
+								</div>
+								<div class="button">
+								<a href="/Bilans/selected" class="bilanss btn">Przeglądaj bilans</a>
+								</div>
+								<div style="clear:both;"></div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<img src="/img/grafa_glowna.png" class="img-fluid"/>
+					</div>
+
+	</div>
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+{% endblock %}

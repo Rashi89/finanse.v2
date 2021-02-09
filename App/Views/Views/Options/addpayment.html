@@ -1,0 +1,54 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Add category payment{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc1 formularz">
+						
+								<form action="/options/showpayment" method="post">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border legenda"> Dodanie kategorii </legend>
+												
+												<div>
+													<h3 class="edit_text">Podaj nazwę nowej kategorii płatności: </h3>
+													<div class="col-1 d-inline" ><i class="icon-list"></i></div>
+														<div class="login d-inline"><input type ="text" placeholder="Kategoria" onfocus="this.placeholder=''" onblur="this.placeholder='Kategoria'" name="new_category" required></div>
+														<div></div>
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
+												</div>
+
+												<div class="dodaj"><input type = "submit" value="Dodaj"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+{% endblock %}

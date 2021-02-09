@@ -1,0 +1,101 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Edit email{% endblock %}
+
+{% block footer %}
+	<script src="/js/hideShowPassword.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			var userId ='{{user.id}}';
+			$('#formProfile').validate(
+			{
+					rules: {
+						name: 'required',
+						email: {
+							required:true,
+							email: true,
+							remote: {
+									url: '/account/validate-email',
+									data: {
+											potencjal_id: function(){
+													return userId;
+											}
+									}
+							}
+						}
+					},
+					messages: {
+						email: {
+							required:'Podaj adres e-mail!',
+							remote: 'Ten e-mail jest już zajęty!',
+							email:'Podaj poprawny format adresu e-mail!'
+						}
+					
+					},
+					errorElement : 'div',
+					errorLabelContainer: '.errorTxt'
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+			
+		});
+	
+		
+	</script>
+	
+{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/profile/updateemail" method="post" id="formProfile">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border legenda"> Zmiana e-mail </legend>
+												<h3 class="old edit_text">Podaj nowy adress e-mail</h3>
+												<div class="email col-1 d-inline"><i class="icon-mail-alt"></i></div>
+														<div class="email1 d-inline"><input type ="email" placeholder="E-mail" 
+														onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'" name="email" 
+														required value="{{user.email}}"></div>
+														<div class="errorTxt"></div>
+														<div class="error">
+																			{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+														</div>
+												
+
+												<div class="dodaj"><input type = "submit" value="Zmień"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+						
+						</div>
+					</div>
+				</div>
+				
+
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+{% endblock %}

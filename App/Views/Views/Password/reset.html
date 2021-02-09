@@ -1,0 +1,81 @@
+{% extends "Base.html" %}
+
+{% block title %}Reset password{% endblock %}
+
+{% block footer %}
+	<script src="/js/hideShowPassword.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#formPassword').validate(
+			{
+					rules: {
+						password: {
+							required: true,
+							minlength: 6,
+							validPassword: true
+						}
+					}
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+		});
+		
+	</script>
+	
+{% endblock %}
+{% block body %}
+
+
+	<main>
+		
+		<div class="container">
+		
+			<header>
+				<div style="height:40px;"></div>
+			</header>
+		
+			
+				<div class="row">
+				
+						<div class="col-sm-12 col-lg-5">
+							<img src="/img/logo.png" class="logotyp" />
+						</div>
+				
+				
+						<div class="col-sm-12 col-lg-7 formularz text-left mt-5">
+								<div class="row">
+									<form action="/password/reset-password" method="post" id="formPassword">
+											<div class="napis">RESETOWANIE HASŁA</div>
+											<input type="hidden" name="token" value="{{token}}"/>
+											<div class="info1">Wpisz nowe hasło do swojego konta:</div>
+											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+											<div class="haslo d-inline"><input type ="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" id="inputPassword" autofocus required></div>
+											<div class="blad">
+												{% for message in flash_messages %}
+													{{message.body}}
+												{% endfor %}
+											</div>
+											<div class="rejestracja1"> <input type = "submit" value="Zresetuj hasło!"></div>
+									</form>	 
+								</div>
+						</div>					
+				</div>
+		</div>
+
+
+	</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+
+{% endblock %}

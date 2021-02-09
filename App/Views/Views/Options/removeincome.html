@@ -1,0 +1,75 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Delete category income{% endblock %}
+
+{% block body %}
+
+			<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/Incomes/removeincome" method="post">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border">Usuwanie kategorii</legend>
+												
+												<div>
+													<h3 class="edit_text">Wybierz nazwę kategorii do usunięcia: </h3>
+													<div>
+															<i class="icon-list"></i>
+															<select class="opcja_2 col-8 col-sm-12 col-md-12 col-lg-12" id="kategoria" name="wybor">
+															{% for income in category %}
+																<option value="{{income.name}}">{{income.name}}</option>
+															{% endfor %}
+															</select>
+													</div>
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+														{% endfor %}
+												</div>
+
+												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Usuń</a></div>
+												<div><a href="/Profile/show" class="reset" >Anuluj</a></div>
+
+<!-- The Modal -->
+												<div class="modal fade" id="akcept" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle"><i class="icon-warning"></i>Uwaga!</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																  <span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body text-center">
+										
+																	<h4 class="edit_text">Usunięcie wybranej kategorii spowoduje usunięcie wszystkich przychodów, które były wprowadzone z&nbsp;tą kategorią! Zgadzasz się?</h4>
+																		
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+																<button type="submit" class="btn btn-primary zapisz">Tak!</button>
+															</div>
+														</div>
+													</div>
+												</div>
+										
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+
+{% endblock %}
