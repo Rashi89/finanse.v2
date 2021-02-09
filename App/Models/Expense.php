@@ -552,7 +552,22 @@ class Expense extends \Core\Model
 		return false;
 	}
 	
-	public function existCategoryInne()
+    public function itisInne()
+	{
+	    $user_id =$_SESSION['user_id'];
+	    $payment_category=static::getCategoryPayment($user_id,$this->wybor);
+	    $option = static::findCategoryPayment($user_id,"Inne");
+	    if($option)
+	    {
+	        $payment_inne_id=static::getCategoryPayment($user_id,"Inne");
+	        if($payment_category==$payment_inne_id) return true;
+	        else return false;
+	    }
+	    else return false;
+	    
+	}
+	
+	public static function existCategoryInne()
 	{
 		$user_id =$_SESSION['user_id'];
 	
@@ -562,6 +577,8 @@ class Expense extends \Core\Model
 			else return false;
 		
 	}
+	
+
 	
 	public static function findCategoryPayment($user_id,$category)
 	{

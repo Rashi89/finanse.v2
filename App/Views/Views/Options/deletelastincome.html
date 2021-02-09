@@ -1,0 +1,111 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Delete last income{% endblock %}
+
+
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/options/deleteincome" method="post" >
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border legenda1">Usuń ostatni wpis</legend>
+												
+												<div >
+													
+											<div >
+												
+														<div class="opcja"> Kwota </div>
+															<div class="kwota active"> <i class="icon-money"></i>  <input class=" col-md-12" 
+															type ="number" required placeholder="Kwota"  value='{{prize}}' step="0.01" name="kwota" 
+															disabled="disabled" style="cursor: context-menu;background-color:white; font-weight: bold;"></div>
+														<div class="error">
+														
+														</div>
+												</div>
+														
+												<div>
+														
+														<div class="opcja"> Data </div>
+															<div class="data"> <i class="icon-calendar"></i><input class=" col-md-12" type="date" 
+															value='{{date}}' name="date" disabled style="cursor: context-menu;background-color:white; font-weight: bold;"></div>
+														<div class="error">
+														
+														</div>
+												</div>
+
+
+												
+												<div>
+												
+														<div class="opcja" >Kategoria</div>
+															<div class="kat"><i class="icon-list"></i>
+															<input class="col-md-12 opcja_2 opcja_3" style="cursor: context-menu; background-color:white; font-weight: bold;" type ="text" 
+															value='{{name}}' name ="name" disabled="disabled"></div>
+
+												</div>
+												
+												<div>	
+													
+													<div class="Komentarz">
+															
+															<div class="opcja"><label for="komentarz">Komentarz</label></div>
+															<textarea class="col-10" name="komentarz" id="komentarz" rows="4" 
+															cols="80"  disabled style="background-color:white; font-weight: bold;">{{comment}}</textarea>
+															
+													</div>
+							
+
+												</div>
+												<div class="error">
+														{% for message in flash_messages %}
+																				{{message.body}}
+																			{% endfor %}
+												</div>
+											
+												<div><a href="#" class="akcept" data-toggle="modal" data-target="#akcept">Usuń</a></div>
+												<div><a href="/Profile/show" class="reset">Anuluj</a></div>
+
+<!-- The Modal -->
+												<div class="modal fade" id="akcept" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle"><i class="icon-warning"></i>Uwaga!</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																  <span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body text-center">
+										
+																	<h4 class="edit_text">Jesteś pewny, że chcesz usunąć ten przychód?</h4>
+																		
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+																<button type="submit" class="btn btn-primary zapisz">Tak</button>
+															</div>
+														</div>
+													</div>
+												</div>
+										
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+{% endblock %}

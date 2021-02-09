@@ -1,0 +1,94 @@
+{% extends "Base_user.html" %}
+
+{% block title %}Edit password{% endblock %}
+
+{% block footer %}
+	<script src="/js/hideShowPassword.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#formProfile').validate(
+			{
+					rules: {
+						new_password: {
+							required: true,
+							minlength: 6,
+							validPassword: true
+						}
+					},
+					messages: {
+						new_password:{
+							required:'Podaj nowe hasło!',
+							validPassword:'Hasło musi zawierać conajmniej jedną cyfrę i literę!',
+							minlength:'Hasło musi mieć długość 6 znaków!'
+						}
+					
+
+					},
+					errorElement : 'div',
+					errorLabelContainer: '.errorTxt'
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+		});
+		
+	</script>
+	
+{% endblock %}
+
+{% block body %}
+
+<main>
+			
+				<div class="container">
+					
+					<div class="row">
+					
+						<div class="zawartosc formularz">
+						
+								<form action="/profile/updatepass" method="post" id="formProfile">
+								
+										<fieldset class="scheduler-border">
+											
+											<legend class="scheduler-border legenda"> Zmiana hasła </legend>
+												<h3 class="old edit_text">Podaj stare hasło: </h3>
+												<div cless="col-10 col-md-8 col-lg-6 col-xl-5 formularz text-center mt-5">
+												<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+															<div class="haslo d-inline"><input type ="password" placeholder="Old Password" onfocus="this.placeholder=''" onblur="this.placeholder='Old Password'" name="old_password" ></div>
+															<div></div>
+													<h3 class="new edit_text">Podaj nowe hasło: </h3>
+															<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+															<div class="haslo d-inline"><input type ="password" placeholder="New Password" onfocus="this.placeholder=''" onblur="this.placeholder='New Password'" name="new_password" required></div>
+															<div class="errorTxt d-inline"></div>
+															{% for message in flash_messages %}
+															<div class="error error-{{message.type}}">
+															{{message.body}}
+															</div>
+															{% endfor %}
+												</div>
+
+												<div class="dodaj"><input type = "submit" value="Zmień"></div>
+												<a href="/Profile/show" class="reset">Anuluj</a>
+
+										</fieldset>
+								
+								</form>
+						
+						
+						</div>
+					</div>
+				</div>
+
+			</main>
+			<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+{% endblock %}

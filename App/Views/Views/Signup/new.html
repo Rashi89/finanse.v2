@@ -1,0 +1,139 @@
+{% extends "Base.html" %}
+
+{% block title %}Sign up{% endblock %}
+
+{% block footer %}
+	<script type="text/javascript" src="/js/hideShowPassword.min.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#formSignup').validate(
+			{
+					rules: {
+						name: {
+							required: true,
+							remote: '/account/validate-name'
+						},
+						email: {
+							required: true,
+							email: true,
+							remote: '/account/validate-email'
+						},
+						password: {
+							required: true,
+							minlength: 6,
+							validPassword: true
+						}
+					},
+					messages: {
+						email: {
+							email:'Podaj poprawny adres!',
+							required:'Podaj adres e-mail!',
+							remote: 'E-mail już jest aktywny'
+						},
+						name:{
+							required:'Podaj nazwę!',
+							remote: 'Ta nazwa jest już zajęta!'
+						},
+						password:{
+							required:'Podaj hasło!',
+							validPassword:'Hasło musi zawierać conajmniej jedną cyfrę i literę!',
+							minlength:'Hasło musi mieć długość 6 znaków!'
+						}
+					
+
+					},
+					highlight: function(element) {
+						$(element).addClass('error');
+					}, unhighlight: function(element) {
+						$(element).removeClass('error');
+					},
+				 errorPlacement: function(error, element) {
+						if (element.attr("name") == "password") {
+							error.insertAfter(".haslo");
+						} else {
+							error.insertAfter(element);
+						}
+					}
+			});
+			
+			$('#inputPassword').hideShowPassword({
+				show:false,
+				innerToggle: 'focus'
+			});
+		});
+		
+	</script>
+	
+{% endblock %}
+{% block body %}
+
+
+<main>
+			
+			<div class="container">
+				<header>
+					<div style="height:40px;"></div>
+				</header>
+		
+		
+				<div class="row justify-content-around">
+				
+					<div class="col-sm-12 col-lg-5">
+						<img src="/img/logo.png" class="logotyp" />
+					</div>
+						<div class="col-sm-12 col-lg-7 formularz text-left mt-5">
+							<div class="row">
+									<form method="post" action="/signup/create" id="formSignup">
+											<div class="napis">REJESTRACJA</div>
+											<div class="col-1 d-inline" ><i class="icon-user-1"></i></div>
+											<div class="login d-inline"><input type ="text" placeholder="Login" onfocus="this.placeholder=''" 
+											onblur="this.placeholder='Login'" name="name" id="inputName" autofocus value="{{user.name}}" 
+											required></div>
+											<div id="error_name" style="color:green"></div>
+											<div class="klodka col-1 d-inline"><i class="icon-lock"></i></div>
+											<div class="haslo d-inline"><input type ="password" placeholder="Password" 
+											onfocus="this.placeholder=''" onblur="this.placeholder='Password'" name="password" 
+											id="inputPassword" required></div>
+											<div></div>
+											<div class="email col-1 d-inline"><i class="icon-mail-alt"></i></div>
+											<div class="email d-inline"><input type ="email" placeholder="E-mail" onfocus="this.placeholder=''" 
+											onblur="this.placeholder='E-mail'" name="email" id="inputEmail" value="{{user.email}}" required></div>
+											
+											{% if user.errors is not empty %}
+												<p>Errors</p>
+												<ul>
+													{% for error in user.errors %}
+													<li>
+														{{error}}
+													</li>
+													{% endfor %}
+													
+												</ul>
+											{% endif %}
+											<div class="rejestracja"> <input type = "submit" value="Zarejestruj się!"></div>
+											<a href="/" class="anuluj">Anuluj!</a>
+									</form>
+															
+								</div>
+						</div>
+					</div>
+
+			</div>
+	
+		</main>
+					<div class="container-fluid p-0 mt-4">
+				<footer class="page-footer font-small blue fixed-bottom">
+							<div class="stopka_menu">
+							 <p>Wszelkie prawa zastrzeżone. Copyright &copy; 2020 All Rights Reserved </p>
+							</div>
+				</footer>
+			</div>
+
+
+
+
+
+{% endblock %}
+ 
