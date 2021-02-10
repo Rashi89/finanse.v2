@@ -55,8 +55,23 @@
 														<a class="nav-link color-text" href="/Expenses/add"><i class="icon-basket"></i> Dodaj wydatek </a>
 													</li>
 													
-													<li class="nav-item">
-														<a class="nav-link color-text" href="/Bilans/selected"><i class="icon-chart-bar"></i> Przeglądaj bilans </a>
+													<li class="nav-item dropdown">
+														<a class="nav-link color-text dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"><i class="icon-chart-bar"></i> Przeglądaj bilans </a>
+													
+														
+													<ul class="dropdown-menu">
+														<form action="/bilans/show" method="post">
+																	<li><button class="dropdown-item" type="submit" class="first btn"	name="opcja_bilansu" value="1">Bieżący miesiąc</li>
+																	
+																	<li><button class="dropdown-item" type="submit" class="first btn"	name="opcja_bilansu" value="2">Poprzedni miesiąc</li>
+																	
+																	<li><button class="dropdown-item" type="submit" class="first btn"	name="opcja_bilansu" value="3">Bieżący rok</li>
+																	
+																	<li><button type="button" class="dropdown-item" name="opcja_bilansu"  value="5" data-toggle="modal" data-target="#daty" >Niestandardowy</button></li>		
+														</form>
+													</ul>
+															
+												
 													</li>
 													
 													<li class="nav-item dropdown">
@@ -140,7 +155,32 @@
 				
 						</nav>
 					</div>
-			
+				<form action="/bilans/show" method="post">
+					<div class="modal fade" id="daty" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"data-backdrop="static">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalCenterTitle">Ustawienie dat</h5>
+																<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																  <span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body text-center">
+										
+																		<div class="option_modal">Data początkowa</div>
+																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="start_date"></label></div>
+																		<div class="option_modal">Data końcowa</div>
+																		<div class="data text-center"><i class="icon-calendar"></i><label><input type="date" name="end_date"></label></div>
+
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+																<button type="submit" name="opcja_bilansu"  value="5" class="btn btn-primary zapisz">Zapisz</button>
+															</div>
+														</div>
+													</div>
+					</div>
+			</form>
 	
 		{% block body %}
 		{% endblock %}
