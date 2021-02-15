@@ -116,6 +116,7 @@ class Options extends Authenticated
 				$options->addLimit();
 				Flash::addMessage('Kategoria została dodana!');
 				}
+				else Flash::addMessage('Kategoria została dodana!');
 			}
 				View::renderTemplate('Options/addexpense.html',[
 				'user' => $this->user

@@ -243,7 +243,7 @@ $('#limit_info').css('color','green');
 
 if(form.valid()==true)
 {
- $('#daty').modal('show');
+ $('#akcepts').modal('show');
 	$.post("/Expenses/limit",{
 		dane: kategoria
 	}, function(limit,status){
@@ -375,7 +375,7 @@ e.preventDefault();
 
 												<div><a href="#" class="akcept" id="akcept">Dodaj</a></div>
 												<a href="/Profile/show" class="reset">Anuluj</a>
-											<div class="modal fade"  id="daty" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"data-backdrop="static">
+											<div class="modal fade"  id="akcepts" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"data-backdrop="static">
 													<div class="modal-dialog modal-dialog-centered" role="document">
 														<div class="modal-content">
 															<div class="modal-header">
